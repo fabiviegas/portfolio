@@ -1,0 +1,48 @@
+//out: false
+
+.page__header {
+    position: absolute;
+    width: 100%;
+    background-image: url('../img/header/flag.png');
+    background-repeat: no-repeat;
+    background-position: top 0 left 0;
+
+    .is--desktop {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 51px;
+        padding-bottom: 85px;
+
+        .is--desktop {
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+
+            nav {
+                display: flex;
+                width: 480px;
+                justify-content: space-between;
+                align-items: center;
+
+                .header__link {
+                    font: 600 18px @fontR;
+                    color: #F4E5F3;
+                    transition: all linear .15s;
+                    letter-spacing: 1px;
+
+                    &:hover {
+                        transform: translateY(-5px);
+                        color: #f3cbf0;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .is--mobile {
+            display: none;
+        }
+    }
+}

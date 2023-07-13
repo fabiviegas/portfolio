@@ -1,0 +1,47 @@
+//out: false
+
+.page__about {
+    background-color: #FDF9FC;
+    background-image: url('../img/sobre/bg-about.png');
+    background-repeat: no-repeat;
+    background-position: bottom 17px left -13px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .about__content {
+
+        h2 {
+            display: flex;
+            flex-direction: column;
+            font: 700 46px @fontR;
+            color: #550979;
+            margin-bottom: 37px;
+
+            img {
+                width: fit-content;            
+            }
+        }
+
+        .about__text {
+            font: 400 18px @fontR;
+            color: #270C3D;
+            line-height: 157.9%;
+        }
+    }
+
+    .photo {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: fit-content;
+            border-radius: 5px;
+            box-shadow: 20px 20px 0 #270C3D;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 117px;
+        padding-bottom: 117px;
+    }
+}

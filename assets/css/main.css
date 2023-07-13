@@ -1,0 +1,272 @@
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVuEooCP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaooCP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvoooCP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVsEpYCP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pYCP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVtapYCP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVtzpYCP.ttf) format('truetype');
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+  background-color: white;
+}
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+iframe {
+  margin: 0;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+address {
+  font-style: normal;
+}
+iframe {
+  border: none;
+}
+mark {
+  padding: 0;
+  background-color: transparent;
+}
+menu {
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+p {
+  margin-bottom: 0;
+}
+section,
+article,
+aside,
+details,
+figcaption,
+figure,
+header,
+footer,
+menu,
+nav {
+  display: block;
+}
+@media screen and (min-width: 1200px) {
+  .container.util--container1198 {
+    max-width: 1198px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container.util--container1016 {
+    max-width: 1016px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container.util--container802 {
+    max-width: 802px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container.util--container1000 {
+    max-width: 1000px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container.util--container1028 {
+    max-width: 1028px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .util--padding30 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+.util--carousel {
+  padding-left: 0;
+  padding-right: 0;
+}
+.page__header {
+  position: absolute;
+  width: 100%;
+  background-image: url('../img/header/flag.png');
+  background-repeat: no-repeat;
+  background-position: top 0 left 0;
+}
+.page__header .is--desktop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .page__header {
+    padding-top: 51px;
+    padding-bottom: 85px;
+  }
+  .page__header .is--desktop {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .page__header .is--desktop nav {
+    display: flex;
+    width: 480px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .page__header .is--desktop nav .header__link {
+    font: 600 18px 'Raleway', sans-serif;
+    color: #F4E5F3;
+    transition: all linear 0.15s;
+    letter-spacing: 1px;
+  }
+  .page__header .is--desktop nav .header__link:hover {
+    transform: translateY(-5px);
+    color: #f3cbf0;
+    cursor: pointer;
+  }
+  .page__header .is--mobile {
+    display: none;
+  }
+}
+.page__banner {
+  background-color: #270c3d;
+  background-image: url('../img/banner/bg-banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page__banner .banner__content {
+  display: flex;
+  gap: 50px;
+}
+.page__banner .banner__content .banner__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.page__banner .banner__content .banner__text h1 {
+  font: 700 42px 'Raleway', sans-serif;
+  color: #F4E5F3;
+  margin-bottom: 15px;
+}
+.page__banner .banner__content .banner__text p {
+  font: 500 18px 'Raleway', sans-serif;
+  color: #F4E5F3;
+  line-height: 150.4%;
+  margin-bottom: 17px;
+  letter-spacing: 1px;
+}
+.page__banner .banner__content .banner__text .social__links {
+  display: flex;
+  gap: 20px;
+}
+.page__banner .banner__content .banner__text .social__links a {
+  transition: all linear 0.15s;
+}
+.page__banner .banner__content .banner__text .social__links a img {
+  width: 30px;
+}
+.page__banner .banner__content .banner__text .social__links a:hover {
+  transform: translateY(-5px);
+}
+.page__banner .banner__content .banner__text .social__links a:hover img {
+  filter: brightness(0) saturate(100%) invert(99%) sepia(77%) saturate(1695%) hue-rotate(192deg) brightness(100%) contrast(91%);
+}
+@media screen and (min-width: 768px) {
+  .page__banner {
+    padding-top: 221px;
+    padding-bottom: 90px;
+  }
+}
+.page__about {
+  background-color: #FDF9FC;
+  background-image: url('../img/sobre/bg-about.png');
+  background-repeat: no-repeat;
+  background-position: bottom 17px left -13px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.page__about .about__content h2 {
+  display: flex;
+  flex-direction: column;
+  font: 700 46px 'Raleway', sans-serif;
+  color: #550979;
+  margin-bottom: 37px;
+}
+.page__about .about__content h2 img {
+  width: fit-content;
+}
+.page__about .about__content .about__text {
+  font: 400 18px 'Raleway', sans-serif;
+  color: #270C3D;
+  line-height: 157.9%;
+}
+.page__about .photo {
+  display: flex;
+  justify-content: center;
+}
+.page__about .photo img {
+  width: fit-content;
+  border-radius: 5px;
+  box-shadow: 20px 20px 0 #270C3D;
+}
+@media screen and (min-width: 768px) {
+  .page__about {
+    padding-top: 117px;
+    padding-bottom: 117px;
+  }
+}

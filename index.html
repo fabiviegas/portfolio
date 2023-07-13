@@ -34,64 +34,112 @@
 <body>
     <header class="page__header" id="header">
         <div class="container">
-            <div class="row">
+                         
+            <div class="is--desktop">
+                <nav>
+                    <a href="#sobre" class="header__link">Sobre mim</a>
+                    <a href="#skills" class="header__link">Skills</a>
+                    <a href="#projetos" class="header__link">Projetos</a>
+                    <a href="#contato" class="header__link">Contato</a>
+                </nav>
+            </div>       
 
-                <div class="col col-md-5">
-                    <h1>
-                        <a href="index.html">
-                            <img src="assets/img/logo.svg" class="logo__header">
-                        </a>
-                    </h1>
-                </div>
+            <div class="is--mobile">
+                <menu class="navbar__hamburguer">
+                    <img src="assets/img/header/burger-bar.svg" alt="Menu">
+                </menu>
 
-                <div class="col-md-5 is--desktop">
-                    
+                <div id="navbar__overlay" class="navbar__overlay animate__animated animate__backInRight">
+                    <div class="overlay__content">
 
-                <div class="col col-md-1 is--mobile">
-                    <menu class="navbar__hamburguer">
-                        <img src="assets/img/burger-bar.svg" alt="Menu">
-                    </menu>
-
-                    <div id="navbar__overlay" class="navbar__overlay animate__animated animate__backInRight">
-                        <div class="overlay__content">
-
-                            <div class="d-flex justify-content-between align-items-center overlay__header">
-                                
-                                
-                                <i class="fa-solid fa-xmark overlay__close"></i>
-                            </div>
-        
-                            <div class="container d-flex flex-column align-items-center overlay__menu">
-                                
-                                <nav class="overlay__links">
-                                    <a class="text-center link anchor1" href="#servicos">Serviços</a>
-                                    <a class="text-center link anchor2" href="#quemsomos">Quem somos</a>
-                                    <a class="text-center link anchor3" href="#contato">Contato</a>
-                                </nav>
-
-                                <a href="#" class="btn__cyanblue overlay__button">
-                                    <i class="fa-brands fa-whatsapp" alt="Whatsapp Ark Mídia"></i>
-                                    Fale conosco
-                                </a>
-
-                                <div class="overlay__social d-flex justify-content-between">
-                                    <a href="#" class="icon__social">
-                                        <i class="fa-brands fa-instagram" alt="Instagram Ark Mídia"></i>
-                                    </a>
-                                    <a href="#" class="icon__social">
-                                        <i class="fa-brands fa-facebook" alt="Facebook Ark Mídia"></i>
-                                    </a>
-                                    <a href="#" class="icon__social">
-                                        <i class="fa-brands fa-whatsapp" alt="Whatsapp Ark Mídia"></i>
-                                    </a>
-                                </div>
-                                
-                            </div>
+                        <div class="d-flex justify-content-between align-items-center overlay__header">
+                            
+                            
+                            <img src="assets/img/header/icon-close.svg" class="overlay__close">
                         </div>
+    
+                        <div class="container d-flex flex-column align-items-center overlay__menu">
+                            
+                            <nav class="overlay__links">
+                                <a href="#sobre" class="header__link">Sobre mim</a>
+                                <a href="#skills" class="header__link">Skills</a>
+                                <a href="#projetos" class="header__link">Projetos</a>
+                                <a href="#contato" class="header__link">Contato</a>
+                            </nav>
 
+                            <a href="#" class="overlay__button">
+                               
+                            </a>
+
+                            <div class="overlay__social">
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </header> 
+
+    <main class="page__banner">
+        <div class="container">
+            <div class="banner__content">
+                <img src="assets/img/banner/fabi-photo.png" alt="Fabiane Viegas" class="banner__photo">
+                <div class="banner__text">
+                    <h1>Fabiane Viegas</h1>
+                    <p>Desenvolvedora Front-End<br>
+                       Estudante de Design Gráfico</p>
+
+                    <div class="social__links">
+                        <a href="www.linkedin.com/in/fabiane-viegas-8867671b4" class="link">
+                            <img src="assets/img/icons-social/icon-linkedin.svg" alt="LinkedIn" class="icon__social">
+                        </a>
+                        <a href="https://github.com/fabiviegas" class="link">
+                            <img src="assets/img/icons-social/icon-github.svg" alt="Github" class="icon__social">
+                        </a>
+                        <a href="https://wa.me/5551989743363" class="link">
+                            <img src="assets/img/icons-social/icon-whats.svg" alt="Whatsapp" class="icon__social">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </header> 
+    </main>
+
+    <section class="page__about" id="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="about__content">
+                        <h2>
+                            <img src="assets/img/title/title-line.svg" class="title__line" alt="Título">
+                            Sobre mim
+                        </h2>
+
+                        <p class="about__text">
+                            Tenho 33 anos, tenho dois filhos e vivo na cidade litorânea de Tramandaí no Rio Grande do Sul. Sempre fui amante das artes e da tecnologia, comecei cursando Graduação em Artes Visuais na Universidade Federal do Rio Grande do Sul, fiz parte de projetos de extensão e pesquisa científica. Acabei voltando para a área da tecnologia por acaso e logo me apaixonei por desenvolvimento web. Passei a estudar muito e hoje faz cerca de um ano que trabalho como Front-End. Decidi mergulhar no desenvolvimento web não apenas em sua construção como também no design, portanto hoje dedico meus estudos ao Design Gráfico e Web Design com foco em UX/UI.<br>
+                            A seguir, um desenho do meu filho mais velho, Vincent, um artista nato.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="photo">
+                        <img src="assets/img/sobre/photo-about.png" class="photo__about" alt="Desenho do Vincent"> 
+                    </div>                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- bootstrap 4.6.1 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    
+
+
 </body>
