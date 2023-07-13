@@ -1,0 +1,133 @@
+//out: false
+
+.page__projects {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #FDF9FC;
+    background-image: url('../img/projetos/bg-projects.png');
+    background-repeat: no-repeat;
+    background-position: top 11px right 13px;
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font: 700 46px @fontR;
+        color: #550979;
+        margin-bottom: 78px;
+
+        img {
+            width: fit-content;
+            margin-bottom: 4px;
+        }
+    }
+
+    .accordion {
+
+        .projects__enterprises {
+
+            .title__enterprises {
+                width: 100%;
+                border: 1px solid rgba(181, 4, 142, 0.30);
+                background: #FDF9FC;
+                box-shadow: -5px 5px 26px 0px rgba(45, 13, 38, 0.30);
+                padding: 40px 160px 40px 140px; 
+                
+                h2 {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .btn__title {
+                        font: 600 24px @fontR;
+                        letter-spacing: 3.96px;
+                        text-transform: uppercase;
+                        color: #270C3D;
+                        
+                        &:focus {
+                            box-shadow: none;
+                        }
+                        
+                    }
+                }
+                
+            }
+
+            .projects__content {
+                background-image: url('../img/projetos/bg-projects-b.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                .description {
+                    padding-top: 57px;
+                    font: 400 18px @fontR;
+                    color: #270C3D;
+                    line-height: 171.9%;
+                    padding-bottom: 80px;
+                }
+
+                .projects__list {
+
+                    display: flex;
+                    gap: 30px;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+
+                    .card__job {
+                        position: relative;
+                        width: 245px;
+                        height: 245px;
+
+                        .job__overlay {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            z-index: 10;
+                        }
+
+                        .photo__job {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        .card__text {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-end;
+                            gap: 12px;
+                            position: absolute;
+                            z-index: 11;
+                            bottom: 14px;
+                            left: 16px;
+
+                            h3 {
+                               font: 600 18px @fontR;
+                               color: #FDF9FC;
+                               letter-spacing: 1.53px;
+                            }
+
+                            .links {
+                                display: flex;
+                                gap: 9px;
+
+                                .site__link {
+                                    font: 500 14px @fontR;
+                                    color: #FDF9FC;
+                                    letter-spacing: 0.21px;
+                                    border-radius: 10px;
+                                    border: 1px solid #FDF9FC;
+                                    padding: 5px 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 92px;
+        padding-bottom: 100px;
+    }
+}
