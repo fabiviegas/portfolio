@@ -1,0 +1,21 @@
+//out: false
+
+.animation__click() {
+    animation: effect--click 3s infinite both;
+
+}
+
+@keyframes effect--click {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+
+    50% {
+        transform: translateY(-10px) translateX(-20px);
+    }
+
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}
+

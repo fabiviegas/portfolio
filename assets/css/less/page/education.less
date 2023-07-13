@@ -1,0 +1,212 @@
+//out: false
+
+.page__training {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url('../img/formacao/bg-education.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        font: 700 46px @fontR;
+        color: #550979;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 76px;
+
+        img {
+            width: fit-content;
+            margin-bottom: 4px;
+        }
+    }
+
+    .education__cards {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+
+        .card__graduation {
+            background-color: #FDF9FC;
+            border-radius: 5px;
+            box-shadow: 4px 4px 16px #270C3D;
+            width: 284px;
+            height: 242px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+
+            .card__image {
+                margin-bottom: 16px;
+                max-width: 170px;
+            }
+
+            h3 {
+                font: 600 16px @fontR;
+                color: #270C3D;
+                margin-bottom: 5px;
+                text-align: center;
+                line-height: 127.4%;
+            }
+
+            p {
+               font: 400 14px @fontR;
+               color: #270C3D;
+               text-align: center;
+            }
+        }
+
+        .card__courses {
+            width: 433px;
+            height: 242px;
+            background-color: #FDF9FC;
+            border-radius: 5px;
+            box-shadow: 4px 4px 16px #270C3D;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 30px;
+            position: relative;
+
+            .icon__click {
+                width: fit-content;
+                position: absolute;
+                top: 99px;
+                right: 29px;
+                .animation__click();
+            }
+
+            .card__header {
+                display: flex;
+                align-items: center;
+                gap: 26px;
+                margin-bottom: 17px;
+
+                .logo {
+                    width: fit-content;
+                }
+
+                h3 {
+                    display: flex;
+                    flex-direction: column;
+                    font: 600 18px @fontR;
+                    color: #270C3D;
+
+                    img {
+                        width: fit-content;
+                        margin-top: 3px;
+                    }
+                }
+            }
+
+            .courses__list {
+                display: flex;
+                flex-direction: column;
+                gap: 11px;
+
+                .courses {
+                    display: flex;
+                    gap: 9px;
+                    align-items: center;
+                    font: 400 16px @fontR;
+                    color: #270C3D;
+                    transition: all linear .15s;
+                    width: fit-content;
+
+                    .icon__sparkles {
+                        width: fit-content;
+                    }  
+
+                    &:hover {
+                        color: #8E2790;
+                        font-weight: 500;
+                        cursor: pointer;
+                        transform: translateX(5px);
+
+                        .icon__sparkles {
+                            filter: brightness(0) saturate(100%) invert(22%) sepia(74%) saturate(1868%) hue-rotate(275deg) brightness(90%) contrast(98%);
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 94px;
+        padding-bottom: 117px;
+
+    }
+}
+
+.other__courses {
+    padding-top: 40px;
+    padding-bottom: 65px;
+    background-color: #FDF9FC;
+    background-image: url('../img/formacao/study.png');
+    background-repeat: no-repeat;
+    background-position: right 5% bottom 30px;
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        font: 700 28px @fontR;
+        color: #550979;
+        margin-bottom: 19px;
+
+        img {
+            width: fit-content;
+            margin-bottom: 4px;
+        }
+    }
+
+    .content {
+        display: flex;
+        gap: 40px;
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 17px;
+
+            .courses {
+                display: flex;
+                gap: 9px;
+                align-items: center;
+
+                .icon__sparkles {
+                    width: fit-content;
+                }
+
+                .course__title {
+                    font: 400 16px @fontR;
+                    color: #270C3D;
+                }
+            }
+        }
+
+        .wrapper2 {
+            display: flex;
+            flex-direction: column;
+            gap: 17px;
+
+            .courses {
+                display: flex;
+                gap: 9px;
+                align-items: center;
+
+                .icon__sparkles {
+                    width: fit-content;
+                }
+
+                .course__title {
+                    font: 400 16px @fontR;
+                    color: #270C3D;
+                }
+            }
+        }
+    }
+}
