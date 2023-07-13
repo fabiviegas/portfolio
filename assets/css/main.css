@@ -108,8 +108,8 @@ nav {
   display: block;
 }
 @media screen and (min-width: 1200px) {
-  .container.util--container1198 {
-    max-width: 1198px;
+  .container.util--container1250 {
+    max-width: 1250px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -460,4 +460,54 @@ nav {
 .other__courses .content .wrapper2 .courses .course__title {
   font: 400 16px 'Raleway', sans-serif;
   color: #270C3D;
+}
+.page__skills {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #270c3d;
+  background-image: url('../img/skills/bg-skills.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page__skills .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font: 700 46px 'Raleway', sans-serif;
+  color: #F4E5F3;
+  margin-bottom: 89px;
+}
+.page__skills .title img {
+  width: fit-content;
+  margin-bottom: 4px;
+}
+.page__skills .owl-carousel.owl-theme.skills__carousel .card__skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.page__skills .owl-carousel.owl-theme.skills__carousel .card__skill .card__image {
+  background-color: #f4e5f3;
+  border-radius: 100%;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page__skills .owl-carousel.owl-theme.skills__carousel .card__skill .card__image .icon__skill {
+  width: fit-content;
+}
+.page__skills .owl-carousel.owl-theme.skills__carousel .card__skill h3 {
+  font: 600 26px 'Raleway', sans-serif;
+  color: #F4E5F3;
+  text-align: center;
+  letter-spacing: 0.8px;
+}
+@media screen and (min-width: 768px) {
+  .page__skills {
+    padding-top: 98px;
+    padding-bottom: 110px;
+  }
 }

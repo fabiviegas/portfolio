@@ -235,11 +235,102 @@
         </section>
     </div>
 
+    <section class="page__skills" id="skills">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="title">
+                        <img src="assets/img/title/title-line-white.svg" alt="Título" class="title__line">
+                        Skills
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid px-5">
+            <div class="owl-carousel owl-theme skills__carousel">
+                <div class="item">
+                    <div class="card__skill">
+                        <div class="card__image">
+                            <img src="assets/img/skills/html5.svg" class="icon__skill" alt="HTML5">
+                        </div>
+                        <h3>HTML5</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card__skill">
+                        <div class="card__image">
+                            <img src="assets/img/skills/css3.svg" class="icon__skill" alt="css3">
+                        </div>
+                        <h3>CSS3</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card__skill">
+                        <div class="card__image">
+                            <img src="assets/img/skills/js.svg" class="icon__skill" alt="JavaScript">
+                        </div>
+                        <h3>JavaScript</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card__skill">
+                        <div class="card__image">
+                            <img src="assets/img/skills/bootstrap.svg" class="icon__skill" alt="Bootstrap">
+                        </div>
+                        <h3>Bootstrap</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card__skill">
+                        <div class="card__image">
+                            <img src="assets/img/skills/less.svg" class="icon__skill" alt="less">
+                        </div>
+                        <h3>less</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card__skill">
+                        <div class="card__image">
+                            <img src="assets/img/skills/figma.svg" class="icon__skill" alt="Figma">
+                        </div>
+                        <h3>Figma</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- bootstrap 4.6.1 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 
+    <!-- owl carousel controls -->
+    <script src="assets/libs/owl.carousel.min.js"></script>
+    <script> 
     
+        $('.skills__carousel').owlCarousel({
+            loop: true,
+            nav: false,
+            dots: true, 
+                        
+            responsive:{
+                0: {
+                    items: 1,
+                    margin: 10,                    
+                },
+                
+                768: {
+                    items: 3,
+                    margin: 20,
+                },
 
+                1200: {
+                    items: 6,
+                    margin: 20,
+                }
+            }
+        });
+    </script>
 
 </body>
