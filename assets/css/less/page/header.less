@@ -7,6 +7,70 @@
     background-repeat: no-repeat;
     background-position: top 0 left 0;
 
+    .is--mobile {
+
+        .navbar__hamburguer {
+            margin-right: 15px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .navbar__overlay {
+            background-image: linear-gradient(0deg, rgba(148,62,129,1) 0%, rgba(85,9,121,1) 20%, rgba(39,12,61,1) 100%);
+            background-color: #270c3d;
+            background-repeat: no-repeat;            
+            z-index: 3001;
+            display: none;
+        
+            &.open {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                width: 100%;
+                position: fixed;
+                                
+                top: 0;
+                right: 0;
+                
+                overflow: hidden !important;
+                transition: all linear 0.5s;
+        
+                .overlay__content {
+                    
+                    overflow-y: auto !important;
+                    height: 90%;
+
+                    .overlay__header {
+                        margin: 30px 54px 109px 30px;
+
+                        .overlay__logo {
+                            width: 77px;
+                        }                                                           
+                        
+                    }
+
+                    .overlay__menu {
+                        margin: 0;
+                        
+                        .overlay__links {
+                            a {
+                                font: 500 15px @fontR;
+                                color: #FDF9FC;
+                                text-decoration: none;
+                                margin-bottom: 16px;
+                            }
+                        }
+
+                        .overlay__social {
+                            width: 140px;
+                            margin-top: 190px;
+                        }
+                    }
+                }
+            } 
+        }       
+    }
+
     .is--desktop {
         display: none;
     }

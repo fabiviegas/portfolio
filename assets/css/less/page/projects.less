@@ -6,19 +6,27 @@
     background-image: url('../img/projetos/bg-projects.png');
     background-repeat: no-repeat;
     background-position: top 11px right 13px;
+    background-size: auto 300px;
 
     .title {
         display: flex;
         flex-direction: column;
         align-items: center;
-        font: 700 46px @fontR;
+        font: 800 46px @fontR;
         color: #550979;
-        margin-bottom: 78px;
+        margin-bottom: 10px;
 
         img {
             width: fit-content;
             margin-bottom: 4px;
         }
+    }
+
+    .subtitle {
+        text-align: center;
+        margin-bottom: 78px;
+        font: 500 20px @fontR;
+        color: #270C3D;
     }
 
     .accordion {
@@ -27,22 +35,25 @@
             
             .title__enterprises {
                 width: 100%;
-                border: 1px solid rgba(181, 4, 142, 0.30);
+                border: 1px solid rgba(175, 92, 157, 0.3);
                 background: #FDF9FC;
                 box-shadow: -5px 5px 26px 0px rgba(45, 13, 38, 0.30);
                                 
                 h2 {
                    
                     .btn__title {
-                        font: 600 24px @fontR;
-                        letter-spacing: 3.96px;
-                        text-transform: uppercase;
-                        color: #270C3D;
+                        font: 700 20px @fontR;
+                        letter-spacing: 2px;                        
+                        color: #550979;
                         display: flex;
                         flex-direction: row;
                         justify-content: space-between;
                         align-items: center;
-                        padding: 40px 160px 40px 140px;
+                        padding: 25px 160px 25px 140px;
+
+                        .chevrons__right {
+                            height: 20px;
+                        }
                         
                         &:focus {
                             box-shadow: none;
@@ -58,13 +69,14 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 padding-bottom: 118px;
+                padding-top: 57px;
 
                 &.content2 {
                     background-image: url('../img/projetos/bg-projects-c.png');
+                    padding-bottom: 162px;
                 }
 
-                .description {
-                    padding-top: 57px;
+                .description {                    
                     font: 400 18px @fontR;
                     color: #270C3D;
                     line-height: 171.9%;

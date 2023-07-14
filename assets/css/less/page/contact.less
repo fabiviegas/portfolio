@@ -1,0 +1,95 @@
+//out: false
+
+.page__contact {
+    padding-top: 60px;
+    background-image: url('../img/contato/bg-contact.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .contact__content  {
+        margin-bottom: 85px;
+
+        h2 {
+            display: flex;
+            flex-direction: column;
+            font: 600 32px @fontR;
+            color: #FDF9FC;
+            margin-bottom: 6px;
+
+            img {
+                width: fit-content;
+                margin-bottom: 6px;
+            }
+        }
+
+        h3 {
+            font: 600 32px @fontR;
+            color: #FDF9FC; 
+            margin-bottom: 25px;
+        }
+
+        .text {
+            font: 400 16px @fontR;
+            color: #FDF9FC; 
+            line-height: 145.9%;
+            margin-bottom: 20px;
+        }
+
+        .contact__button {            
+            padding: 13px 24px;
+            border: 1px solid #FDF9FC;
+            border-radius: 20px;
+            width: fit-content;
+            margin-bottom: 15px;
+            transition: all linear .15s;
+            position: relative;
+            z-index: 1;
+
+            .text {
+                z-index: 1;
+                position: relative;
+                font: 600 20px @fontR;
+                color: #FDF9FC;                 
+            }
+
+            .icon__button {
+                width: 20px;
+                margin-right: 9px;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                background-image: linear-gradient(90deg, #270C3D 0%, #550979 28.65%, #920C74 53.65%, #F44B74 85.94%); 
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+                z-index: 0;
+                opacity: 0;
+                transition: all linear .5s;
+            }
+
+            &:hover {
+                &::after {
+                    opacity: 1;
+                }              
+            }
+        }
+    }
+
+    .photo {
+        position: relative;
+
+        .photo__contact {
+            position: absolute;
+            bottom: -443px;
+            right: calc(60% - 212px);
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 99px;
+    }
+}
