@@ -536,18 +536,17 @@ nav {
   border: 1px solid rgba(181, 4, 142, 0.3);
   background: #FDF9FC;
   box-shadow: -5px 5px 26px 0px rgba(45, 13, 38, 0.3);
-  padding: 40px 160px 40px 140px;
-}
-.page__projects .accordion .projects__enterprises .title__enterprises h2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 .page__projects .accordion .projects__enterprises .title__enterprises h2 .btn__title {
   font: 600 24px 'Raleway', sans-serif;
   letter-spacing: 3.96px;
   text-transform: uppercase;
   color: #270C3D;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 160px 40px 140px;
 }
 .page__projects .accordion .projects__enterprises .title__enterprises h2 .btn__title:focus {
   box-shadow: none;
@@ -556,6 +555,7 @@ nav {
   background-image: url('../img/projetos/bg-projects-b.png');
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 118px;
 }
 .page__projects .accordion .projects__enterprises .projects__content .description {
   padding-top: 57px;
@@ -567,7 +567,7 @@ nav {
 .page__projects .accordion .projects__enterprises .projects__content .projects__list {
   display: flex;
   gap: 30px;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job {
