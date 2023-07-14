@@ -513,7 +513,6 @@ nav {
 }
 .page__projects {
   padding-top: 60px;
-  padding-bottom: 60px;
   background-color: #FDF9FC;
   background-image: url('../img/projetos/bg-projects.png');
   background-repeat: no-repeat;
@@ -557,6 +556,9 @@ nav {
   background-size: cover;
   padding-bottom: 118px;
 }
+.page__projects .accordion .projects__enterprises .projects__content.content2 {
+  background-image: url('../img/projetos/bg-projects-c.png');
+}
 .page__projects .accordion .projects__enterprises .projects__content .description {
   padding-top: 57px;
   font: 400 18px 'Raleway', sans-serif;
@@ -574,6 +576,8 @@ nav {
   position: relative;
   width: 245px;
   height: 245px;
+  overflow: hidden;
+  border-radius: 20px;
 }
 .page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job .job__overlay {
   position: absolute;
@@ -584,6 +588,8 @@ nav {
 .page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job .photo__job {
   width: 100%;
   height: 100%;
+  border-radius: 20px;
+  transition: all linear 0.15s;
 }
 .page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job .card__text {
   display: flex;
@@ -611,10 +617,18 @@ nav {
   border-radius: 10px;
   border: 1px solid #FDF9FC;
   padding: 5px 8px;
+  transition: all linear 0.15s;
+}
+.page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job .card__text .links .site__link:hover {
+  background-color: #FDF9FC;
+  color: #270C3D;
+}
+.page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job:hover .photo__job {
+  transform: scale(1.2);
+  border-radius: 20px;
 }
 @media screen and (min-width: 768px) {
   .page__projects {
     padding-top: 92px;
-    padding-bottom: 100px;
   }
 }
