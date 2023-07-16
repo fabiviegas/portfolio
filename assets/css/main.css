@@ -429,8 +429,8 @@ nav {
   text-align: center;
 }
 .page__training .education__cards .card__courses {
-  width: 433px;
-  height: 242px;
+  width: 284px;
+  height: 432px;
   background-color: #FDF9FC;
   border-radius: 5px;
   box-shadow: 4px 4px 16px #270C3D;
@@ -442,7 +442,7 @@ nav {
 .page__training .education__cards .card__courses .icon__click {
   width: fit-content;
   position: absolute;
-  top: 99px;
+  top: 208px;
   right: 29px;
   animation: effect--click 3s infinite both;
 }
@@ -450,8 +450,8 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 26px;
-  margin-bottom: 17px;
+  gap: 18px;
+  margin-bottom: 25px;
 }
 .page__training .education__cards .card__courses .card__header .logo {
   width: fit-content;
@@ -459,6 +459,7 @@ nav {
 .page__training .education__cards .card__courses .card__header h3 {
   display: flex;
   flex-direction: column;
+  align-items: center;
   font: 600 18px 'Raleway', sans-serif;
   color: #270C3D;
 }
@@ -469,7 +470,7 @@ nav {
 .page__training .education__cards .card__courses .courses__list {
   display: flex;
   flex-direction: column;
-  gap: 11px;
+  gap: 18px;
 }
 .page__training .education__cards .card__courses .courses__list .courses {
   display: flex;
@@ -507,24 +508,39 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
   }
+  .page__training .education__cards .card__courses {
+    width: 433px;
+    height: 242px;
+  }
+  .page__training .education__cards .card__courses .icon__click {
+    top: 99px;
+  }
   .page__training .education__cards .card__courses .card__header {
     flex-direction: row;
+    gap: 26px;
+    margin-bottom: 25px;
+  }
+  .page__training .education__cards .card__courses .card__header h3 {
+    align-items: flex-start;
+  }
+  .page__training .education__cards .card__courses .courses__list {
+    gap: 11px;
   }
 }
 .other__courses {
   padding-top: 40px;
-  padding-bottom: 65px;
+  padding-bottom: 220px;
   background-color: #FDF9FC;
   background-image: url('../img/formacao/study.png');
   background-repeat: no-repeat;
-  background-position: right 5% bottom 30px;
+  background-position: center bottom 20px;
 }
 .other__courses .title {
   display: flex;
   flex-direction: column;
   font: 700 28px 'Raleway', sans-serif;
   color: #550979;
-  margin-bottom: 19px;
+  margin-bottom: 35px;
 }
 .other__courses .title img {
   width: fit-content;
@@ -532,7 +548,8 @@ nav {
 }
 .other__courses .content {
   display: flex;
-  gap: 40px;
+  flex-direction: column;
+  gap: 21px;
 }
 .other__courses .content .wrapper {
   display: flex;
@@ -567,6 +584,19 @@ nav {
 .other__courses .content .wrapper2 .courses .course__title {
   font: 400 16px 'Raleway', sans-serif;
   color: #270C3D;
+}
+@media screen and (min-width: 768px) {
+  .other__courses {
+    padding-bottom: 65px;
+    background-position: right 5% bottom 30px;
+  }
+  .other__courses .title {
+    margin-bottom: 19px;
+  }
+  .other__courses .content {
+    flex-direction: row;
+    gap: 40px;
+  }
 }
 .page__skills {
   padding-top: 60px;
