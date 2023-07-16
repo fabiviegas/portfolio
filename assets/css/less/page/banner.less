@@ -2,23 +2,30 @@
 
 .page__banner {
     background-color: rgb(39, 12, 61);
-    background-image: url('../img/banner/bg-banner.png');
+    background-image: url('../img/banner/bg-banner-mobile.png');
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 170px;
 
     .banner__content {
         display: flex;
-        gap: 50px;
+        flex-direction: column;
+        gap: 30px;
+
+        .banner__photo {
+            width: 174px;
+        }
 
         .banner__text {
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
+            margin-bottom: 58px;
 
             h1 {
-                font: 700 42px @fontR;
+                font: 700 32px @fontR;
                 color: #F4E5F3;
-                margin-bottom: 15px;
+                margin-bottom: 5px;
             }
 
             p {
@@ -50,11 +57,44 @@
 
                 }
             }
+        }        
+    }
+
+    .chevrons__down {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding-bottom: 45px;
+
+        .chevrons {
+            width: fit-content;
         }
     }
     
     @media screen and (min-width: 768px) {
+        background-image: url('../img/banner/bg-banner.png');
         padding-top: 221px;
         padding-bottom: 90px;
+
+        .banner__photo {
+            width: 257px;
+        }
+
+        .banner__content {
+            flex-direction: row;
+            gap: 50px;
+
+            .banner__text {
+
+                h1 {
+                    font-size: 42px;
+                    margin-bottom: 15px;
+                }                 
+            }            
+        }
+
+        .chevrons__down {
+            display: none;
+        }
     }
 }

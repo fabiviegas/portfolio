@@ -154,11 +154,14 @@ nav {
   }
 }
 .page__header {
+  padding-top: 37px;
+  padding-bottom: 40px;
   position: absolute;
   width: 100%;
   background-image: url('../img/header/flag.png');
   background-repeat: no-repeat;
   background-position: top 0 left 0;
+  background-size: 100px;
 }
 .page__header .is--mobile .navbar__hamburguer {
   margin-right: 15px;
@@ -242,23 +245,29 @@ nav {
 }
 .page__banner {
   background-color: #270c3d;
-  background-image: url('../img/banner/bg-banner.png');
+  background-image: url('../img/banner/bg-banner-mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 170px;
 }
 .page__banner .banner__content {
   display: flex;
-  gap: 50px;
+  flex-direction: column;
+  gap: 30px;
+}
+.page__banner .banner__content .banner__photo {
+  width: 174px;
 }
 .page__banner .banner__content .banner__text {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin-bottom: 58px;
 }
 .page__banner .banner__content .banner__text h1 {
-  font: 700 42px 'Raleway', sans-serif;
+  font: 700 32px 'Raleway', sans-serif;
   color: #F4E5F3;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 .page__banner .banner__content .banner__text p {
   font: 500 18px 'Raleway', sans-serif;
@@ -283,66 +292,103 @@ nav {
 .page__banner .banner__content .banner__text .social__links a:hover img {
   filter: brightness(0) saturate(100%) invert(99%) sepia(77%) saturate(1695%) hue-rotate(192deg) brightness(100%) contrast(91%);
 }
+.page__banner .chevrons__down {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 45px;
+}
+.page__banner .chevrons__down .chevrons {
+  width: fit-content;
+}
 @media screen and (min-width: 768px) {
   .page__banner {
+    background-image: url('../img/banner/bg-banner.png');
     padding-top: 221px;
     padding-bottom: 90px;
+  }
+  .page__banner .banner__photo {
+    width: 257px;
+  }
+  .page__banner .banner__content {
+    flex-direction: row;
+    gap: 50px;
+  }
+  .page__banner .banner__content .banner__text h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+  }
+  .page__banner .chevrons__down {
+    display: none;
   }
 }
 .page__about {
   background-color: #FDF9FC;
   background-image: url('../img/sobre/bg-about.png');
   background-repeat: no-repeat;
-  background-position: bottom 17px left -13px;
+  background-position: top 226px left -28px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 .page__about .about__content h2 {
   display: flex;
   flex-direction: column;
-  font: 800 46px 'Raleway', sans-serif;
+  font: 800 32px 'Raleway', sans-serif;
   color: #550979;
-  margin-bottom: 37px;
+  margin-bottom: 40px;
 }
 .page__about .about__content h2 img {
   width: fit-content;
   margin-bottom: 3px;
 }
 .page__about .about__content .about__text {
-  font: 400 18px 'Raleway', sans-serif;
+  font: 400 14px 'Raleway', sans-serif;
   color: #270C3D;
   line-height: 157.9%;
+  margin-bottom: 40px;
 }
 .page__about .photo {
   display: flex;
   justify-content: center;
 }
 .page__about .photo img {
-  width: fit-content;
+  width: 277px;
   border-radius: 5px;
-  box-shadow: 20px 20px 0 #270C3D;
+  box-shadow: 15px 15px 0 #270C3D;
 }
 @media screen and (min-width: 768px) {
   .page__about {
     padding-top: 117px;
     padding-bottom: 117px;
+    background-position: bottom 17px left -13px;
+  }
+  .page__about .about__content h2 {
+    font-size: 42px;
+  }
+  .page__about .about__content .about__text {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  .page__about .about__content .photo img {
+    width: fit-content;
+    box-shadow: 20px 20px 0 #270C3D;
   }
 }
 .page__training {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-image: url('../img/formacao/bg-education.png');
+  background-image: url('../img/formacao/bg-education-mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
 .page__training .title {
   display: flex;
   flex-direction: column;
-  font: 800 46px 'Raleway', sans-serif;
+  font: 800 32px 'Raleway', sans-serif;
   color: #550979;
   text-align: center;
   align-items: center;
-  margin-bottom: 76px;
+  margin-bottom: 56px;
 }
 .page__training .title img {
   width: fit-content;
@@ -350,7 +396,8 @@ nav {
 }
 .page__training .education__cards {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   gap: 30px;
 }
 .page__training .education__cards .card__graduation {
@@ -401,6 +448,7 @@ nav {
 }
 .page__training .education__cards .card__courses .card__header {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 26px;
   margin-bottom: 17px;
@@ -448,6 +496,19 @@ nav {
   .page__training {
     padding-top: 94px;
     padding-bottom: 117px;
+    background-image: url('../img/formacao/bg-education.png');
+  }
+  .page__training .title {
+    font-size: 42px;
+    margin-bottom: 76px;
+  }
+  .page__training .education__cards {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .page__training .education__cards .card__courses .card__header {
+    flex-direction: row;
   }
 }
 .other__courses {
