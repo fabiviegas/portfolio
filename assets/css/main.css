@@ -307,12 +307,12 @@ nav {
     padding-top: 221px;
     padding-bottom: 90px;
   }
-  .page__banner .banner__photo {
-    width: 257px;
-  }
   .page__banner .banner__content {
     flex-direction: row;
     gap: 50px;
+  }
+  .page__banner .banner__content .banner__photo {
+    width: 257px;
   }
   .page__banner .banner__content .banner__text h1 {
     font-size: 42px;
