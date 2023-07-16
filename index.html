@@ -250,7 +250,7 @@
             </div>
         </div>
 
-        <div class="container-fluid px-5">
+        <div class="carousel">
             <div class="owl-carousel owl-theme skills__carousel">
                 <div class="item">
                     <div class="card__skill">
@@ -772,7 +772,8 @@
         $('.skills__carousel').owlCarousel({
             loop: true,
             nav: false,
-            dots: true, 
+            dots: true,
+            stagePadding: 85, 
                         
             responsive:{
                 0: {
@@ -787,7 +788,8 @@
 
                 1200: {
                     items: 6,
-                    margin: 20,
+                    margin: 10,
+                    stagePadding: 0,
                 }
             }
         });

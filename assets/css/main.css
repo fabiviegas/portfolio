@@ -339,7 +339,7 @@ nav {
 }
 .page__about .about__content h2 img {
   width: fit-content;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
 }
 .page__about .about__content .about__text {
   font: 400 14px 'Raleway', sans-serif;
@@ -610,7 +610,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font: 800 46px 'Raleway', sans-serif;
+  font: 800 32px 'Raleway', sans-serif;
   color: #F4E5F3;
   margin-bottom: 89px;
 }
@@ -618,13 +618,13 @@ nav {
   width: fit-content;
   margin-bottom: 4px;
 }
-.page__skills .owl-carousel.owl-theme.skills__carousel .card__skill {
+.page__skills .carousel .owl-carousel.owl-theme.skills__carousel .card__skill {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
-.page__skills .owl-carousel.owl-theme.skills__carousel .card__skill .card__image {
+.page__skills .carousel .owl-carousel.owl-theme.skills__carousel .card__skill .card__image {
   background-color: #f4e5f3;
   border-radius: 100%;
   width: 170px;
@@ -633,20 +633,53 @@ nav {
   align-items: center;
   justify-content: center;
 }
-.page__skills .owl-carousel.owl-theme.skills__carousel .card__skill .card__image .icon__skill {
+.page__skills .carousel .owl-carousel.owl-theme.skills__carousel .card__skill .card__image .icon__skill {
   max-width: 90px;
   max-height: 104px;
 }
-.page__skills .owl-carousel.owl-theme.skills__carousel .card__skill h3 {
+.page__skills .carousel .owl-carousel.owl-theme.skills__carousel .card__skill h3 {
   font: 600 26px 'Raleway', sans-serif;
   color: #F4E5F3;
   text-align: center;
   letter-spacing: 0.8px;
 }
+.page__skills .carousel .owl-carousel.owl-theme.skills__carousel .owl-dots {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.page__skills .carousel .owl-carousel.owl-theme.skills__carousel .owl-dots .owl-dot {
+  height: 10px !important;
+  display: flex;
+  align-items: center;
+}
+.page__skills .carousel .owl-carousel.owl-theme.skills__carousel .owl-dots .owl-dot span {
+  margin: 0;
+  width: 6px;
+  height: 6px;
+  background-color: #FDF9FC;
+  transition: all linear 0.25s;
+}
+.page__skills .carousel .owl-carousel.owl-theme.skills__carousel .owl-dots .owl-dot.active span {
+  width: 10px;
+  height: 10px;
+}
+.page__skills .carousel .owl-carousel.owl-theme.skills__carousel .owl-dots.disabled {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .page__skills {
     padding-top: 98px;
     padding-bottom: 110px;
+  }
+  .page__skills .title {
+    font-size: 42px;
+  }
+  .page__skills .carousel {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 .page__projects {
