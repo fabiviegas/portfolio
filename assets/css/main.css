@@ -372,8 +372,8 @@ nav {
     font-size: 18px;
     margin-bottom: 0;
   }
-  .page__about .about__content .photo img {
-    width: fit-content;
+  .page__about .photo img {
+    width: 412px;
     box-shadow: 20px 20px 0 #270C3D;
   }
 }
@@ -508,7 +508,8 @@ nav {
   }
   .page__training .education__cards {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 50px;
     flex-wrap: wrap;
   }
   .page__training .education__cards .card__courses {
@@ -598,6 +599,8 @@ nav {
   }
   .other__courses .content {
     flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     gap: 40px;
   }
 }
@@ -1008,6 +1011,9 @@ nav {
     transform: scale(1.2);
     border-radius: 20px;
   }
+  .page__projects .accordion .projects__enterprises .projects__content .projects__mobile {
+    display: none;
+  }
 }
 .page__contact {
   padding-top: 60px;
@@ -1127,7 +1133,7 @@ nav {
 .page__footer .copyrights {
   font: 600 16px 'Raleway', sans-serif;
   color: #FDF9FC;
-  max-width: 240px;
+  width: 240px;
 }
 .page__footer .copyrights .icon__heart {
   width: 23px;
@@ -1141,7 +1147,7 @@ nav {
   .page__footer .copyrights {
     font-size: 20px;
     text-align: center;
-    width: fit-content;
+    width: 100%;
   }
   .page__footer .copyrights .icon__heart {
     width: fit-content;
