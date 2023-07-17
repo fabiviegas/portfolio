@@ -200,14 +200,17 @@ nav {
   margin: 0;
 }
 .page__header .is--mobile .navbar__overlay.open .overlay__content .overlay__menu .overlay__links a {
-  font: 500 15px 'Raleway', sans-serif;
+  font: 600 18px 'Raleway', sans-serif;
   color: #FDF9FC;
   text-decoration: none;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
+  text-align: center;
 }
 .page__header .is--mobile .navbar__overlay.open .overlay__content .overlay__menu .overlay__social {
-  width: 140px;
-  margin-top: 190px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
 }
 .page__header .is--desktop {
   display: none;
@@ -683,18 +686,17 @@ nav {
   }
 }
 .page__projects {
-  padding-top: 60px;
+  padding-top: 70px;
   background-color: #FDF9FC;
   background-image: url('../img/projetos/bg-projects.png');
   background-repeat: no-repeat;
-  background-position: top 11px right 13px;
-  background-size: auto 300px;
+  background-position: top 50px right 20px;
+  background-size: auto 150px;
 }
 .page__projects .title {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  font: 800 46px 'Raleway', sans-serif;
+  font: 800 32px 'Raleway', sans-serif;
   color: #550979;
   margin-bottom: 10px;
 }
@@ -703,9 +705,8 @@ nav {
   margin-bottom: 4px;
 }
 .page__projects .subtitle {
-  text-align: center;
-  margin-bottom: 78px;
-  font: 500 20px 'Raleway', sans-serif;
+  margin-bottom: 45px;
+  font: 500 16px 'Raleway', sans-serif;
   color: #270C3D;
 }
 .page__projects .accordion .projects__enterprises .title__enterprises {
@@ -715,17 +716,17 @@ nav {
   box-shadow: -5px 5px 26px 0px rgba(45, 13, 38, 0.3);
 }
 .page__projects .accordion .projects__enterprises .title__enterprises h2 .btn__title {
-  font: 700 20px 'Raleway', sans-serif;
+  font: 700 16px 'Raleway', sans-serif;
   letter-spacing: 2px;
   color: #550979;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 160px 25px 140px;
+  padding: 20px 50px 20px 30px;
 }
 .page__projects .accordion .projects__enterprises .title__enterprises h2 .btn__title .chevrons__right {
-  height: 20px;
+  height: 16px;
 }
 .page__projects .accordion .projects__enterprises .title__enterprises h2 .btn__title:focus {
   box-shadow: none;
@@ -734,45 +735,42 @@ nav {
   background-image: url('../img/projetos/bg-projects-b.png');
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 118px;
-  padding-top: 57px;
+  padding-bottom: 80px;
+  padding-top: 30px;
 }
 .page__projects .accordion .projects__enterprises .projects__content.content2 {
   background-image: url('../img/projetos/bg-projects-c.png');
-  padding-bottom: 162px;
-}
-.page__projects .accordion .projects__enterprises .projects__content .description {
-  font: 400 18px 'Raleway', sans-serif;
-  color: #270C3D;
-  line-height: 171.9%;
   padding-bottom: 80px;
 }
-.page__projects .accordion .projects__enterprises .projects__content .projects__list {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  flex-wrap: wrap;
+.page__projects .accordion .projects__enterprises .projects__content .description {
+  font: 400 14px 'Raleway', sans-serif;
+  color: #270C3D;
+  line-height: 168%;
+  padding-bottom: 40px;
 }
-.page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job {
+.page__projects .accordion .projects__enterprises .projects__content .projects__list {
+  display: none;
+}
+.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .card__job {
   position: relative;
   width: 245px;
   height: 245px;
   overflow: hidden;
   border-radius: 20px;
 }
-.page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job .job__overlay {
+.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .card__job .job__overlay {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 10;
 }
-.page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job .photo__job {
+.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .card__job .photo__job {
   width: 100%;
   height: 100%;
   border-radius: 20px;
   transition: all linear 0.15s;
 }
-.page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job .card__text {
+.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .card__job .card__text {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -782,16 +780,16 @@ nav {
   bottom: 14px;
   left: 16px;
 }
-.page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job .card__text h3 {
+.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .card__job .card__text h3 {
   font: 600 18px 'Raleway', sans-serif;
   color: #FDF9FC;
   letter-spacing: 1.53px;
 }
-.page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job .card__text .links {
+.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .card__job .card__text .links {
   display: flex;
   gap: 9px;
 }
-.page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job .card__text .links .site__link {
+.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .card__job .card__text .links .site__link {
   font: 500 14px 'Raleway', sans-serif;
   color: #FDF9FC;
   letter-spacing: 0.21px;
@@ -800,17 +798,215 @@ nav {
   padding: 5px 8px;
   transition: all linear 0.15s;
 }
-.page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job .card__text .links .site__link:hover {
+.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .card__job .card__text .links .site__link:hover {
   background-color: #FDF9FC;
   color: #270C3D;
 }
-.page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job:hover .photo__job {
+.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .card__job:hover .photo__job {
   transform: scale(1.2);
   border-radius: 20px;
+}
+.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .owl-dots {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .owl-dots .owl-dot {
+  height: 10px !important;
+  display: flex;
+  align-items: center;
+}
+.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .owl-dots .owl-dot span {
+  margin: 0;
+  width: 6px;
+  height: 6px;
+  background-color: #920C74;
+  transition: all linear 0.25s;
+}
+.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .owl-dots .owl-dot.active span {
+  width: 10px;
+  height: 10px;
+}
+.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .owl-dots.disabled {
+  display: none;
+}
+.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .card__job {
+  position: relative;
+  width: 245px;
+  height: 245px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .card__job .job__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .card__job .photo__job {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  transition: all linear 0.15s;
+}
+.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .card__job .card__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 12px;
+  position: absolute;
+  z-index: 11;
+  bottom: 14px;
+  left: 16px;
+}
+.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .card__job .card__text h3 {
+  font: 600 18px 'Raleway', sans-serif;
+  color: #FDF9FC;
+  letter-spacing: 1.53px;
+}
+.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .card__job .card__text .links {
+  display: flex;
+  gap: 9px;
+}
+.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .card__job .card__text .links .site__link {
+  font: 500 14px 'Raleway', sans-serif;
+  color: #FDF9FC;
+  letter-spacing: 0.21px;
+  border-radius: 10px;
+  border: 1px solid #FDF9FC;
+  padding: 5px 8px;
+  transition: all linear 0.15s;
+}
+.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .card__job .card__text .links .site__link:hover {
+  background-color: #FDF9FC;
+  color: #270C3D;
+}
+.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .card__job:hover .photo__job {
+  transform: scale(1.2);
+  border-radius: 20px;
+}
+.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .owl-dots {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .owl-dots .owl-dot {
+  height: 10px !important;
+  display: flex;
+  align-items: center;
+}
+.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .owl-dots .owl-dot span {
+  margin: 0;
+  width: 6px;
+  height: 6px;
+  background-color: #920C74;
+  transition: all linear 0.25s;
+}
+.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .owl-dots .owl-dot.active span {
+  width: 10px;
+  height: 10px;
+}
+.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .owl-dots.disabled {
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .page__projects {
     padding-top: 92px;
+    background-position: top 11px right 13px;
+    background-size: auto 300px;
+  }
+  .page__projects .title {
+    align-items: center;
+    font-size: 42px;
+  }
+  .page__projects .subtitle {
+    text-align: center;
+    margin-bottom: 78px;
+    font-size: 20px;
+  }
+  .page__projects .accordion .projects__enterprises .title__enterprises h2 .btn__title {
+    font-size: 20px;
+    padding: 25px 160px 25px 140px;
+  }
+  .page__projects .accordion .projects__enterprises .title__enterprises h2 .btn__title .chevrons__right {
+    height: 20px;
+  }
+  .page__projects .accordion .projects__enterprises .projects__content {
+    padding-top: 57px;
+    padding-bottom: 118px;
+  }
+  .page__projects .accordion .projects__enterprises .projects__content.content2 {
+    padding-bottom: 162px;
+  }
+  .page__projects .accordion .projects__enterprises .projects__content .description {
+    font-size: 18px;
+    line-height: 171.9%;
+    padding-bottom: 80px;
+  }
+  .page__projects .accordion .projects__enterprises .projects__content .projects__list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job {
+    position: relative;
+    width: 245px;
+    height: 245px;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  .page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job .job__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  .page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job .photo__job {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: all linear 0.15s;
+  }
+  .page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job .card__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 12px;
+    position: absolute;
+    z-index: 11;
+    bottom: 14px;
+    left: 16px;
+  }
+  .page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job .card__text h3 {
+    font: 600 18px 'Raleway', sans-serif;
+    color: #FDF9FC;
+    letter-spacing: 1.53px;
+  }
+  .page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job .card__text .links {
+    display: flex;
+    gap: 9px;
+  }
+  .page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job .card__text .links .site__link {
+    font: 500 14px 'Raleway', sans-serif;
+    color: #FDF9FC;
+    letter-spacing: 0.21px;
+    border-radius: 10px;
+    border: 1px solid #FDF9FC;
+    padding: 5px 8px;
+    transition: all linear 0.15s;
+  }
+  .page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job .card__text .links .site__link:hover {
+    background-color: #FDF9FC;
+    color: #270C3D;
+  }
+  .page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job:hover .photo__job {
+    transform: scale(1.2);
+    border-radius: 20px;
   }
 }
 .page__contact {
@@ -820,12 +1016,12 @@ nav {
   background-size: cover;
 }
 .page__contact .contact__content {
-  margin-bottom: 85px;
+  margin-bottom: 48px;
 }
 .page__contact .contact__content h2 {
   display: flex;
   flex-direction: column;
-  font: 600 32px 'Raleway', sans-serif;
+  font: 600 22px 'Raleway', sans-serif;
   color: #FDF9FC;
   margin-bottom: 6px;
 }
@@ -834,9 +1030,12 @@ nav {
   margin-bottom: 6px;
 }
 .page__contact .contact__content h3 {
-  font: 600 32px 'Raleway', sans-serif;
+  font: 600 22px 'Raleway', sans-serif;
   color: #FDF9FC;
   margin-bottom: 25px;
+}
+.page__contact .contact__content h3 .icon__smile {
+  width: 30px;
 }
 .page__contact .contact__content .text {
   font: 400 16px 'Raleway', sans-serif;
@@ -857,7 +1056,7 @@ nav {
 .page__contact .contact__content .contact__button .text {
   z-index: 1;
   position: relative;
-  font: 600 20px 'Raleway', sans-serif;
+  font: 600 18px 'Raleway', sans-serif;
   color: #FDF9FC;
 }
 .page__contact .contact__content .contact__button .icon__button {
@@ -881,28 +1080,70 @@ nav {
   opacity: 1;
 }
 .page__contact .photo {
-  position: relative;
+  display: flex;
+  justify-content: center;
 }
 .page__contact .photo .photo__contact {
-  position: absolute;
-  bottom: -443px;
-  right: calc(60% - 212px);
+  width: 285px;
 }
 @media screen and (min-width: 768px) {
   .page__contact {
     padding-top: 99px;
   }
+  .page__contact .contact__content {
+    margin-bottom: 85px;
+  }
+  .page__contact .contact__content h2 {
+    font-size: 32px;
+  }
+  .page__contact .contact__content h3 {
+    font-size: 32px;
+  }
+  .page__contact .contact__content h3 .icon__smile {
+    width: fit-content;
+  }
+  .page__contact .contact__content .contact__button .text {
+    font-size: 20px;
+  }
+  .page__contact .photo {
+    position: relative;
+  }
+  .page__contact .photo .photo__contact {
+    position: absolute;
+    bottom: -443px;
+    right: calc(60% - 212px);
+    width: fit-content;
+  }
 }
 .page__footer {
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: 22px;
+  padding-bottom: 22px;
   background-image: url('../img/footer/flag2.png');
   background-repeat: no-repeat;
   background-position: bottom 0 right 0;
+  background-size: 150px;
   background-color: #270C3D;
 }
 .page__footer .copyrights {
-  text-align: center;
-  font: 600 20px 'Raleway', sans-serif;
+  font: 600 16px 'Raleway', sans-serif;
   color: #FDF9FC;
+  max-width: 240px;
+}
+.page__footer .copyrights .icon__heart {
+  width: 23px;
+}
+@media screen and (min-width: 768px) {
+  .page__footer {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background-size: auto;
+  }
+  .page__footer .copyrights {
+    font-size: 20px;
+    text-align: center;
+    width: fit-content;
+  }
+  .page__footer .copyrights .icon__heart {
+    width: fit-content;
+  }
 }

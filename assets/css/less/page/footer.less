@@ -1,17 +1,39 @@
 //out: false
 
 .page__footer {
-   padding-top: 48px;
-   padding-bottom: 48px;
+   padding-top: 22px;
+   padding-bottom: 22px;
    background-image: url('../img/footer/flag2.png');
    background-repeat: no-repeat;
    background-position: bottom 0 right 0;
+   background-size: 150px; 
    background-color: #270C3D;
 
-   .copyrights {
-      text-align: center;
-      font: 600 20px @fontR;
+   .copyrights {      
+      font: 600 16px @fontR;
       color: #FDF9FC;
+      max-width: 240px;
+
+      .icon__heart {
+         width: 23px;
+      }
+   }
+
+   @media screen and (min-width: 768px) {
+      padding-top: 48px;
+      padding-bottom: 48px;
+      background-size: auto;
+      
+
+      .copyrights {
+         font-size: 20px;
+         text-align: center;
+         width: fit-content;
+
+         .icon__heart {
+            width: fit-content;
+         }
+      }
    }
    
 }

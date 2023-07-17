@@ -1,18 +1,17 @@
 //out: false
 
 .page__projects {
-    padding-top: 60px;
+    padding-top: 70px;
     background-color: #FDF9FC;
     background-image: url('../img/projetos/bg-projects.png');
     background-repeat: no-repeat;
-    background-position: top 11px right 13px;
-    background-size: auto 300px;
+    background-position: top 50px right 20px;
+    background-size: auto 150px;
 
     .title {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        font: 800 46px @fontR;
+        font: 800 32px @fontR;
         color: #550979;
         margin-bottom: 10px;
 
@@ -23,9 +22,8 @@
     }
 
     .subtitle {
-        text-align: center;
-        margin-bottom: 78px;
-        font: 500 20px @fontR;
+        margin-bottom: 45px;
+        font: 500 16px @fontR;
         color: #270C3D;
     }
 
@@ -42,17 +40,17 @@
                 h2 {
                    
                     .btn__title {
-                        font: 700 20px @fontR;
+                        font: 700 16px @fontR;
                         letter-spacing: 2px;                        
                         color: #550979;
                         display: flex;
                         flex-direction: row;
                         justify-content: space-between;
                         align-items: center;
-                        padding: 25px 160px 25px 140px;
+                        padding: 20px 50px 20px 30px;
 
                         .chevrons__right {
-                            height: 20px;
+                            height: 16px;
                         }
                         
                         &:focus {
@@ -68,89 +66,221 @@
                 background-image: url('../img/projetos/bg-projects-b.png');
                 background-repeat: no-repeat;
                 background-size: cover;
-                padding-bottom: 118px;
-                padding-top: 57px;
+                padding-bottom: 80px;
+                padding-top: 30px;
 
                 &.content2 {
                     background-image: url('../img/projetos/bg-projects-c.png');
-                    padding-bottom: 162px;
-                }
-
-                .description {                    
-                    font: 400 18px @fontR;
-                    color: #270C3D;
-                    line-height: 171.9%;
                     padding-bottom: 80px;
                 }
 
+                .description {                    
+                    font: 400 14px @fontR;
+                    color: #270C3D;
+                    line-height: 168%;
+                    padding-bottom: 40px;
+                }
+
                 .projects__list {
-                    display: flex;
-                    gap: 30px;
-                    justify-content: center;
-                    flex-wrap: wrap;
+                    display: none;
+                }
 
-                    .card__job {
-                        position: relative;
-                        width: 245px;
-                        height: 245px;                        
-                        overflow: hidden;
-                        border-radius: 20px;
+                .projects__mobile {
 
-                        .job__overlay {
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            z-index: 10;
-                        }
+                    .owl-carousel.owl-theme.projects__carousel {
 
-                        .photo__job {
-                            width: 100%;
-                            height: 100%;
+                        .card__job {
+                            position: relative;
+                            width: 245px;
+                            height: 245px;                        
+                            overflow: hidden;
                             border-radius: 20px;
-                            transition: all linear .15s;
-                        }
 
-                        .card__text {
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: flex-end;
-                            gap: 12px;
-                            position: absolute;
-                            z-index: 11;
-                            bottom: 14px;
-                            left: 16px;
-
-                            h3 {
-                               font: 600 18px @fontR;
-                               color: #FDF9FC;
-                               letter-spacing: 1.53px;
+                            .job__overlay {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                z-index: 10;
                             }
 
-                            .links {
+                            .photo__job {
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 20px;
+                                transition: all linear .15s;
+                            }
+
+                            .card__text {
                                 display: flex;
-                                gap: 9px;
+                                flex-direction: column;
+                                justify-content: flex-end;
+                                gap: 12px;
+                                position: absolute;
+                                z-index: 11;
+                                bottom: 14px;
+                                left: 16px;
 
-                                .site__link {
-                                    font: 500 14px @fontR;
-                                    color: #FDF9FC;
-                                    letter-spacing: 0.21px;
-                                    border-radius: 10px;
-                                    border: 1px solid #FDF9FC;
-                                    padding: 5px 8px;
-                                    transition: all linear .15s;
+                                h3 {
+                                font: 600 18px @fontR;
+                                color: #FDF9FC;
+                                letter-spacing: 1.53px;
+                                }
 
-                                    &:hover {
-                                        background-color: #FDF9FC;
-                                        color: #270C3D;
+                                .links {
+                                    display: flex;
+                                    gap: 9px;
+
+                                    .site__link {
+                                        font: 500 14px @fontR;
+                                        color: #FDF9FC;
+                                        letter-spacing: 0.21px;
+                                        border-radius: 10px;
+                                        border: 1px solid #FDF9FC;
+                                        padding: 5px 8px;
+                                        transition: all linear .15s;
+
+                                        &:hover {
+                                            background-color: #FDF9FC;
+                                            color: #270C3D;
+                                        }
                                     }
+                                }
+                            }
+
+                            &:hover {
+                                .photo__job {
+                                    transform: scale(1.2);
+                                    border-radius: 20px;
                                 }
                             }
                         }
 
-                        &:hover {
+                        .owl-dots {
+                            margin-top: 30px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 10px;
+            
+                            .owl-dot {
+                                height: 10px !important;
+                                display: flex;
+                                align-items: center;
+                                span {
+                                    margin: 0;
+                                    width: 6px;
+                                    height: 6px;
+                                    background-color: #920C74;
+                                    transition: all linear .25s;
+                                }
+                                &.active {
+                                    span {
+                                        width: 10px;
+                                        height: 10px;
+                                    }
+                                }
+                            }
+                            &.disabled {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .owl-carousel.owl-theme.projects__carousel2 {
+
+                        .card__job {
+                            position: relative;
+                            width: 245px;
+                            height: 245px;                        
+                            overflow: hidden;
+                            border-radius: 20px;
+
+                            .job__overlay {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                z-index: 10;
+                            }
+
                             .photo__job {
-                                transform: scale(1.2);
+                                width: 100%;
+                                height: 100%;
                                 border-radius: 20px;
+                                transition: all linear .15s;
+                            }
+
+                            .card__text {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: flex-end;
+                                gap: 12px;
+                                position: absolute;
+                                z-index: 11;
+                                bottom: 14px;
+                                left: 16px;
+
+                                h3 {
+                                font: 600 18px @fontR;
+                                color: #FDF9FC;
+                                letter-spacing: 1.53px;
+                                }
+
+                                .links {
+                                    display: flex;
+                                    gap: 9px;
+
+                                    .site__link {
+                                        font: 500 14px @fontR;
+                                        color: #FDF9FC;
+                                        letter-spacing: 0.21px;
+                                        border-radius: 10px;
+                                        border: 1px solid #FDF9FC;
+                                        padding: 5px 8px;
+                                        transition: all linear .15s;
+
+                                        &:hover {
+                                            background-color: #FDF9FC;
+                                            color: #270C3D;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &:hover {
+                                .photo__job {
+                                    transform: scale(1.2);
+                                    border-radius: 20px;
+                                }
+                            }
+                        }
+
+                        .owl-dots {
+                            margin-top: 30px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 10px;
+            
+                            .owl-dot {
+                                height: 10px !important;
+                                display: flex;
+                                align-items: center;
+                                span {
+                                    margin: 0;
+                                    width: 6px;
+                                    height: 6px;
+                                    background-color: #920C74;
+                                    transition: all linear .25s;
+                                }
+                                &.active {
+                                    span {
+                                        width: 10px;
+                                        height: 10px;
+                                    }
+                                }
+                            }
+                            &.disabled {
+                                display: none;
                             }
                         }
                     }
@@ -161,5 +291,126 @@
 
     @media screen and (min-width: 768px) {
         padding-top: 92px;
+        background-position: top 11px right 13px;
+        background-size: auto 300px;
+
+        .title {
+            align-items: center;
+            font-size: 42px;
+        }
+
+        .subtitle {
+            text-align: center;
+            margin-bottom: 78px;
+            font-size: 20px;
+        }
+
+        .accordion {
+            .projects__enterprises {
+
+                .title__enterprises {
+
+                    h2 {
+                        .btn__title {
+                            font-size: 20px;
+                            padding: 25px 160px 25px 140px;
+
+                            .chevrons__right {
+                                height: 20px;
+                            }
+                        }
+                    }
+                }
+
+                .projects__content {
+                    padding-top: 57px;
+                    padding-bottom: 118px;
+
+                    &.content2 {
+                        padding-bottom: 162px;
+                    }
+
+                    .description {
+                        font-size: 18px;
+                        line-height: 171.9%;
+                        padding-bottom: 80px;
+                    }
+
+                    .projects__list {
+                        display: flex;
+                        gap: 30px;
+                        justify-content: center;
+                        flex-wrap: wrap;
+    
+                        .card__job {
+                            position: relative;
+                            width: 245px;
+                            height: 245px;                        
+                            overflow: hidden;
+                            border-radius: 20px;
+    
+                            .job__overlay {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                z-index: 10;
+                            }
+    
+                            .photo__job {
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 20px;
+                                transition: all linear .15s;
+                            }
+    
+                            .card__text {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: flex-end;
+                                gap: 12px;
+                                position: absolute;
+                                z-index: 11;
+                                bottom: 14px;
+                                left: 16px;
+    
+                                h3 {
+                                   font: 600 18px @fontR;
+                                   color: #FDF9FC;
+                                   letter-spacing: 1.53px;
+                                }
+    
+                                .links {
+                                    display: flex;
+                                    gap: 9px;
+    
+                                    .site__link {
+                                        font: 500 14px @fontR;
+                                        color: #FDF9FC;
+                                        letter-spacing: 0.21px;
+                                        border-radius: 10px;
+                                        border: 1px solid #FDF9FC;
+                                        padding: 5px 8px;
+                                        transition: all linear .15s;
+    
+                                        &:hover {
+                                            background-color: #FDF9FC;
+                                            color: #270C3D;
+                                        }
+                                    }
+                                }
+                            }
+    
+                            &:hover {
+                                .photo__job {
+                                    transform: scale(1.2);
+                                    border-radius: 20px;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
     }
 }

@@ -7,12 +7,12 @@
     background-size: cover;
 
     .contact__content  {
-        margin-bottom: 85px;
+        margin-bottom: 48px;
 
         h2 {
             display: flex;
             flex-direction: column;
-            font: 600 32px @fontR;
+            font: 600 22px @fontR;
             color: #FDF9FC;
             margin-bottom: 6px;
 
@@ -23,9 +23,13 @@
         }
 
         h3 {
-            font: 600 32px @fontR;
+            font: 600 22px @fontR;
             color: #FDF9FC; 
             margin-bottom: 25px;
+
+            .icon__smile {
+                width: 30px;
+            }
         }
 
         .text {
@@ -48,7 +52,7 @@
             .text {
                 z-index: 1;
                 position: relative;
-                font: 600 20px @fontR;
+                font: 600 18px @fontR;
                 color: #FDF9FC;                 
             }
 
@@ -80,16 +84,48 @@
     }
 
     .photo {
-        position: relative;
+        display: flex;
+        justify-content: center;
 
         .photo__contact {
-            position: absolute;
-            bottom: -443px;
-            right: calc(60% - 212px);
+            width: 285px;
         }
     }
 
     @media screen and (min-width: 768px) {
         padding-top: 99px;
+
+        .contact__content {
+            margin-bottom: 85px;
+
+            h2 {
+                font-size: 32px;
+            }
+
+            h3 {
+                font-size: 32px;
+
+                .icon__smile {
+                    width: fit-content;
+                }
+            }
+
+            .contact__button {
+                .text {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .photo {
+            position: relative;
+
+            .photo__contact {
+                position: absolute;
+                bottom: -443px;
+                right: calc(60% - 212px);
+                width: fit-content;
+            }
+        }
     }
 }
