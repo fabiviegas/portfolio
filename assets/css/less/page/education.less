@@ -3,15 +3,10 @@
 .page__training {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-image: url('../img/formacao/bg-education-mobile.png');
-    background-repeat: no-repeat;
-    background-size: cover;
 
-    .title {
-        display: flex;
-        flex-direction: column;
-        font: 800 32px @fontR;
-        color: #550979;
+    .title {        
+        font: 800 32px @fontM;
+        color: #270C3D;
         text-align: center;
         align-items: center;
         margin-bottom: 56px;
@@ -62,7 +57,7 @@
 
         .card__courses {
             width: 284px;
-            height: 432px;
+            height: 380px;
             background-color: #FDF9FC;
             border-radius: 5px;
             box-shadow: 4px 4px 16px #270C3D;
@@ -84,54 +79,56 @@
                 flex-direction: column;
                 align-items: center;
                 gap: 18px;
-                margin-bottom: 25px;
+                margin-bottom: 20px;
 
                 .logo {
                     width: fit-content;
                 }
 
                 h3 {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    font: 600 18px @fontR;
+                    font: 800 18px @fontM;
                     color: #270C3D;
+                    text-transform: uppercase;
+                    text-align: center;
+                    line-height: 25px;
+                }
+            }
 
-                    img {
-                        width: fit-content;
-                        margin-top: 3px;
-                    }
+            .card__title {
+                margin-bottom: 25px;
+                margin-top: 10px;
+                
+                h3 {
+                    font: 800 18px @fontM;
+                    color: #270C3D;
+                    text-transform: uppercase;
+                    text-align: center;
+                    line-height: 25px;
                 }
             }
 
             .courses__list {
                 display: flex;
                 flex-direction: column;
-                gap: 18px;
+                gap: 11px;
 
-                .courses {
-                    display: flex;
-                    gap: 9px;
-                    align-items: center;
+                .courses {                    
                     font: 400 16px @fontR;
                     color: #270C3D;
                     transition: all linear .15s;
-                    width: fit-content;
-
-                    .icon__sparkles {
-                        width: fit-content;
-                    }  
+                    width: fit-content;                     
 
                     &:hover {
                         color: #8E2790;
                         font-weight: 500;
                         cursor: pointer;
                         transform: translateX(5px);
-
-                        .icon__sparkles {
-                            filter: brightness(0) saturate(100%) invert(22%) sepia(74%) saturate(1868%) hue-rotate(275deg) brightness(90%) contrast(98%);
-                        }
                     }
+                }
+
+                .course__title {
+                    font: 400 16px @fontR;
+                    color: #270C3D;
                 }
             }
 
@@ -142,15 +139,17 @@
         padding-top: 94px;
         padding-bottom: 117px;
         background-image: url('../img/formacao/bg-education.png');
+        background-repeat: no-repeat;
+        background-position: bottom 0 right 0;
 
         .title {
-            font-size: 42px;
+            font-size: 46px;
             margin-bottom: 76px;
         }
 
         .education__cards {
             flex-direction: row;
-            justify-content: center;
+            justify-content: flex-start;
             gap: 50px;
             flex-wrap: wrap;
 
@@ -164,12 +163,22 @@
 
                 .card__header {
                     flex-direction: row;
+                    align-items: flex-end;
                     gap: 26px;
                     margin-bottom: 25px;
 
                     h3 {
                         align-items: flex-start;
+                        text-align: left;
+                        font-size: 20px;
+                        line-height: normal;
                     }                    
+                }
+
+                .card__title {
+                    text-align: left;
+                    font-size: 20px;
+                    line-height: normal;
                 }
 
                 .courses__list {
@@ -181,88 +190,3 @@
     }
 }
 
-.other__courses {
-    padding-top: 40px;
-    padding-bottom: 220px;
-    background-color: #FDF9FC;
-    background-image: url('../img/formacao/study.png');
-    background-repeat: no-repeat;
-    background-position: center bottom 20px;
-
-    .title {
-        display: flex;
-        flex-direction: column;
-        font: 700 28px @fontR;
-        color: #550979;
-        margin-bottom: 35px;
-
-        img {
-            width: fit-content;
-            margin-bottom: 4px;
-        }
-    }
-
-    .content {
-        display: flex;
-        flex-direction: column;
-        gap: 21px;
-
-        .wrapper {
-            display: flex;
-            flex-direction: column;
-            gap: 17px;
-
-            .courses {
-                display: flex;
-                gap: 9px;
-                align-items: center;
-
-                .icon__sparkles {
-                    width: fit-content;
-                }
-
-                .course__title {
-                    font: 400 16px @fontR;
-                    color: #270C3D;
-                }
-            }
-        }
-
-        .wrapper2 {
-            display: flex;
-            flex-direction: column;
-            gap: 17px;
-
-            .courses {
-                display: flex;
-                gap: 9px;
-                align-items: center;
-
-                .icon__sparkles {
-                    width: fit-content;
-                }
-
-                .course__title {
-                    font: 400 16px @fontR;
-                    color: #270C3D;
-                }
-            }
-        }
-    }
-
-    @media screen and (min-width: 768px) {
-        padding-bottom: 65px;
-        background-position: right 5% bottom 30px;
-
-        .title {
-            margin-bottom: 19px;
-        }
-
-        .content {
-            flex-direction: row;
-            justify-content: flex-start;
-            flex-wrap: wrap;
-            gap: 40px;
-        }
-    }
-}

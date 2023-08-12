@@ -1,69 +1,60 @@
 //out: false
 
 .page__about {
-    background-color: #FDF9FC;
-    background-image: url('../img/sobre/bg-about.png');
-    background-repeat: no-repeat;
-    background-position: top 226px left -28px;
+    background-color: white;
     padding-top: 60px;
     padding-bottom: 60px;
 
-    .about__content {
-
-        h2 {
-            display: flex;
-            flex-direction: column;
-            font: 800 32px @fontR;
-            color: #550979;
-            margin-bottom: 40px;
-
-            img {
-                width: fit-content; 
-                margin-bottom: 4px;           
-            }
-        }
-
-        .about__text {
-            font: 400 14px @fontR;
-            color: #270C3D;
-            line-height: 157.9%;
-            margin-bottom: 40px;
-        }
-    }
-
-    .photo {
+    .about__wrapper {
+        background: #FDF9FC;
+        box-shadow: -10px 10px 36px 0px rgba(39, 12, 61, 0.25);
         display: flex;
-        justify-content: center;
+        flex-direction: column-reverse;
+        width: 100%;       
 
-        img {
-            width: 277px;
-            border-radius: 5px;
-            box-shadow: 15px 15px 0 #270C3D;
+        .about__content {
+            padding: 30px;
+
+            h2 {
+                font: 800 32px @fontM;
+                color: #270C3D;
+                margin-bottom: 26px;
+            }
+
+            .about__text {
+                font: 400 14px @fontR;
+                color: #270C3D;
+                line-height: 157.9%;
+            }
         }
     }
 
     @media screen and (min-width: 768px) {
         padding-top: 117px;
         padding-bottom: 117px;
-        background-position: bottom 17px left -13px;
 
-        .about__content {
+        .about__wrapper {
+            flex-direction: row;
+            flex-wrap: wrap;
 
-            h2 {
-                font-size: 42px;
+            .photo {
+                width: 45%;
             }
 
-            .about__text {
-                font-size: 18px;
-                margin-bottom: 0;
-            }           
-        }
+            .about__content {
+                padding: 46px 40px 40px 70px;
+                width: 55%;
 
-        .photo {
-            img {
-                width: 412px;
-                box-shadow: 20px 20px 0 #270C3D;
+                h2 {
+                    font-size: 42px;
+                }
+
+                .about__text {
+                    font-size: 22px;
+                    margin-bottom: 0;
+                }           
             }
+
         }
     }
 }

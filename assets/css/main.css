@@ -47,6 +47,48 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVtzpYCP.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Ew-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Ew-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu170w-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM70w-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr70w-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvC70w-.ttf) format('truetype');
+}
 html {
   scroll-behavior: smooth;
 }
@@ -201,7 +243,7 @@ nav {
 }
 .page__header .is--mobile .navbar__overlay.open .overlay__content .overlay__menu .overlay__links a {
   font: 600 18px 'Raleway', sans-serif;
-  color: #FDF9FC;
+  color: white;
   text-decoration: none;
   margin-bottom: 18px;
   text-align: center;
@@ -233,7 +275,7 @@ nav {
   }
   .page__header .is--desktop nav .header__link {
     font: 600 18px 'Raleway', sans-serif;
-    color: #F4E5F3;
+    color: white;
     transition: all linear 0.15s;
     letter-spacing: 1px;
   }
@@ -248,10 +290,11 @@ nav {
 }
 .page__banner {
   background-color: #270c3d;
-  background-image: url('../img/banner/bg-banner-mobile.png');
+  background-image: url('../img/banner/bg-banner.png');
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 170px;
+  padding-bottom: 48px;
 }
 .page__banner .banner__content {
   display: flex;
@@ -265,19 +308,18 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin-bottom: 58px;
 }
 .page__banner .banner__content .banner__text h1 {
-  font: 700 32px 'Raleway', sans-serif;
-  color: #F4E5F3;
-  margin-bottom: 5px;
+  font: 700 32px 'Montserrat', sans-serif;
+  color: white;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
 }
 .page__banner .banner__content .banner__text p {
   font: 500 18px 'Raleway', sans-serif;
-  color: #F4E5F3;
+  color: white;
   line-height: 150.4%;
   margin-bottom: 17px;
-  letter-spacing: 1px;
 }
 .page__banner .banner__content .banner__text .social__links {
   display: flex;
@@ -299,96 +341,91 @@ nav {
   display: flex;
   width: 100%;
   justify-content: center;
-  padding-bottom: 45px;
+  margin-top: 58px;
 }
 .page__banner .chevrons__down .chevrons {
   width: fit-content;
 }
 @media screen and (min-width: 768px) {
   .page__banner {
-    background-image: url('../img/banner/bg-banner.png');
     padding-top: 221px;
-    padding-bottom: 90px;
+    padding-bottom: 50px;
   }
   .page__banner .banner__content {
     flex-direction: row;
+    align-items: center;
     gap: 50px;
   }
   .page__banner .banner__content .banner__photo {
-    width: 257px;
+    width: 300px;
   }
   .page__banner .banner__content .banner__text h1 {
-    font-size: 42px;
-    margin-bottom: 15px;
+    font-size: 60px;
+  }
+  .page__banner .banner__content .banner__text p {
+    font-size: 32px;
+    margin-bottom: 25px;
   }
   .page__banner .chevrons__down {
-    display: none;
+    margin-top: 90px;
   }
 }
 .page__about {
-  background-color: #FDF9FC;
-  background-image: url('../img/sobre/bg-about.png');
-  background-repeat: no-repeat;
-  background-position: top 226px left -28px;
+  background-color: white;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.page__about .about__content h2 {
+.page__about .about__wrapper {
+  background: #FDF9FC;
+  box-shadow: -10px 10px 36px 0px rgba(39, 12, 61, 0.25);
   display: flex;
-  flex-direction: column;
-  font: 800 32px 'Raleway', sans-serif;
-  color: #550979;
-  margin-bottom: 40px;
+  flex-direction: column-reverse;
+  width: 100%;
 }
-.page__about .about__content h2 img {
-  width: fit-content;
-  margin-bottom: 4px;
+.page__about .about__wrapper .about__content {
+  padding: 30px;
 }
-.page__about .about__content .about__text {
+.page__about .about__wrapper .about__content h2 {
+  font: 800 32px 'Montserrat', sans-serif;
+  color: #270C3D;
+  margin-bottom: 26px;
+}
+.page__about .about__wrapper .about__content .about__text {
   font: 400 14px 'Raleway', sans-serif;
   color: #270C3D;
   line-height: 157.9%;
-  margin-bottom: 40px;
-}
-.page__about .photo {
-  display: flex;
-  justify-content: center;
-}
-.page__about .photo img {
-  width: 277px;
-  border-radius: 5px;
-  box-shadow: 15px 15px 0 #270C3D;
 }
 @media screen and (min-width: 768px) {
   .page__about {
     padding-top: 117px;
     padding-bottom: 117px;
-    background-position: bottom 17px left -13px;
   }
-  .page__about .about__content h2 {
+  .page__about .about__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .page__about .about__wrapper .photo {
+    width: 45%;
+  }
+  .page__about .about__wrapper .about__content {
+    padding: 46px 40px 40px 70px;
+    width: 55%;
+  }
+  .page__about .about__wrapper .about__content h2 {
     font-size: 42px;
   }
-  .page__about .about__content .about__text {
-    font-size: 18px;
+  .page__about .about__wrapper .about__content .about__text {
+    font-size: 22px;
     margin-bottom: 0;
-  }
-  .page__about .photo img {
-    width: 412px;
-    box-shadow: 20px 20px 0 #270C3D;
   }
 }
 .page__training {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-image: url('../img/formacao/bg-education-mobile.png');
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .page__training .title {
-  display: flex;
-  flex-direction: column;
-  font: 800 32px 'Raleway', sans-serif;
-  color: #550979;
+  font: 800 32px 'Montserrat', sans-serif;
+  color: #270C3D;
   text-align: center;
   align-items: center;
   margin-bottom: 56px;
@@ -433,7 +470,7 @@ nav {
 }
 .page__training .education__cards .card__courses {
   width: 284px;
-  height: 432px;
+  height: 380px;
   background-color: #FDF9FC;
   border-radius: 5px;
   box-shadow: 4px 4px 16px #270C3D;
@@ -454,37 +491,38 @@ nav {
   flex-direction: column;
   align-items: center;
   gap: 18px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .page__training .education__cards .card__courses .card__header .logo {
   width: fit-content;
 }
 .page__training .education__cards .card__courses .card__header h3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font: 600 18px 'Raleway', sans-serif;
+  font: 800 18px 'Montserrat', sans-serif;
   color: #270C3D;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 25px;
 }
-.page__training .education__cards .card__courses .card__header h3 img {
-  width: fit-content;
-  margin-top: 3px;
+.page__training .education__cards .card__courses .card__title {
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+.page__training .education__cards .card__courses .card__title h3 {
+  font: 800 18px 'Montserrat', sans-serif;
+  color: #270C3D;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 25px;
 }
 .page__training .education__cards .card__courses .courses__list {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 11px;
 }
 .page__training .education__cards .card__courses .courses__list .courses {
-  display: flex;
-  gap: 9px;
-  align-items: center;
   font: 400 16px 'Raleway', sans-serif;
   color: #270C3D;
   transition: all linear 0.15s;
-  width: fit-content;
-}
-.page__training .education__cards .card__courses .courses__list .courses .icon__sparkles {
   width: fit-content;
 }
 .page__training .education__cards .card__courses .courses__list .courses:hover {
@@ -493,22 +531,25 @@ nav {
   cursor: pointer;
   transform: translateX(5px);
 }
-.page__training .education__cards .card__courses .courses__list .courses:hover .icon__sparkles {
-  filter: brightness(0) saturate(100%) invert(22%) sepia(74%) saturate(1868%) hue-rotate(275deg) brightness(90%) contrast(98%);
+.page__training .education__cards .card__courses .courses__list .course__title {
+  font: 400 16px 'Raleway', sans-serif;
+  color: #270C3D;
 }
 @media screen and (min-width: 768px) {
   .page__training {
     padding-top: 94px;
     padding-bottom: 117px;
     background-image: url('../img/formacao/bg-education.png');
+    background-repeat: no-repeat;
+    background-position: bottom 0 right 0;
   }
   .page__training .title {
-    font-size: 42px;
+    font-size: 46px;
     margin-bottom: 76px;
   }
   .page__training .education__cards {
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 50px;
     flex-wrap: wrap;
   }
@@ -521,87 +562,23 @@ nav {
   }
   .page__training .education__cards .card__courses .card__header {
     flex-direction: row;
+    align-items: flex-end;
     gap: 26px;
     margin-bottom: 25px;
   }
   .page__training .education__cards .card__courses .card__header h3 {
     align-items: flex-start;
+    text-align: left;
+    font-size: 20px;
+    line-height: normal;
+  }
+  .page__training .education__cards .card__courses .card__title {
+    text-align: left;
+    font-size: 20px;
+    line-height: normal;
   }
   .page__training .education__cards .card__courses .courses__list {
     gap: 11px;
-  }
-}
-.other__courses {
-  padding-top: 40px;
-  padding-bottom: 220px;
-  background-color: #FDF9FC;
-  background-image: url('../img/formacao/study.png');
-  background-repeat: no-repeat;
-  background-position: center bottom 20px;
-}
-.other__courses .title {
-  display: flex;
-  flex-direction: column;
-  font: 700 28px 'Raleway', sans-serif;
-  color: #550979;
-  margin-bottom: 35px;
-}
-.other__courses .title img {
-  width: fit-content;
-  margin-bottom: 4px;
-}
-.other__courses .content {
-  display: flex;
-  flex-direction: column;
-  gap: 21px;
-}
-.other__courses .content .wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 17px;
-}
-.other__courses .content .wrapper .courses {
-  display: flex;
-  gap: 9px;
-  align-items: center;
-}
-.other__courses .content .wrapper .courses .icon__sparkles {
-  width: fit-content;
-}
-.other__courses .content .wrapper .courses .course__title {
-  font: 400 16px 'Raleway', sans-serif;
-  color: #270C3D;
-}
-.other__courses .content .wrapper2 {
-  display: flex;
-  flex-direction: column;
-  gap: 17px;
-}
-.other__courses .content .wrapper2 .courses {
-  display: flex;
-  gap: 9px;
-  align-items: center;
-}
-.other__courses .content .wrapper2 .courses .icon__sparkles {
-  width: fit-content;
-}
-.other__courses .content .wrapper2 .courses .course__title {
-  font: 400 16px 'Raleway', sans-serif;
-  color: #270C3D;
-}
-@media screen and (min-width: 768px) {
-  .other__courses {
-    padding-bottom: 65px;
-    background-position: right 5% bottom 30px;
-  }
-  .other__courses .title {
-    margin-bottom: 19px;
-  }
-  .other__courses .content {
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: 40px;
   }
 }
 .page__skills {
@@ -613,16 +590,11 @@ nav {
   background-size: cover;
 }
 .page__skills .title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font: 800 32px 'Raleway', sans-serif;
-  color: #F4E5F3;
+  font: 800 40px 'Montserrat', sans-serif;
+  color: white;
   margin-bottom: 89px;
-}
-.page__skills .title img {
-  width: fit-content;
-  margin-bottom: 4px;
+  text-align: center;
+  letter-spacing: 2px;
 }
 .page__skills .carousel .owl-carousel.owl-theme.skills__carousel .card__skill {
   display: flex;
@@ -631,7 +603,7 @@ nav {
   gap: 20px;
 }
 .page__skills .carousel .owl-carousel.owl-theme.skills__carousel .card__skill .card__image {
-  background-color: #f4e5f3;
+  background-color: white;
   border-radius: 100%;
   width: 170px;
   height: 170px;
@@ -645,7 +617,7 @@ nav {
 }
 .page__skills .carousel .owl-carousel.owl-theme.skills__carousel .card__skill h3 {
   font: 600 26px 'Raleway', sans-serif;
-  color: #F4E5F3;
+  color: white;
   text-align: center;
   letter-spacing: 0.8px;
 }
@@ -681,7 +653,7 @@ nav {
     padding-bottom: 110px;
   }
   .page__skills .title {
-    font-size: 42px;
+    font-size: 46px;
   }
   .page__skills .carousel {
     padding-left: 30px;
@@ -690,66 +662,85 @@ nav {
 }
 .page__projects {
   padding-top: 70px;
-  background-color: #FDF9FC;
-  background-image: url('../img/projetos/bg-projects.png');
-  background-repeat: no-repeat;
-  background-position: top 50px right 20px;
-  background-size: auto 150px;
+  padding-bottom: 40px;
+  background-color: white;
 }
 .page__projects .title {
-  display: flex;
-  flex-direction: column;
-  font: 800 32px 'Raleway', sans-serif;
-  color: #550979;
-  margin-bottom: 10px;
-}
-.page__projects .title img {
-  width: fit-content;
-  margin-bottom: 4px;
-}
-.page__projects .subtitle {
-  margin-bottom: 45px;
-  font: 500 16px 'Raleway', sans-serif;
+  font: 800 32px 'Montserrat', sans-serif;
   color: #270C3D;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.page__projects .accordion {
+  margin-bottom: 30px;
 }
 .page__projects .accordion .projects__enterprises .title__enterprises {
+  background-color: #2E2345;
+  border-radius: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.page__projects .accordion .projects__enterprises .title__enterprises h2 {
+  position: relative;
+  z-index: 1;
   width: 100%;
-  border: 1px solid rgba(175, 92, 157, 0.3);
-  background: #FDF9FC;
-  box-shadow: -5px 5px 26px 0px rgba(45, 13, 38, 0.3);
 }
 .page__projects .accordion .projects__enterprises .title__enterprises h2 .btn__title {
-  font: 700 16px 'Raleway', sans-serif;
-  letter-spacing: 2px;
-  color: #550979;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px 20px 30px;
+  padding: 20px 30px;
+  transition: all linear 0.15s;
+  position: relative;
+  z-index: 1;
+  border: none;
+}
+.page__projects .accordion .projects__enterprises .title__enterprises h2 .btn__title p {
+  font: 600 16px 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  color: white;
+  position: relative;
+  z-index: 1;
 }
 .page__projects .accordion .projects__enterprises .title__enterprises h2 .btn__title .chevrons__right {
   height: 16px;
+  position: relative;
+  z-index: 1;
+  transition: all linear 0.15s;
 }
 .page__projects .accordion .projects__enterprises .title__enterprises h2 .btn__title:focus {
   box-shadow: none;
 }
-.page__projects .accordion .projects__enterprises .projects__content {
-  background-image: url('../img/projetos/bg-projects-b.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 80px;
-  padding-top: 30px;
+.page__projects .accordion .projects__enterprises .title__enterprises h2 .btn__title::after {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(90deg, #270C3D, #550979, #172C9A, #1C64B9);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  z-index: 0;
+  opacity: 0;
+  transition: all linear 0.5s;
 }
-.page__projects .accordion .projects__enterprises .projects__content.content2 {
-  background-image: url('../img/projetos/bg-projects-c.png');
-  padding-bottom: 80px;
+.page__projects .accordion .projects__enterprises .title__enterprises h2 .btn__title:hover::after {
+  opacity: 1;
+}
+.page__projects .accordion .projects__enterprises .title__enterprises h2 .btn__title.active .chevrons__right {
+  transform: rotate(90deg);
+}
+.page__projects .accordion .projects__enterprises .projects__content {
+  padding-bottom: 40px;
+  padding-top: 30px;
 }
 .page__projects .accordion .projects__enterprises .projects__content .description {
   font: 400 14px 'Raleway', sans-serif;
   color: #270C3D;
   line-height: 168%;
   padding-bottom: 40px;
+  text-align: center;
 }
 .page__projects .accordion .projects__enterprises .projects__content .projects__list {
   display: none;
@@ -760,18 +751,15 @@ nav {
   height: 245px;
   overflow: hidden;
   border-radius: 20px;
-}
-.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .card__job .job__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
+  z-index: 0;
 }
 .page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .card__job .photo__job {
   width: 100%;
   height: 100%;
   border-radius: 20px;
   transition: all linear 0.15s;
+  position: relative;
+  z-index: 0;
 }
 .page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .card__job .card__text {
   display: flex;
@@ -805,6 +793,18 @@ nav {
   background-color: #FDF9FC;
   color: #270C3D;
 }
+.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .card__job::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all linear 0.5s;
+  border-radius: 20px;
+  background-image: linear-gradient(180deg, rgba(21, 10, 31, 0) 0%, rgba(21, 10, 31, 0.68) 68.23%, #150A1F 100%);
+}
 .page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .card__job:hover .photo__job {
   transform: scale(1.2);
   border-radius: 20px;
@@ -825,7 +825,7 @@ nav {
   margin: 0;
   width: 6px;
   height: 6px;
-  background-color: #920C74;
+  background-color: #270C3D;
   transition: all linear 0.25s;
 }
 .page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .owl-dots .owl-dot.active span {
@@ -836,23 +836,20 @@ nav {
   display: none;
 }
 .page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .card__job {
-  position: relative;
   width: 245px;
   height: 245px;
   overflow: hidden;
   border-radius: 20px;
-}
-.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .card__job .job__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
+  position: relative;
+  z-index: 0;
 }
 .page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .card__job .photo__job {
   width: 100%;
   height: 100%;
   border-radius: 20px;
   transition: all linear 0.15s;
+  position: relative;
+  z-index: 0;
 }
 .page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .card__job .card__text {
   display: flex;
@@ -886,6 +883,18 @@ nav {
   background-color: #FDF9FC;
   color: #270C3D;
 }
+.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .card__job::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all linear 0.5s;
+  border-radius: 20px;
+  background-image: linear-gradient(180deg, rgba(21, 10, 31, 0) 0%, rgba(21, 10, 31, 0.68) 68.23%, #150A1F 100%);
+}
 .page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .card__job:hover .photo__job {
   transform: scale(1.2);
   border-radius: 20px;
@@ -906,7 +915,7 @@ nav {
   margin: 0;
   width: 6px;
   height: 6px;
-  background-color: #920C74;
+  background-color: #270C3D;
   transition: all linear 0.25s;
 }
 .page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .owl-dots .owl-dot.active span {
@@ -919,21 +928,24 @@ nav {
 @media screen and (min-width: 768px) {
   .page__projects {
     padding-top: 92px;
+    padding-bottom: 70px;
     background-position: top 11px right 13px;
     background-size: auto 300px;
   }
   .page__projects .title {
     align-items: center;
-    font-size: 42px;
+    font-size: 46px;
+    margin-bottom: 70px;
   }
-  .page__projects .subtitle {
-    text-align: center;
-    margin-bottom: 78px;
-    font-size: 20px;
+  .page__projects .accordion .projects__enterprises .title__enterprises {
+    margin-left: 10%;
+    margin-right: 10%;
   }
   .page__projects .accordion .projects__enterprises .title__enterprises h2 .btn__title {
-    font-size: 20px;
-    padding: 25px 160px 25px 140px;
+    padding: 30px 40px;
+  }
+  .page__projects .accordion .projects__enterprises .title__enterprises h2 .btn__title p {
+    font-size: 26px;
   }
   .page__projects .accordion .projects__enterprises .title__enterprises h2 .btn__title .chevrons__right {
     height: 20px;
@@ -943,12 +955,15 @@ nav {
     padding-bottom: 118px;
   }
   .page__projects .accordion .projects__enterprises .projects__content.content2 {
-    padding-bottom: 162px;
+    padding-bottom: 0;
   }
   .page__projects .accordion .projects__enterprises .projects__content .description {
     font-size: 18px;
     line-height: 171.9%;
     padding-bottom: 80px;
+    padding-right: 40px;
+    padding-left: 40px;
+    text-align: left;
   }
   .page__projects .accordion .projects__enterprises .projects__content .projects__list {
     display: flex;
@@ -962,18 +977,15 @@ nav {
     height: 245px;
     overflow: hidden;
     border-radius: 20px;
-  }
-  .page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job .job__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
+    z-index: 0;
   }
   .page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job .photo__job {
     width: 100%;
     height: 100%;
     border-radius: 20px;
     transition: all linear 0.15s;
+    position: relative;
+    z-index: 0;
   }
   .page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job .card__text {
     display: flex;
@@ -1007,6 +1019,18 @@ nav {
     background-color: #FDF9FC;
     color: #270C3D;
   }
+  .page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all linear 0.5s;
+    border-radius: 20px;
+    background-image: linear-gradient(180deg, rgba(21, 10, 31, 0) 0%, rgba(21, 10, 31, 0.68) 68.23%, #150A1F 100%);
+  }
   .page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job:hover .photo__job {
     transform: scale(1.2);
     border-radius: 20px;
@@ -1025,9 +1049,7 @@ nav {
   margin-bottom: 48px;
 }
 .page__contact .contact__content h2 {
-  display: flex;
-  flex-direction: column;
-  font: 600 22px 'Raleway', sans-serif;
+  font: 600 22px 'Montserrat', sans-serif;
   color: #FDF9FC;
   margin-bottom: 6px;
 }
@@ -1036,7 +1058,7 @@ nav {
   margin-bottom: 6px;
 }
 .page__contact .contact__content h3 {
-  font: 600 22px 'Raleway', sans-serif;
+  font: 600 22px 'Montserrat', sans-serif;
   color: #FDF9FC;
   margin-bottom: 25px;
 }

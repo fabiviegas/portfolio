@@ -27,8 +27,6 @@
     <link rel="stylesheet" href="assets/css/main.css">
     
     <script defer src="assets/js/header__mobile.js"></script>
-    <script defer src="https://kit.fontawesome.com/845932d5ad.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/phosphor-icons"></script>
 </head>
 
 <body>
@@ -110,144 +108,111 @@
                     </div>
                 </div>
             </div>
-            <a href="#sobre" class="chevrons__down">
-                <img src="assets/img/banner/chevrons-down.svg" class="chevrons" alt="Descer">
-            </a>
+            <div class="chevrons__down animate__animated animate__slideInDown animate__slow animate__infinite">
+                <a href="#sobre">
+                    <img src="assets/img/banner/chevrons-down.svg" class="chevrons" alt="Descer">
+                </a>
+            </div>
         </div>
     </main>
 
     <section class="page__about" id="sobre">
-        <div class="container util--padding30">
-            <div class="row flex-wrap">
-                <div class="col-md-6">
-                    <div class="about__content">
-                        <h2>
-                            <img src="assets/img/title/title-line.svg" class="title__line" alt="Título">
-                            Sobre mim
-                        </h2>
-
-                        <p class="about__text">
-                            Tenho 33 anos, tenho dois filhos e vivo na cidade litorânea de Tramandaí no Rio Grande do Sul. Sempre fui amante das artes e da tecnologia, comecei cursando Graduação em Artes Visuais na Universidade Federal do Rio Grande do Sul, fiz parte de projetos de extensão e pesquisa científica. Acabei voltando para a área da tecnologia por acaso e logo me apaixonei por desenvolvimento web. Passei a estudar muito e hoje faz cerca de um ano que trabalho como Front-End. Decidi mergulhar no desenvolvimento web não apenas em sua construção como também no design, portanto hoje dedico meus estudos ao Design Gráfico e Web Design com foco em UX/UI.<br>
-                            A seguir, um desenho do meu filho mais velho, Vincent, um artista nato.
-                        </p>
-                    </div>
+        <div class="container util--padding30 util--container1198">           
+                
+            <div class="about__wrapper">
+                <div class="photo">
+                    <img src="assets/img/sobre/photo-about.png" class="photo__about img-fluid" alt="Desenho do Vincent">
                 </div>
 
-                <div class="col-md-6">
-                    <div class="photo">
-                        <img src="assets/img/sobre/photo-about.png" class="photo__about img-fluid" alt="Desenho do Vincent"> 
-                    </div>                   
+                <div class="about__content">
+                    <h2>
+                        Sobre mim
+                    </h2>
+                    <p class="about__text">
+                        Tenho 33 anos e vivo em Tramandaí/RS. Sempre fui amante das artes e da tecnologia. Comecei cursando Artes Visuais na UFRGS, fiz parte de projetos de extensão e pesquisa científica. Voltei para a área da tecnologia onde aprendi sobre telecomunicações, redes e então  desenvolvimento web. Em 2022 passei a trabalhar como Front-End e agora estudo Design Gráfico para me aprimorar como Web Designer e Desenvolvedora.
+                    </p>
                 </div>
-            </div>
+                
+            </div>                
+                
+            
         </div>
     </section>
 
-    <div class="education">
-
-        <section class="page__training">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="title">
-                            <img src="assets/img/title/title-line.svg" class="title__line" alt="Título">
-                            Formação
-                        </h2>
-                    </div>
-                </div>
-
-                <div class="education__cards">
-                    <div class="card__graduation">
-                        <img src="assets/img/formacao/logo-ufrgs.png" alt="UFRGS" class="card__image">
-                        <h3>Licenciatura em Artes Visuais</h3>
-                        <p>2010 - 2016 (incompleto)</p>
-                    </div>
-
-                    <div class="card__graduation">
-                        <img src="assets/img/formacao/logo-unicesumar.png" alt="Unicesumar" class="card__image">
-                        <h3>Superior em Tecnologia de Design Gráfico</h3>
-                        <p>2023 (cursando)</p>
-                    </div>
-
-                    <div class="card__courses">
-                        <img src="assets/img/formacao/icon-handclick.svg" class="icon__click" alt="Clique">
-
-                        <div class="card__header">
-                            <img src="assets/img/formacao/logo-alura.png" alt="Alura" class="logo">
-                            <h3>Cursos e Formações
-                                <img src="assets/img/title/title-line-slim.svg" alt="Título" class="title__line">
-                            </h3>
-                        </div>
-                        <div class="courses__list">
-                            <a href="https://cursos.alura.com.br/degree/certificate/3cd2d52c-ba1a-4b89-9ea4-e3f87c8af164" class="courses" target="_blank">
-                                <img src="assets/img/formacao/icon-sparkles.svg" alt="Curso" class="icon__sparkles">
-                                Formação Desenvolvimento Pessoal
-                            </a>
-                            <a href="https://cursos.alura.com.br/degree/certificate/c8d8c801-667e-4692-9bce-33bd67df1501" class="courses" target="_blank">
-                                <img src="assets/img/formacao/icon-sparkles.svg" alt="Curso" class="icon__sparkles">
-                                Formação Iniciante em Programação
-                            </a>
-                            <a href="https://cursos.alura.com.br/degree/certificate/7ba49654-9fd5-4c9f-bfc0-c72ebda2c140" class="courses" target="_blank">
-                                <img src="assets/img/formacao/icon-sparkles.svg" alt="Curso" class="icon__sparkles">
-                                Formação Business Agility
-                            </a>
-                            <a href="https://cursos.alura.com.br/certificate/799465a4-fd2a-4295-8b95-eb384cedbd78" class="courses" target="_blank">
-                                <img src="assets/img/formacao/icon-sparkles.svg" alt="Curso" class="icon__sparkles">
-                                Acessibilidade web: crie designs inclusivos
-                            </a>
-                            <a href="https://cursos.alura.com.br/certificate/8a863e8c-ce6f-45e3-8b0c-20dbefe31ad7" class="courses" target="_blank">
-                                <img src="assets/img/formacao/icon-sparkles.svg" alt="Curso" class="icon__sparkles">
-                                Flexbox: posicione elementos na tela
-                            </a>
-                        </div>
-                    </div>
-                
+    <section class="page__training">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="title">                            
+                        Formação
+                    </h2>
                 </div>
             </div>
-        </section>
 
-        <section class="other__courses">
-            <div class="container util--padding30">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="title">
-                            <img src="assets/img/title/title-line.svg" class="title__line" alt="Título">
+            <div class="education__cards">
+                <div class="card__graduation">
+                    <img src="assets/img/formacao/logo-ufrgs.png" alt="UFRGS" class="card__image">
+                    <h3>Licenciatura em Artes Visuais</h3>
+                    <p>2010 - 2016 (incompleto)</p>
+                </div>
+
+                <div class="card__graduation">
+                    <img src="assets/img/formacao/logo-unicesumar.png" alt="Unicesumar" class="card__image">
+                    <h3>Superior em Tecnologia de Design Gráfico</h3>
+                    <p>2023 (cursando)</p>
+                </div>
+
+                <div class="card__courses">
+                    <img src="assets/img/formacao/icon-handclick.svg" class="icon__click" alt="Clique">
+
+                    <div class="card__header">
+                        <img src="assets/img/formacao/logo-alura.png" alt="Alura" class="logo">
+                        <h3>Cursos e Formações</h3>
+                    </div>
+                    <div class="courses__list">
+                        <a href="https://cursos.alura.com.br/degree/certificate/3cd2d52c-ba1a-4b89-9ea4-e3f87c8af164" class="courses" target="_blank">                                
+                            Formação Desenvolvimento Pessoal
+                        </a>
+                        <a href="https://cursos.alura.com.br/degree/certificate/c8d8c801-667e-4692-9bce-33bd67df1501" class="courses" target="_blank">                                
+                            Formação Iniciante em Programação
+                        </a>
+                        <a href="https://cursos.alura.com.br/degree/certificate/7ba49654-9fd5-4c9f-bfc0-c72ebda2c140" class="courses" target="_blank">
+                            Formação Business Agility
+                        </a>
+                        <a href="https://cursos.alura.com.br/certificate/799465a4-fd2a-4295-8b95-eb384cedbd78" class="courses" target="_blank">
+                            Acessibilidade web: crie designs inclusivos
+                        </a>
+                        <a href="https://cursos.alura.com.br/certificate/8a863e8c-ce6f-45e3-8b0c-20dbefe31ad7" class="courses" target="_blank">
+                            Flexbox: posicione elementos na tela
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card__courses">
+                    <div class="card__title">
+                        <h3>
                             Outros certificados
-                        </h2>
+                        </h3>
+                    </div>                       
+                    <div class="courses__list">
+                        <p class="course__title">SEBRAE - A Liderança na Gestão de Equipes</p>
+                        <p class="course__title">DlteC - Curso Básico de Redes</p>
+                        <p class="course__title">Inatel - Fibra Óptica: Conceitos e Aplicações</p>
+                        <p class="course__title">Universidade Federal de São Carlos - Princípios de Telecomunicações</p>
                     </div>
                 </div>
-                <div class="content">
-                    <div class="wrapper">
-                        <div class="courses">
-                            <img src="assets/img/formacao/icon-sparkles.svg" alt="Curso" class="icon__sparkles">
-                            <p class="course__title">SEBRAE - A Liderança na Gestão de Equipes</p>
-                        </div>
-                        <div class="courses">
-                            <img src="assets/img/formacao/icon-sparkles.svg" alt="Curso" class="icon__sparkles">
-                            <p class="course__title">DlteC - Curso Básico de Redes</p>
-                        </div>
-                    </div>
-                    <div class="wrapper2">
-                        <div class="courses">
-                            <img src="assets/img/formacao/icon-sparkles.svg" alt="Curso" class="icon__sparkles">
-                            <p class="course__title">Inatel - Fibra Óptica: Conceitos e Aplicações</p>
-                        </div>
-                        <div class="courses">
-                            <img src="assets/img/formacao/icon-sparkles.svg" alt="Curso" class="icon__sparkles">
-                            <p class="course__title">Universidade Federal de São Carlos - Princípios de Telecomunicações</p>
-                        </div>
-                    </div>
-                </div>
+            
             </div>
-
-        </section>
-    </div>
+        </div>
+               
+    </section>
 
     <section class="page__skills" id="skills">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="title">
-                        <img src="assets/img/title/title-line-white.svg" alt="Título" class="title__line">
+                    <h2 class="title">                        
                         Skills
                     </h2>
                 </div>
@@ -312,11 +277,9 @@
         <div class="container util--padding30">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="title">
-                        <img src="assets/img/title/title-line.svg" alt="Título" class="title__line">
+                    <h2 class="title">                        
                         Projetos
                     </h2>
-                    <h3 class="subtitle">Clique para ver mais</h3>
                 </div>
             </div>
         </div>
@@ -327,7 +290,7 @@
                     <div class="title__enterprises" id="headingOne">
                         <h2>
                             <button class="btn btn-block text-left btn__title" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                Projetos para Empresas  
+                                <p>Projetos para Empresas </p> 
                                 <img src="assets/img/projetos/chevrons-right.svg" class="chevrons__right" alt="Clique">                              
                             </button>                            
                         </h2>
@@ -337,14 +300,14 @@
                         <div class="container util--padding30">
 
                             <div class="description">
-                                <p>Estes são projetos realizados para a empresa Londrina S/A - Marketing Digital e Criação de Sites. Trabalho no desenvolvimento Front-End das páginas utilizando HTML5, CSS3 com Less, Bootstrap e um pouco de Javascript, dentre outros componentes. As páginas são projetadas paras telas de 1366px e 360px, as mais utilizadas no Brasil.</p>
+                                <p>Projetos realizados para a empresa Londrina S/A - Marketing Digital e Criação de Sites. Trabalho no desenvolvimento Front-End das páginas utilizando HTML5, CSS3 (Less), Bootstrap e Javascript, dentre outros componentes. As páginas são projetadas paras telas de 1366px e 360px.</p>
                             </div>
 
                             <div class="projects__list">
                                 
                                 <div class="card__job">                                    
                                     <img src="assets/img/projetos/job1.png" class="photo__job" alt="Pinturas Condor">
-                                    <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                    
                                     <div class="card__text">
                                         <h3>Pinturas Condor</h3>
                                         <div class="links">
@@ -360,7 +323,7 @@
 
                                 <div class="card__job">                                    
                                     <img src="assets/img/projetos/job2.png" class="photo__job" alt="Laboratório Laboratti">
-                                    <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                   
                                     <div class="card__text">
                                         <h3>Laboratório Laboratti</h3>
                                         <div class="links">
@@ -376,7 +339,7 @@
 
                                 <div class="card__job">                                    
                                     <img src="assets/img/projetos/job3.png" class="photo__job" alt="Panzé">
-                                    <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                    
                                     <div class="card__text">
                                         <h3>Panzé Fotos e Vídeos</h3>
                                         <div class="links">
@@ -392,7 +355,7 @@
 
                                 <div class="card__job">                                    
                                     <img src="assets/img/projetos/job4.png" class="photo__job" alt="Fides">
-                                    <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                    
                                     <div class="card__text">
                                         <h3>Fides Corretora de Seguros</h3>
                                         <div class="links">
@@ -408,7 +371,7 @@
 
                                 <div class="card__job">                                    
                                     <img src="assets/img/projetos/job5.png" class="photo__job" alt="PBS Rural">
-                                    <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                    
                                     <div class="card__text">
                                         <h3>PBS Rural</h3>
                                         <div class="links">
@@ -424,7 +387,7 @@
 
                                 <div class="card__job">                                    
                                     <img src="assets/img/projetos/job6.png" class="photo__job" alt="Leão Incorporadora">
-                                    <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                    
                                     <div class="card__text">
                                         <h3>Leão Incorporadora</h3>
                                         <div class="links">
@@ -440,7 +403,7 @@
 
                                 <div class="card__job">                                    
                                     <img src="assets/img/projetos/job7.png" class="photo__job" alt="LDNA Seguros">
-                                    <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                    
                                     <div class="card__text">
                                         <h3>LDNA Seguros</h3>
                                         <div class="links">
@@ -456,7 +419,7 @@
 
                                 <div class="card__job">                                    
                                     <img src="assets/img/projetos/job8.png" class="photo__job" alt="Rodosider">
-                                    <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                    
                                     <div class="card__text">
                                         <h3>Rodosider</h3>
                                         <div class="links">
@@ -472,7 +435,7 @@
 
                                 <div class="card__job">                                    
                                     <img src="assets/img/projetos/job9.png" class="photo__job" alt="WG Contábil">
-                                    <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                    
                                     <div class="card__text">
                                         <h3>WG Contábil</h3>
                                         <div class="links">
@@ -488,7 +451,7 @@
 
                                 <div class="card__job">                                    
                                     <img src="assets/img/projetos/job10.png" class="photo__job" alt="Arthrom">
-                                    <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                    
                                     <div class="card__text">
                                         <h3>Arthrom</h3>
                                         <div class="links">
@@ -504,7 +467,7 @@
 
                                 <div class="card__job">                                    
                                     <img src="assets/img/projetos/job11.png" class="photo__job" alt="voltzBR">
-                                    <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                    
                                     <div class="card__text">
                                         <h3>voltzBR</h3>
                                         <div class="links">
@@ -520,7 +483,7 @@
 
                                 <div class="card__job">                                    
                                     <img src="assets/img/projetos/job12.png" class="photo__job" alt="Pedro Branco">
-                                    <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                    
                                     <div class="card__text">
                                         <h3>Pedro Branco Advogados</h3>
                                         <div class="links">
@@ -536,7 +499,7 @@
 
                                 <div class="card__job">                                    
                                     <img src="assets/img/projetos/job13.png" class="photo__job" alt="SEO Engenharia">
-                                    <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                    
                                     <div class="card__text">
                                         <h3>SEO Engenharia</h3>
                                         <div class="links">
@@ -552,7 +515,7 @@
 
                                 <div class="card__job">                                    
                                     <img src="assets/img/projetos/job14.png" class="photo__job" alt="Apolo Estofados">
-                                    <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                    
                                     <div class="card__text">
                                         <h3>Apolo Estofados</h3>
                                         <div class="links">
@@ -568,7 +531,7 @@
 
                                 <div class="card__job">                                    
                                     <img src="assets/img/projetos/job15.png" class="photo__job" alt="Hemize">
-                                    <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                    
                                     <div class="card__text">
                                         <h3>Hemize Projetos</h3>
                                         <div class="links">
@@ -584,7 +547,7 @@
 
                                 <div class="card__job">                                    
                                     <img src="assets/img/projetos/job16.png" class="photo__job" alt="Mira no Negócio">
-                                    <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                    
                                     <div class="card__text">
                                         <h3>Mira no Negócio</h3>
                                         <div class="links">
@@ -600,7 +563,7 @@
 
                                 <div class="card__job">                                    
                                     <img src="assets/img/projetos/job17.png" class="photo__job" alt="Mussi & Ollier">
-                                    <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                    
                                     <div class="card__text">
                                         <h3>Mussi & Ollier Advogados</h3>
                                         <div class="links">
@@ -621,7 +584,7 @@
                                 <div class="item">
                                     <div class="card__job">
                                         <img src="assets/img/projetos/job1.png" class="photo__job" alt="Pinturas Condor">
-                                        <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                        
                                         <div class="card__text">
                                             <h3>Pinturas Condor</h3>
                                             <div class="links">
@@ -638,7 +601,7 @@
                                 <div class="item">
                                     <div class="card__job">
                                         <img src="assets/img/projetos/job2.png" class="photo__job" alt="Laboratório Laboratti">
-                                        <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                        
                                         <div class="card__text">
                                             <h3>Laboratório Laboratti</h3>
                                             <div class="links">
@@ -655,7 +618,7 @@
                                 <div class="item">
                                     <div class="card__job">
                                         <img src="assets/img/projetos/job3.png" class="photo__job" alt="Panzé">
-                                        <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                        
                                         <div class="card__text">
                                             <h3>Panzé Fotos e Vídeos</h3>
                                             <div class="links">
@@ -672,7 +635,7 @@
                                 <div class="item">
                                     <div class="card__job">
                                         <img src="assets/img/projetos/job4.png" class="photo__job" alt="Fides">
-                                        <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                        
                                         <div class="card__text">
                                             <h3>Fides Corretora de Seguros</h3>
                                             <div class="links">
@@ -689,7 +652,7 @@
                                 <div class="item">
                                     <div class="card__job">
                                         <img src="assets/img/projetos/job5.png" class="photo__job" alt="PBS Rural">
-                                        <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                        
                                         <div class="card__text">
                                             <h3>PBS Rural</h3>
                                             <div class="links">
@@ -706,7 +669,7 @@
                                 <div class="item">
                                     <div class="card__job">
                                         <img src="assets/img/projetos/job6.png" class="photo__job" alt="Leão Incorporadora">
-                                        <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                        
                                         <div class="card__text">
                                             <h3>Leão Incorporadora</h3>
                                             <div class="links">
@@ -723,7 +686,7 @@
                                 <div class="item">
                                     <div class="card__job">
                                         <img src="assets/img/projetos/job7.png" class="photo__job" alt="LDNA Seguros">
-                                        <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                        
                                         <div class="card__text">
                                             <h3>LDNA Seguros</h3>
                                             <div class="links">
@@ -740,7 +703,7 @@
                                 <div class="item">
                                     <div class="card__job">
                                         <img src="assets/img/projetos/job8.png" class="photo__job" alt="Rodosider">
-                                        <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                        
                                         <div class="card__text">
                                             <h3>Rodosider</h3>
                                             <div class="links">
@@ -757,7 +720,7 @@
                                 <div class="item">
                                     <div class="card__job">
                                         <img src="assets/img/projetos/job9.png" class="photo__job" alt="WG Contábil">
-                                        <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                        
                                         <div class="card__text">
                                             <h3>WG Contábil</h3>
                                             <div class="links">
@@ -774,7 +737,7 @@
                                 <div class="item">
                                     <div class="card__job">
                                         <img src="assets/img/projetos/job10.png" class="photo__job" alt="Arthrom">
-                                        <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                        
                                         <div class="card__text">
                                             <h3>Arthrom</h3>
                                             <div class="links">
@@ -791,7 +754,7 @@
                                 <div class="item">
                                     <div class="card__job">
                                         <img src="assets/img/projetos/job11.png" class="photo__job" alt="voltzBR">
-                                        <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                        
                                         <div class="card__text">
                                             <h3>voltzBR</h3>
                                             <div class="links">
@@ -808,7 +771,7 @@
                                 <div class="item">
                                     <div class="card__job">
                                         <img src="assets/img/projetos/job12.png" class="photo__job" alt="Pedro Branco">
-                                        <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                        
                                         <div class="card__text">
                                             <h3>Pedro Branco Advogados</h3>
                                             <div class="links">
@@ -825,7 +788,7 @@
                                 <div class="item">
                                     <div class="card__job">
                                         <img src="assets/img/projetos/job13.png" class="photo__job" alt="SEO Engenharia">
-                                        <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                        
                                         <div class="card__text">
                                             <h3>SEO Engenharia</h3>
                                             <div class="links">
@@ -842,7 +805,7 @@
                                 <div class="item">
                                     <div class="card__job">
                                         <img src="assets/img/projetos/job14.png" class="photo__job" alt="Apolo Estofados">
-                                        <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                        
                                         <div class="card__text">
                                             <h3>Apolo Estofados</h3>
                                             <div class="links">
@@ -859,7 +822,7 @@
                                 <div class="item">
                                     <div class="card__job">
                                         <img src="assets/img/projetos/job15.png" class="photo__job" alt="Hemize">
-                                        <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                        
                                         <div class="card__text">
                                             <h3>Hemize Projetos</h3>
                                             <div class="links">
@@ -876,7 +839,7 @@
                                 <div class="item">
                                     <div class="card__job">
                                         <img src="assets/img/projetos/job16.png" class="photo__job" alt="Mira no Negócio">
-                                        <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                        
                                         <div class="card__text">
                                             <h3>Mira no Negócio</h3>
                                             <div class="links">
@@ -893,7 +856,7 @@
                                 <div class="item">
                                     <div class="card__job">
                                         <img src="assets/img/projetos/job17.png" class="photo__job" alt="Mussi & Ollier">
-                                        <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                        
                                         <div class="card__text">
                                             <h3>Mussi & Ollier Advogados</h3>
                                             <div class="links">
@@ -921,7 +884,7 @@
                     <div class="title__enterprises" id="headingTwo">
                         <h2>
                             <button class="btn btn-block text-left btn__title" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Projetos Pessoais 
+                                <p>Projetos Pessoais </p>
                                 <img src="assets/img/projetos/chevrons-right.svg" class="chevrons__right" alt="Clique">                              
                             </button>                            
                         </h2>
@@ -938,7 +901,7 @@
                                 
                                 <div class="card__job">                                    
                                     <img src="assets/img/projetos/project1.png" class="photo__job" alt="Tramandaí Imóveis">
-                                    <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                    
                                     <div class="card__text">
                                         <h3>Tramandaí Imóveis</h3>
                                         <div class="links">
@@ -954,7 +917,7 @@
 
                                 <div class="card__job">                                    
                                     <img src="assets/img/projetos/project2.png" class="photo__job" alt="Agatha Terapeuta">
-                                    <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                    
                                     <div class="card__text">
                                         <h3>Agatha - Terapeuta</h3>
                                         <div class="links">
@@ -970,11 +933,11 @@
 
                                 <div class="card__job">                                    
                                     <img src="assets/img/projetos/project3.png" class="photo__job" alt="Meu Contador">
-                                    <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                    
                                     <div class="card__text">
                                         <h3>Meu Contador</h3>
                                         <div class="links">
-                                            <a href="fabiviegas.github.io/meucontador" class="site__link" target="_blank">
+                                            <a href="https://fabiviegas.github.io/meucontador/" class="site__link" target="_blank">
                                                 Ver Live
                                             </a>
                                             <a href="https://github.com/fabiviegas/meucontador" class="site__link" target="_blank">
@@ -986,7 +949,7 @@
 
                                 <div class="card__job">                                    
                                     <img src="assets/img/projetos/project4.png" class="photo__job" alt="ARK Mídia">
-                                    <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                    
                                     <div class="card__text">
                                         <h3>ARK Mídia</h3>
                                         <div class="links">
@@ -1010,7 +973,7 @@
                                 <div class="item">
                                     <div class="card__job">
                                         <img src="assets/img/projetos/project1.png" class="photo__job" alt="Tramandaí Imóveis">
-                                        <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                        
                                         <div class="card__text">
                                             <h3>Tramandaí Imóveis</h3>
                                             <div class="links">
@@ -1028,7 +991,7 @@
                                 <div class="item">
                                     <div class="card__job">
                                         <img src="assets/img/projetos/project2.png" class="photo__job" alt="Agatha Terapeuta">
-                                        <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                        
                                         <div class="card__text">
                                             <h3>Agatha - Terapeuta</h3>
                                             <div class="links">
@@ -1046,7 +1009,7 @@
                                 <div class="item">
                                     <div class="card__job">
                                         <img src="assets/img/projetos/project3.png" class="photo__job" alt="Meu Contador">
-                                        <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                        
                                         <div class="card__text">
                                             <h3>Meu Contador</h3>
                                             <div class="links">
@@ -1064,7 +1027,7 @@
                                 <div class="item">
                                     <div class="card__job">
                                         <img src="assets/img/projetos/project4.png" class="photo__job" alt="ARK Mídia">
-                                        <img src="assets/img/projetos/job__overlay.png" class="job__overlay" alt="Projetos">
+                                        
                                         <div class="card__text">
                                             <h3>ARK Mídia</h3>
                                             <div class="links">
@@ -1095,7 +1058,6 @@
                 <div class="col-md-6">
                     <div class="contact__content">
                         <h2>
-                            <img src="assets/img/title/title-line-white.svg" alt="Título" class="title__line">
                             Gostou do meu trabalho?
                         </h2>
                         <h3>Vamos conversar. <img src="assets/img/contato/icon-smile.svg" class="icon__smile" alt="Contato"></h3>
@@ -1157,6 +1119,11 @@
                     margin: 10,                    
                 },
                 
+                630: {
+                    items: 2,
+                    margin: 20,
+                },
+
                 768: {
                     items: 3,
                     margin: 20,
@@ -1182,10 +1149,11 @@
                     margin: 20,                    
                 },
                 
-                768: {
-                    items: 3,
+                630: {
+                    items: 2,
                     margin: 20,
                 }
+                
             }
         });
 
@@ -1208,5 +1176,7 @@
             }
         });
     </script>
+
+    <script src="assets/js/faq.js"></script>
 
 </body>
