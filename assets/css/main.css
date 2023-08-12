@@ -443,7 +443,7 @@ nav {
 .page__training .education__cards .card__graduation {
   background-color: #FDF9FC;
   border-radius: 5px;
-  box-shadow: 4px 4px 16px #270C3D;
+  box-shadow: 4px 4px 16px rgba(39, 12, 61, 0.3);
   width: 284px;
   height: 242px;
   display: flex;
@@ -473,7 +473,7 @@ nav {
   height: 380px;
   background-color: #FDF9FC;
   border-radius: 5px;
-  box-shadow: 4px 4px 16px #270C3D;
+  box-shadow: 4px 4px 16px rgba(39, 12, 61, 0.3);
   display: flex;
   flex-direction: column;
   padding: 20px 30px;
@@ -534,6 +534,7 @@ nav {
 .page__training .education__cards .card__courses .courses__list .course__title {
   font: 400 16px 'Raleway', sans-serif;
   color: #270C3D;
+  line-height: 22px;
 }
 @media screen and (min-width: 768px) {
   .page__training {
@@ -698,7 +699,7 @@ nav {
 }
 .page__projects .accordion .projects__enterprises .title__enterprises h2 .btn__title p {
   font: 600 16px 'Montserrat', sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: white;
   position: relative;
   z-index: 1;
