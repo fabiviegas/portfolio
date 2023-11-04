@@ -2,60 +2,42 @@
 
 .page__banner {
     background-color: rgb(39, 12, 61);
-    background-image: url('../img/banner/bg-banner.png');
+    background-image: url('../img/banner/bg-hero-desktop.png');
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 170px;
     padding-bottom: 48px;
 
     .banner__content {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-
-        .banner__photo {
-            width: 174px;
-        }
-
+        
         .banner__text {
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
 
             h1 {
-                font: 700 32px @fontM;
-                color: white;
-                margin-bottom: 10px;
-                letter-spacing: 2px;
+                font: 400 32px @fontC;
+                color: #FDF9FC;
+                letter-spacing: 1.25px;
+                margin-bottom: 9px;
             }
 
-            p {
-                font: 500 18px @fontR;
-                color: white;
-                line-height: 150.4%;
-                margin-bottom: 17px;
+            .subtitle {
+                font: 600 20px @fontT;
+                color: #FDF9FC;
+                margin-bottom: 20px;
             }
 
-            .social__links {
-                display: flex;
-                gap: 20px;
+            .description {
+                font: 400 18px/27px @fontT;
+                color: #FDF9FC;
+                letter-spacing: 0.8px;
+                max-width: 430px;
 
-                a {
-                    transition: all linear .15s;
-
-                    img {
-                        width: 30px;
-                    }
-
-                    &:hover {
-                        transform: translateY(-5px);
-
-                        img {
-                            filter: brightness(0) saturate(100%) invert(99%) sepia(77%) saturate(1695%) hue-rotate(192deg) brightness(100%) contrast(91%);
-                        }
-                    }
-
+                span {
+                    font-weight: 700;
                 }
+                
             }
         }        
     }
@@ -72,22 +54,17 @@
     }
     
     @media screen and (min-width: 768px) {        
-        padding-top: 221px; 
-        padding-bottom: 50px;    
+        padding-top: 273px; 
+        padding-bottom: 50px; 
+        background-position: right 0 top 0;   
 
         .banner__content {
-            flex-direction: row;
-            align-items: center;
-            gap: 50px;
-
-            .banner__photo {
-                width: 300px;
-            }
-
+            
             .banner__text {
+                margin-left: 10%;
 
                 h1 {
-                    font-size: 60px;
+                    font-size: 42px;
                 }        
                 
                 p {
@@ -98,7 +75,7 @@
         }
         
         .chevrons__down {
-            margin-top: 90px;
+            margin-top: 342px;
         }
     }
 }
