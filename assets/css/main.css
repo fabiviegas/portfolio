@@ -1,95 +1,4 @@
 @font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/raleway/v29/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVuEooCP.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/raleway/v29/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaooCP.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/raleway/v29/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvoooCP.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/raleway/v29/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVsEpYCP.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/raleway/v29/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pYCP.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/raleway/v29/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVtapYCP.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/raleway/v29/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVtzpYCP.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Ew-.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Ew-.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu170w-.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM70w-.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr70w-.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvC70w-.ttf) format('truetype');
-}
-@font-face {
   font-family: 'Coiny';
   font-style: normal;
   font-weight: 400;
@@ -123,6 +32,13 @@
   font-weight: 900;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/titilliumweb/v17/NaPDcZTIAOhVxoMyOr9n_E7ffEDBKIw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Gugi';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/gugi/v15/A2BVn5dXywshVA4.ttf) format('truetype');
 }
 html {
   scroll-behavior: smooth;
@@ -184,6 +100,49 @@ menu,
 nav {
   display: block;
 }
+.btn__gradient {
+  padding: 12px 30px;
+  border-radius: 10px;
+  background-image: linear-gradient(91deg, #323A82 1.9%, #C284A2 99.66%);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: fit-content;
+  transition: all linear 0.15s;
+  position: relative;
+  z-index: 1;
+}
+.btn__gradient .text {
+  z-index: 1;
+  position: relative;
+  font: 400 18px 'Titillium Web', sans-serif;
+  color: #E6E7EC;
+}
+.btn__gradient .icon__whats {
+  width: 16px;
+  z-index: 1;
+}
+.btn__gradient::after {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(91deg, #C284A2 1.9%, #323A82 99.66%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  z-index: 0;
+  opacity: 0;
+  transition: all linear 0.5s;
+}
+.btn__gradient:hover {
+  color: #E6E7EC;
+}
+.btn__gradient:hover::after {
+  opacity: 1;
+}
 @media screen and (min-width: 1200px) {
   .container.util--container1198 {
     max-width: 1198px;
@@ -235,15 +194,25 @@ nav {
   padding-bottom: 40px;
   position: absolute;
   width: 100%;
-  background-image: url('../img/header/flag.png');
-  background-repeat: no-repeat;
-  background-position: top 0 left 0;
-  background-size: 100px;
+}
+.page__header .logo__header a {
+  width: 150px;
+}
+.page__header .logo__header a .logo {
+  width: 150px;
+}
+.page__header .is--mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .page__header .is--mobile .navbar__hamburguer {
   margin-right: 15px;
   display: flex;
   justify-content: flex-end;
+}
+.page__header .is--mobile .navbar__hamburguer img {
+  width: 35px;
 }
 .page__header .is--mobile .navbar__overlay {
   background-image: linear-gradient(0deg, #943e81 0%, #550979 20%, #270c3d 100%);
@@ -277,7 +246,7 @@ nav {
   margin: 0;
 }
 .page__header .is--mobile .navbar__overlay.open .overlay__content .overlay__menu .overlay__links a {
-  font: 600 18px 'Raleway', sans-serif;
+  font: 600 16px 'Titillium Web', sans-serif;
   color: white;
   text-decoration: none;
   margin-bottom: 18px;
@@ -294,13 +263,19 @@ nav {
 }
 @media screen and (min-width: 768px) {
   .page__header {
-    padding-top: 51px;
+    padding-top: 30px;
     padding-bottom: 85px;
   }
   .page__header .is--desktop {
     display: flex;
     width: 100%;
-    justify-content: flex-end;
+    justify-content: space-between;
+  }
+  .page__header .is--desktop .logo__header a {
+    width: 234px;
+  }
+  .page__header .is--desktop .logo__header a .logo {
+    width: 234px;
   }
   .page__header .is--desktop nav {
     display: flex;
@@ -309,14 +284,14 @@ nav {
     align-items: center;
   }
   .page__header .is--desktop nav .header__link {
-    font: 600 18px 'Raleway', sans-serif;
+    font: 600 16px 'Titillium Web', sans-serif;
     color: white;
     transition: all linear 0.15s;
     letter-spacing: 1px;
   }
   .page__header .is--desktop nav .header__link:hover {
     transform: translateY(-5px);
-    color: #f3cbf0;
+    color: #F5C5CB;
     cursor: pointer;
   }
   .page__header .is--mobile {
@@ -325,11 +300,11 @@ nav {
 }
 .page__banner {
   background-color: #270c3d;
-  background-image: url('../img/banner/bg-hero-desktop.png');
+  background-image: url('../img/banner/bg-hero-mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 170px;
-  padding-bottom: 48px;
+  padding-top: 186px;
+  padding-bottom: 100px;
 }
 .page__banner .banner__content .banner__text {
   display: flex;
@@ -337,21 +312,22 @@ nav {
   justify-content: flex-end;
 }
 .page__banner .banner__content .banner__text h1 {
-  font: 400 32px 'Coiny', sans-serif;
+  font: 400 32px 'Gugi', sans-serif;
   color: #FDF9FC;
-  letter-spacing: 1.25px;
-  margin-bottom: 9px;
 }
 .page__banner .banner__content .banner__text .subtitle {
-  font: 600 20px 'Titillium', sans-serif;
+  font: 600 20px 'Titillium Web', sans-serif;
   color: #FDF9FC;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
+  padding-left: 3px;
 }
 .page__banner .banner__content .banner__text .description {
-  font: 400 18px/27px 'Titillium', sans-serif;
+  font: 400 16px/22px 'Titillium Web', sans-serif;
   color: #FDF9FC;
   letter-spacing: 0.8px;
-  max-width: 430px;
+  max-width: 380px;
+  padding-left: 3px;
+  margin-bottom: 50px;
 }
 .page__banner .banner__content .banner__text .description span {
   font-weight: 700;
@@ -360,7 +336,7 @@ nav {
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top: 58px;
+  margin-top: 120px;
 }
 .page__banner .chevrons__down .chevrons {
   width: fit-content;
@@ -369,69 +345,82 @@ nav {
   .page__banner {
     padding-top: 273px;
     padding-bottom: 50px;
-    background-position: right 0 top 0;
+    background-position: center top 0;
+    background-image: url('../img/banner/bg-hero-desktop.png');
   }
   .page__banner .banner__content .banner__text {
     margin-left: 10%;
   }
   .page__banner .banner__content .banner__text h1 {
-    font-size: 42px;
-  }
-  .page__banner .banner__content .banner__text p {
-    font-size: 32px;
-    margin-bottom: 25px;
+    font-size: 52px;
   }
   .page__banner .chevrons__down {
-    margin-top: 342px;
+    margin-top: 250px;
   }
 }
 .page__about {
-  background-color: white;
+  background-image: linear-gradient(92deg, #141527 2.76%, #181830 25.47%, #171932 40.68%);
+  background-repeat: no-repeat;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 .page__about .about__wrapper {
-  background: #FDF9FC;
-  box-shadow: -10px 10px 36px 0px rgba(39, 12, 61, 0.25);
   display: flex;
   flex-direction: column-reverse;
-  width: 100%;
+  position: relative;
 }
 .page__about .about__wrapper .about__content {
-  padding: 30px;
+  margin-bottom: 40px;
 }
 .page__about .about__wrapper .about__content h2 {
-  font: 800 32px 'Montserrat', sans-serif;
-  color: #270C3D;
-  margin-bottom: 26px;
+  font: 400 36px 'Gugi', sans-serif;
+  color: #E6E7EC;
+  margin-bottom: 15px;
+  text-align: center;
 }
 .page__about .about__wrapper .about__content .about__text {
-  font: 400 14px 'Raleway', sans-serif;
-  color: #270C3D;
-  line-height: 157.9%;
+  font: 400 14px 'Titillium Web', sans-serif;
+  color: #E6E7EC;
+  text-align: center;
+}
+.page__about .about__wrapper .about__content .about__text span {
+  color: #B769FF;
+  font-weight: 700;
+}
+.page__about .about__wrapper .about__detail {
+  position: absolute;
+  bottom: -79px;
+  right: -14px;
+  width: 64px;
 }
 @media screen and (min-width: 768px) {
   .page__about {
-    padding-top: 117px;
-    padding-bottom: 117px;
+    padding-top: 70px;
+    padding-bottom: 80px;
   }
   .page__about .about__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
-  }
-  .page__about .about__wrapper .photo {
-    width: 45%;
+    gap: 30px;
   }
   .page__about .about__wrapper .about__content {
-    padding: 46px 40px 40px 70px;
-    width: 55%;
+    width: 488px;
+    padding-top: 42px;
+    margin-bottom: 0;
   }
   .page__about .about__wrapper .about__content h2 {
-    font-size: 42px;
+    text-align: left;
   }
   .page__about .about__wrapper .about__content .about__text {
-    font-size: 22px;
+    font-size: 16px;
     margin-bottom: 0;
+    text-align: justify;
+  }
+  .page__about .about__wrapper .about__detail {
+    position: absolute;
+    bottom: -106px;
+    right: -39px;
+    width: fit-content;
   }
 }
 .page__training {

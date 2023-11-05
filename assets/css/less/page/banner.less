@@ -2,11 +2,11 @@
 
 .page__banner {
     background-color: rgb(39, 12, 61);
-    background-image: url('../img/banner/bg-hero-desktop.png');
+    background-image: url('../img/banner/bg-hero-mobile.png');
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 170px;
-    padding-bottom: 48px;
+    padding-top: 186px;
+    padding-bottom: 100px;
 
     .banner__content {
         
@@ -16,23 +16,24 @@
             justify-content: flex-end;
 
             h1 {
-                font: 400 32px @fontC;
+                font: 400 32px @fontG;
                 color: #FDF9FC;
-                letter-spacing: 1.25px;
-                margin-bottom: 9px;
             }
 
             .subtitle {
                 font: 600 20px @fontT;
                 color: #FDF9FC;
-                margin-bottom: 20px;
+                margin-bottom: 23px;
+                padding-left: 3px;
             }
 
             .description {
-                font: 400 18px/27px @fontT;
+                font: 400 16px/22px @fontT;
                 color: #FDF9FC;
                 letter-spacing: 0.8px;
-                max-width: 430px;
+                max-width: 380px;
+                padding-left: 3px;
+                margin-bottom: 50px;
 
                 span {
                     font-weight: 700;
@@ -46,7 +47,7 @@
         display: flex;
         width: 100%;
         justify-content: center;
-        margin-top: 58px;
+        margin-top: 120px;
 
         .chevrons {
             width: fit-content;
@@ -56,7 +57,8 @@
     @media screen and (min-width: 768px) {        
         padding-top: 273px; 
         padding-bottom: 50px; 
-        background-position: right 0 top 0;   
+        background-position: center top 0; 
+        background-image: url('../img/banner/bg-hero-desktop.png');  
 
         .banner__content {
             
@@ -64,18 +66,15 @@
                 margin-left: 10%;
 
                 h1 {
-                    font-size: 42px;
-                }        
+                    font-size: 52px;
+                }    
                 
-                p {
-                    font-size: 32px;
-                    margin-bottom: 25px;
-                }
+                
             }            
         }
         
         .chevrons__down {
-            margin-top: 342px;
+            margin-top: 250px;
         }
     }
 }
