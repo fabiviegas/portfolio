@@ -137,7 +137,7 @@ nav {
   opacity: 0;
   transition: all linear 0.5s;
 }
-.btn__gradient:hover {
+.btn__gradient:hover .text {
   color: #E6E7EC;
 }
 .btn__gradient:hover::after {
@@ -423,252 +423,161 @@ nav {
     width: fit-content;
   }
 }
-.page__training {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-.page__training .title {
-  font: 800 32px 'Montserrat', sans-serif;
-  color: #270C3D;
-  text-align: center;
-  align-items: center;
-  margin-bottom: 56px;
-}
-.page__training .title img {
-  width: fit-content;
-  margin-bottom: 4px;
-}
-.page__training .education__cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-}
-.page__training .education__cards .card__graduation {
-  background-color: #FDF9FC;
-  border-radius: 5px;
-  box-shadow: 4px 4px 16px rgba(39, 12, 61, 0.3);
-  width: 284px;
-  height: 242px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-.page__training .education__cards .card__graduation .card__image {
-  margin-bottom: 16px;
-  max-width: 170px;
-}
-.page__training .education__cards .card__graduation h3 {
-  font: 600 16px 'Raleway', sans-serif;
-  color: #270C3D;
-  margin-bottom: 5px;
-  text-align: center;
-  line-height: 127.4%;
-}
-.page__training .education__cards .card__graduation p {
-  font: 400 14px 'Raleway', sans-serif;
-  color: #270C3D;
-  text-align: center;
-}
-.page__training .education__cards .card__courses {
-  width: 284px;
-  height: 380px;
-  background-color: #FDF9FC;
-  border-radius: 5px;
-  box-shadow: 4px 4px 16px rgba(39, 12, 61, 0.3);
-  display: flex;
-  flex-direction: column;
-  padding: 20px 30px;
-  position: relative;
-}
-.page__training .education__cards .card__courses .icon__click {
-  width: fit-content;
-  position: absolute;
-  top: 208px;
-  right: 29px;
-  animation: effect--click 3s infinite both;
-}
-.page__training .education__cards .card__courses .card__header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 18px;
-  margin-bottom: 20px;
-}
-.page__training .education__cards .card__courses .card__header .logo {
-  width: fit-content;
-}
-.page__training .education__cards .card__courses .card__header h3 {
-  font: 800 18px 'Montserrat', sans-serif;
-  color: #270C3D;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 25px;
-}
-.page__training .education__cards .card__courses .card__title {
-  margin-bottom: 25px;
-  margin-top: 10px;
-}
-.page__training .education__cards .card__courses .card__title h3 {
-  font: 800 18px 'Montserrat', sans-serif;
-  color: #270C3D;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 25px;
-}
-.page__training .education__cards .card__courses .courses__list {
-  display: flex;
-  flex-direction: column;
-  gap: 11px;
-}
-.page__training .education__cards .card__courses .courses__list .courses {
-  font: 400 16px 'Raleway', sans-serif;
-  color: #270C3D;
-  transition: all linear 0.15s;
-  width: fit-content;
-}
-.page__training .education__cards .card__courses .courses__list .courses:hover {
-  color: #8E2790;
-  font-weight: 500;
-  cursor: pointer;
-  transform: translateX(5px);
-}
-.page__training .education__cards .card__courses .courses__list .course__title {
-  font: 400 16px 'Raleway', sans-serif;
-  color: #270C3D;
-  line-height: 22px;
-}
-@media screen and (min-width: 768px) {
-  .page__training {
-    padding-top: 94px;
-    padding-bottom: 117px;
-    background-image: url('../img/formacao/bg-education.png');
-    background-repeat: no-repeat;
-    background-position: bottom 0 right 0;
-  }
-  .page__training .title {
-    font-size: 46px;
-    margin-bottom: 76px;
-  }
-  .page__training .education__cards {
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 50px;
-    flex-wrap: wrap;
-  }
-  .page__training .education__cards .card__courses {
-    width: 433px;
-    height: 242px;
-  }
-  .page__training .education__cards .card__courses .icon__click {
-    top: 99px;
-  }
-  .page__training .education__cards .card__courses .card__header {
-    flex-direction: row;
-    align-items: flex-end;
-    gap: 26px;
-    margin-bottom: 25px;
-  }
-  .page__training .education__cards .card__courses .card__header h3 {
-    align-items: flex-start;
-    text-align: left;
-    font-size: 20px;
-    line-height: normal;
-  }
-  .page__training .education__cards .card__courses .card__title {
-    text-align: left;
-    font-size: 20px;
-    line-height: normal;
-  }
-  .page__training .education__cards .card__courses .courses__list {
-    gap: 11px;
-  }
-}
-.page__skills {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #270c3d;
-  background-image: url('../img/skills/bg-skills.png');
+.page__numbers {
+  background-image: url('../img/sobre/bg-numbers.svg'), linear-gradient(154deg, #7B6EC6 11.74%, #DCBFFF 95.31%);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 270px, cover;
+  background-position: right -11px bottom -28px, top 0 left 0;
+  padding-top: 60px;
+  padding-bottom: 264px;
 }
-.page__skills .title {
-  font: 800 40px 'Montserrat', sans-serif;
-  color: white;
-  margin-bottom: 89px;
+.page__numbers .numbers__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+.page__numbers .numbers__wrapper .info {
+  color: #171932;
   text-align: center;
-  letter-spacing: 2px;
-}
-.page__skills .carousel .owl-carousel.owl-theme.skills__carousel .card__skill {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
 }
-.page__skills .carousel .owl-carousel.owl-theme.skills__carousel .card__skill .card__image {
-  background-color: white;
-  border-radius: 100%;
-  width: 170px;
-  height: 170px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.page__numbers .numbers__wrapper .info .info__number {
+  font: 900 80px 'Titillium Web', sans-serif;
+  margin-bottom: 5px;
+  line-height: 60px;
 }
-.page__skills .carousel .owl-carousel.owl-theme.skills__carousel .card__skill .card__image .icon__skill {
-  max-width: 90px;
-  max-height: 104px;
-}
-.page__skills .carousel .owl-carousel.owl-theme.skills__carousel .card__skill h3 {
-  font: 600 26px 'Raleway', sans-serif;
-  color: white;
-  text-align: center;
-  letter-spacing: 0.8px;
-}
-.page__skills .carousel .owl-carousel.owl-theme.skills__carousel .owl-dots {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-.page__skills .carousel .owl-carousel.owl-theme.skills__carousel .owl-dots .owl-dot {
-  height: 10px !important;
-  display: flex;
-  align-items: center;
-}
-.page__skills .carousel .owl-carousel.owl-theme.skills__carousel .owl-dots .owl-dot span {
-  margin: 0;
-  width: 6px;
-  height: 6px;
-  background-color: #FDF9FC;
-  transition: all linear 0.25s;
-}
-.page__skills .carousel .owl-carousel.owl-theme.skills__carousel .owl-dots .owl-dot.active span {
-  width: 10px;
-  height: 10px;
-}
-.page__skills .carousel .owl-carousel.owl-theme.skills__carousel .owl-dots.disabled {
-  display: none;
+.page__numbers .numbers__wrapper .info .info__text {
+  font: 400 20px 'Titillium Web', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 30px;
+  width: 133px;
 }
 @media screen and (min-width: 768px) {
-  .page__skills {
-    padding-top: 98px;
-    padding-bottom: 110px;
+  .page__numbers {
+    background-image: url('../img/sobre/bg-numbers.svg'), linear-gradient(90deg, #7B6EC6 1.33%, #DCBFFF 96.26%);
+    background-size: 335px, cover;
+    background-position: right 83px top -40px, top 0 left 0;
+    padding-bottom: 60px;
   }
-  .page__skills .title {
-    font-size: 46px;
-  }
-  .page__skills .carousel {
-    padding-left: 30px;
-    padding-right: 30px;
+  .page__numbers .numbers__wrapper {
+    flex-direction: row;
+    gap: 88px;
   }
 }
 .page__projects {
-  padding-top: 70px;
-  padding-bottom: 40px;
-  background-color: white;
+  padding-top: 75px;
+  padding-bottom: 63px;
+  background-color: #171932;
+  overflow: hidden;
+}
+.page__projects .projects__heading {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page__projects .projects__heading .title__projects {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font: 400 42px 'Gugi', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  color: #B769FF;
+  margin-bottom: 35px;
+}
+.page__projects .projects__heading .title__projects .line {
+  width: fit-content;
+}
+.page__projects .projects__heading .title__description {
+  border-radius: 170px 0px 0px 170px;
+  background-color: #F8F0F7;
+  margin-left: -48px;
+  padding: 45px 36px 74px 104px;
+}
+.page__projects .projects__heading .title__description .description {
+  font: 400 14px 'Titillium Web', sans-serif;
+  letter-spacing: 0.07px;
+  color: #171932;
+}
+.page__projects .projects__heading .cover {
+  width: 350px;
+  margin-top: -65px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page__projects .project__highlight--1 {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page__projects .project__highlight--1 .cover__project {
+  width: 300px;
+  position: relative;
+  z-index: 2;
+}
+.page__projects .project__highlight--1 .project__description {
+  border-radius: 0px 200px 200px 0px;
+  background-color: #F8F0F7;
+  margin-right: -28px;
+  padding: 150px 57px 32px 41px;
+  margin-top: -136px;
+  position: relative;
+  z-index: 1;
+}
+.page__projects .project__highlight--1 .project__description .project__name {
+  font: 700 24px 'Titillium Web', sans-serif;
+  letter-spacing: 1px;
+  color: #7341A0;
+  margin-bottom: 16px;
+}
+.page__projects .project__highlight--1 .project__description .about__project {
+  font: 400 14px 'Titillium Web', sans-serif;
+  letter-spacing: 0.07px;
+  color: #171932;
+  margin-bottom: 16px;
+}
+.page__projects .project__highlight--2 {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page__projects .project__highlight--2 .cover__project {
+  width: 300px;
+  position: relative;
+  z-index: 2;
+}
+.page__projects .project__highlight--2 .project__description {
+  border-radius: 200px 0 0 200px;
+  background-color: #F8F0F7;
+  margin-left: -28px;
+  padding: 145px 30px 56px 53px;
+  margin-top: -140px;
+  position: relative;
+  z-index: 1;
+  text-align: right;
+}
+.page__projects .project__highlight--2 .project__description .project__name {
+  font: 700 24px 'Titillium Web', sans-serif;
+  letter-spacing: 1px;
+  color: #7341A0;
+  margin-bottom: 16px;
+}
+.page__projects .project__highlight--2 .project__description .about__project {
+  font: 400 14px 'Titillium Web', sans-serif;
+  letter-spacing: 0.07px;
+  color: #171932;
+  margin-bottom: 16px;
+}
+.page__projects .project__highlight--2 .project__description .btn__project {
+  margin-right: 0;
+  margin-left: auto;
 }
 .page__projects .title {
   font: 800 32px 'Montserrat', sans-serif;
@@ -932,10 +841,59 @@ nav {
 }
 @media screen and (min-width: 768px) {
   .page__projects {
-    padding-top: 92px;
-    padding-bottom: 70px;
-    background-position: top 11px right 13px;
-    background-size: auto 300px;
+    padding-top: 137px;
+    padding-bottom: 177px;
+  }
+  .page__projects .projects__heading .title__projects {
+    margin-right: 21%;
+  }
+  .page__projects .projects__heading .title__description {
+    border-radius: 200px 0px 0px 200px;
+    padding: 41px 490px 42px 112px;
+    margin-left: 25%;
+  }
+  .page__projects .projects__heading .title__description .description {
+    width: 465px;
+    font-size: 16px;
+  }
+  .page__projects .projects__heading .cover {
+    position: absolute;
+    width: fit-content;
+    right: 10px;
+    top: 56px;
+  }
+  .page__projects .project__highlight--1 {
+    position: relative;
+  }
+  .page__projects .project__highlight--1 .cover__project {
+    position: absolute;
+    width: fit-content;
+    left: 8%;
+    top: 60px;
+  }
+  .page__projects .project__highlight--1 .project__description {
+    padding: 48px 97px 54px 52%;
+    margin-top: 165px;
+    margin-right: 15%;
+  }
+  .page__projects .project__highlight--2 {
+    position: relative;
+  }
+  .page__projects .project__highlight--2 .cover__project {
+    position: absolute;
+    width: fit-content;
+    right: 10%;
+    top: 110px;
+  }
+  .page__projects .project__highlight--2 .project__description {
+    padding: 61px 48% 62px 140px;
+    margin-top: 211px;
+    margin-left: 15%;
+    text-align: left;
+  }
+  .page__projects .project__highlight--2 .project__description .btn__project {
+    margin-left: 0;
+    margin-right: auto;
   }
   .page__projects .title {
     align-items: center;

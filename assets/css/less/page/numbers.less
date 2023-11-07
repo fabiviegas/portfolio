@@ -1,0 +1,52 @@
+//out: false
+
+.page__numbers {
+    background-image: url('../img/sobre/bg-numbers.svg'), linear-gradient(154deg, #7B6EC6 11.74%, #DCBFFF 95.31%);
+    background-repeat: no-repeat;
+    background-size: 270px, cover;
+    background-position: right -11px bottom -28px, top 0 left 0;
+    padding-top: 60px;
+    padding-bottom: 264px;
+
+    .numbers__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+
+        .info {
+            color: #171932;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .info__number {
+                font: 900 80px @fontT;
+                margin-bottom: 5px;
+                line-height: 60px;
+            }
+
+            .info__text {
+                font: 400 20px @fontT;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                line-height: 30px;
+                width: 133px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image: url('../img/sobre/bg-numbers.svg'), linear-gradient(90deg, #7B6EC6 1.33%, #DCBFFF 96.26%);
+        background-size: 335px, cover;
+        background-position: right 83px top -40px, top 0 left 0;
+        padding-bottom: 60px;
+
+        .numbers__wrapper {
+            flex-direction: row;
+            gap: 88px;
+        }
+
+    }
+}
