@@ -470,7 +470,6 @@ nav {
 }
 .page__projects {
   padding-top: 75px;
-  padding-bottom: 63px;
   background-color: #171932;
   overflow: hidden;
 }
@@ -542,6 +541,9 @@ nav {
   color: #171932;
   margin-bottom: 16px;
 }
+.page__projects .project__highlight--1.last__project {
+  padding-bottom: 180px;
+}
 .page__projects .project__highlight--2 {
   margin-top: 40px;
   display: flex;
@@ -579,270 +581,144 @@ nav {
   margin-right: 0;
   margin-left: auto;
 }
-.page__projects .title {
-  font: 800 32px 'Montserrat', sans-serif;
-  color: #270C3D;
-  margin-bottom: 40px;
-  text-align: center;
+.page__projects .projects__more {
+  background-color: #F8F0F7;
+  background-image: linear-gradient(#141628 100%, #171932 0%);
+  background-size: 100% 200px;
+  background-position: bottom 0 left 0;
+  background-repeat: no-repeat;
+  padding-top: 60px;
+  padding-bottom: 45px;
 }
-.page__projects .accordion {
-  margin-bottom: 30px;
+.page__projects .projects__more .wrapper {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.page__projects .accordion .projects__enterprises .title__enterprises {
-  background-color: #2E2345;
-  border-radius: 20px;
-  margin-left: 30px;
-  margin-right: 30px;
-}
-.page__projects .accordion .projects__enterprises .title__enterprises h2 {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-}
-.page__projects .accordion .projects__enterprises .title__enterprises h2 .btn__title {
+.page__projects .projects__more .wrapper .title__more {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
   align-items: center;
-  padding: 20px 30px;
-  transition: all linear 0.15s;
-  position: relative;
-  z-index: 1;
-  border: none;
+  margin-bottom: 32px;
 }
-.page__projects .accordion .projects__enterprises .title__enterprises h2 .btn__title p {
-  font: 600 16px 'Montserrat', sans-serif;
-  letter-spacing: 1px;
+.page__projects .projects__more .wrapper .title__more .title {
+  font: 400 32px 'Gugi', sans-serif;
+  color: #7341A0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+}
+.page__projects .projects__more .wrapper .title__more .subtitle {
+  font: 400 14px 'Titillium Web', sans-serif;
+  color: #171932;
+  text-align: center;
+  max-width: 273px;
+}
+.page__projects .projects__more .wrapper .owl-carousel.owl-theme.projects__carousel .card__projects {
+  position: relative;
+  transition: all linear 0.2s;
+  width: 245px;
+  height: 245px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.page__projects .projects__more .wrapper .owl-carousel.owl-theme.projects__carousel .card__projects .card__overlay {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-image: linear-gradient(rgba(23, 25, 50, 0.05) 0%, #101122 100%);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transition: all linear 0.3s;
+}
+.page__projects .projects__more .wrapper .owl-carousel.owl-theme.projects__carousel .card__projects .cover__card {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+  transition: all linear 0.3s;
+}
+.page__projects .projects__more .wrapper .owl-carousel.owl-theme.projects__carousel .card__projects .card__caption {
+  position: absolute;
+  z-index: 3;
+  bottom: 15px;
+  left: 20px;
+  width: 205px;
+}
+.page__projects .projects__more .wrapper .owl-carousel.owl-theme.projects__carousel .card__projects .card__caption .project__name {
+  font: 600 18px 'Titillium Web', sans-serif;
+  letter-spacing: 8.5%;
+  line-height: 133.4%;
   color: white;
-  position: relative;
-  z-index: 1;
-}
-.page__projects .accordion .projects__enterprises .title__enterprises h2 .btn__title .chevrons__right {
-  height: 16px;
-  position: relative;
-  z-index: 1;
+  margin-bottom: 10px;
   transition: all linear 0.15s;
+  width: fit-content;
 }
-.page__projects .accordion .projects__enterprises .title__enterprises h2 .btn__title:focus {
-  box-shadow: none;
-}
-.page__projects .accordion .projects__enterprises .title__enterprises h2 .btn__title::after {
-  content: "";
-  position: absolute;
-  background-image: linear-gradient(90deg, #270C3D, #550979, #172C9A, #1C64B9);
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  z-index: 0;
-  opacity: 0;
-  transition: all linear 0.5s;
-}
-.page__projects .accordion .projects__enterprises .title__enterprises h2 .btn__title:hover::after {
-  opacity: 1;
-}
-.page__projects .accordion .projects__enterprises .title__enterprises h2 .btn__title.active .chevrons__right {
-  transform: rotate(90deg);
-}
-.page__projects .accordion .projects__enterprises .projects__content {
-  padding-bottom: 40px;
-  padding-top: 30px;
-}
-.page__projects .accordion .projects__enterprises .projects__content .description {
-  font: 400 14px 'Raleway', sans-serif;
-  color: #270C3D;
-  line-height: 168%;
-  padding-bottom: 40px;
-  text-align: center;
-}
-.page__projects .accordion .projects__enterprises .projects__content .projects__list {
-  display: none;
-}
-.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .card__job {
-  position: relative;
-  width: 245px;
-  height: 245px;
-  overflow: hidden;
-  border-radius: 20px;
-  z-index: 0;
-}
-.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .card__job .photo__job {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  transition: all linear 0.15s;
-  position: relative;
-  z-index: 0;
-}
-.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .card__job .card__text {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 12px;
-  position: absolute;
-  z-index: 11;
-  bottom: 14px;
-  left: 16px;
-}
-.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .card__job .card__text h3 {
-  font: 600 18px 'Raleway', sans-serif;
-  color: #FDF9FC;
-  letter-spacing: 1.53px;
-}
-.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .card__job .card__text .links {
-  display: flex;
-  gap: 9px;
-}
-.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .card__job .card__text .links .site__link {
-  font: 500 14px 'Raleway', sans-serif;
-  color: #FDF9FC;
-  letter-spacing: 0.21px;
+.page__projects .projects__more .wrapper .owl-carousel.owl-theme.projects__carousel .card__projects .card__caption .btn__link {
+  border: 1px solid white;
   border-radius: 10px;
-  border: 1px solid #FDF9FC;
-  padding: 5px 8px;
+  background-color: transparent;
   transition: all linear 0.15s;
+  font: 600 14px 'Titillium Web', sans-serif;
+  color: white;
+  padding: 5px 10px;
+  width: fit-content;
 }
-.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .card__job .card__text .links .site__link:hover {
-  background-color: #FDF9FC;
-  color: #270C3D;
+.page__projects .projects__more .wrapper .owl-carousel.owl-theme.projects__carousel .card__projects .card__caption .btn__link:hover {
+  cursor: pointer;
+  color: white;
 }
-.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .card__job::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  transition: all linear 0.5s;
-  border-radius: 20px;
-  background-image: linear-gradient(180deg, rgba(21, 10, 31, 0) 0%, rgba(21, 10, 31, 0.68) 68.23%, #150A1F 100%);
+.page__projects .projects__more .wrapper .owl-carousel.owl-theme.projects__carousel .card__projects:hover .card__overlay {
+  transform: translateY(100%);
 }
-.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .card__job:hover .photo__job {
-  transform: scale(1.2);
-  border-radius: 20px;
+.page__projects .projects__more .wrapper .owl-carousel.owl-theme.projects__carousel .card__projects:hover .cover__card {
+  transform: scale(1.1);
 }
-.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .owl-dots {
+.page__projects .projects__more .wrapper .owl-carousel.owl-theme.projects__carousel .card__projects:hover .card__caption .project__name {
+  color: #171932;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+.page__projects .projects__more .wrapper .owl-carousel.owl-theme.projects__carousel .card__projects:hover .card__caption .btn__link {
+  background-color: #171932;
+  color: white;
+}
+.page__projects .projects__more .wrapper .owl-carousel.owl-theme.projects__carousel .owl-dots {
   margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
-.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .owl-dots .owl-dot {
+.page__projects .projects__more .wrapper .owl-carousel.owl-theme.projects__carousel .owl-dots .owl-dot {
   height: 10px !important;
   display: flex;
   align-items: center;
 }
-.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .owl-dots .owl-dot span {
+.page__projects .projects__more .wrapper .owl-carousel.owl-theme.projects__carousel .owl-dots .owl-dot span {
   margin: 0;
-  width: 6px;
-  height: 6px;
-  background-color: #270C3D;
-  transition: all linear 0.25s;
+  width: 5px;
+  height: 5px;
+  background-color: #B769FF;
+  border-radius: 100%;
+  transition: all linear 0.15s;
 }
-.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .owl-dots .owl-dot.active span {
+.page__projects .projects__more .wrapper .owl-carousel.owl-theme.projects__carousel .owl-dots .owl-dot.active span {
+  background-color: #B769FF;
   width: 10px;
   height: 10px;
 }
-.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel .owl-dots.disabled {
-  display: none;
-}
-.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .card__job {
-  width: 245px;
-  height: 245px;
-  overflow: hidden;
-  border-radius: 20px;
-  position: relative;
-  z-index: 0;
-}
-.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .card__job .photo__job {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  transition: all linear 0.15s;
-  position: relative;
-  z-index: 0;
-}
-.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .card__job .card__text {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 12px;
-  position: absolute;
-  z-index: 11;
-  bottom: 14px;
-  left: 16px;
-}
-.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .card__job .card__text h3 {
-  font: 600 18px 'Raleway', sans-serif;
-  color: #FDF9FC;
-  letter-spacing: 1.53px;
-}
-.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .card__job .card__text .links {
-  display: flex;
-  gap: 9px;
-}
-.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .card__job .card__text .links .site__link {
-  font: 500 14px 'Raleway', sans-serif;
-  color: #FDF9FC;
-  letter-spacing: 0.21px;
-  border-radius: 10px;
-  border: 1px solid #FDF9FC;
-  padding: 5px 8px;
-  transition: all linear 0.15s;
-}
-.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .card__job .card__text .links .site__link:hover {
-  background-color: #FDF9FC;
-  color: #270C3D;
-}
-.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .card__job::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  transition: all linear 0.5s;
-  border-radius: 20px;
-  background-image: linear-gradient(180deg, rgba(21, 10, 31, 0) 0%, rgba(21, 10, 31, 0.68) 68.23%, #150A1F 100%);
-}
-.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .card__job:hover .photo__job {
-  transform: scale(1.2);
-  border-radius: 20px;
-}
-.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .owl-dots {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .owl-dots .owl-dot {
-  height: 10px !important;
-  display: flex;
-  align-items: center;
-}
-.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .owl-dots .owl-dot span {
-  margin: 0;
-  width: 6px;
-  height: 6px;
-  background-color: #270C3D;
-  transition: all linear 0.25s;
-}
-.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .owl-dots .owl-dot.active span {
-  width: 10px;
-  height: 10px;
-}
-.page__projects .accordion .projects__enterprises .projects__content .projects__mobile .owl-carousel.owl-theme.projects__carousel2 .owl-dots.disabled {
+.page__projects .projects__more .wrapper .owl-carousel.owl-theme.projects__carousel .owl-dots.disabled {
   display: none;
 }
 @media screen and (min-width: 768px) {
   .page__projects {
     padding-top: 137px;
-    padding-bottom: 177px;
   }
   .page__projects .projects__heading .title__projects {
     margin-right: 21%;
@@ -878,6 +754,7 @@ nav {
   }
   .page__projects .project__highlight--2 {
     position: relative;
+    margin-bottom: 80px;
   }
   .page__projects .project__highlight--2 .cover__project {
     position: absolute;
@@ -895,111 +772,15 @@ nav {
     margin-left: 0;
     margin-right: auto;
   }
-  .page__projects .title {
-    align-items: center;
-    font-size: 46px;
-    margin-bottom: 70px;
+  .page__projects .projects__more .wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
   }
-  .page__projects .accordion .projects__enterprises .title__enterprises {
-    margin-left: 10%;
-    margin-right: 10%;
+  .page__projects .projects__more .wrapper .title__more {
+    margin-bottom: 48px;
   }
-  .page__projects .accordion .projects__enterprises .title__enterprises h2 .btn__title {
-    padding: 30px 40px;
-  }
-  .page__projects .accordion .projects__enterprises .title__enterprises h2 .btn__title p {
-    font-size: 26px;
-  }
-  .page__projects .accordion .projects__enterprises .title__enterprises h2 .btn__title .chevrons__right {
-    height: 20px;
-  }
-  .page__projects .accordion .projects__enterprises .projects__content {
-    padding-top: 57px;
-    padding-bottom: 118px;
-  }
-  .page__projects .accordion .projects__enterprises .projects__content.content2 {
-    padding-bottom: 0;
-  }
-  .page__projects .accordion .projects__enterprises .projects__content .description {
-    font-size: 18px;
-    line-height: 171.9%;
-    padding-bottom: 80px;
-    padding-right: 40px;
-    padding-left: 40px;
-    text-align: left;
-  }
-  .page__projects .accordion .projects__enterprises .projects__content .projects__list {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job {
-    position: relative;
-    width: 245px;
-    height: 245px;
-    overflow: hidden;
-    border-radius: 20px;
-    z-index: 0;
-  }
-  .page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job .photo__job {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    transition: all linear 0.15s;
-    position: relative;
-    z-index: 0;
-  }
-  .page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job .card__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 12px;
-    position: absolute;
-    z-index: 11;
-    bottom: 14px;
-    left: 16px;
-  }
-  .page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job .card__text h3 {
-    font: 600 18px 'Raleway', sans-serif;
-    color: #FDF9FC;
-    letter-spacing: 1.53px;
-  }
-  .page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job .card__text .links {
-    display: flex;
-    gap: 9px;
-  }
-  .page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job .card__text .links .site__link {
-    font: 500 14px 'Raleway', sans-serif;
-    color: #FDF9FC;
-    letter-spacing: 0.21px;
-    border-radius: 10px;
-    border: 1px solid #FDF9FC;
-    padding: 5px 8px;
-    transition: all linear 0.15s;
-  }
-  .page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job .card__text .links .site__link:hover {
-    background-color: #FDF9FC;
-    color: #270C3D;
-  }
-  .page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    transition: all linear 0.5s;
-    border-radius: 20px;
-    background-image: linear-gradient(180deg, rgba(21, 10, 31, 0) 0%, rgba(21, 10, 31, 0.68) 68.23%, #150A1F 100%);
-  }
-  .page__projects .accordion .projects__enterprises .projects__content .projects__list .card__job:hover .photo__job {
-    transform: scale(1.2);
-    border-radius: 20px;
-  }
-  .page__projects .accordion .projects__enterprises .projects__content .projects__mobile {
-    display: none;
+  .page__projects .projects__more .wrapper .title__more .subtitle {
+    max-width: fit-content;
   }
 }
 .page__contact {
@@ -1109,15 +890,14 @@ nav {
 .page__footer {
   padding-top: 22px;
   padding-bottom: 22px;
-  background-image: url('../img/footer/flag2.png');
+  background-image: url('../img/footer/flag2.png'), linear-gradient(to right, #7b6ec6, #dcbfff);
   background-repeat: no-repeat;
   background-position: bottom 0 right 0;
-  background-size: 150px;
-  background-color: #270C3D;
+  background-size: 150px, 100%;
 }
 .page__footer .copyrights {
-  font: 600 16px 'Raleway', sans-serif;
-  color: #FDF9FC;
+  font: 600 16px 'Titillium Web', sans-serif;
+  color: white;
   width: 240px;
 }
 .page__footer .copyrights .icon__heart {
