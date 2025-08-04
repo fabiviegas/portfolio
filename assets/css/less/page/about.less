@@ -1,79 +1,97 @@
 //out: false
 
-.page__about {
-    background-image: linear-gradient(92deg, #141527 2.76%, #181830 25.47%, #171932 40.68%);
+.sobre {
+    background-image: url('../img/cover-about.png');
     background-repeat: no-repeat;
+    background-position: right 0 top 0;
+    background-size: auto 100%;
+    padding-top: 91px;
+    padding-bottom: 146px;
 
-    padding-top: 60px;
-    padding-bottom: 60px;
+    .wrapper {
+        border-radius: 60px 0;
+        background-color: #f7f7f7;
+        box-shadow: -6px 0 20px rgba(46, 53, 59, .15);
+        padding: 71px 102px 72px 96px;
+        width: 100%;
+        max-width: 751px;
+        margin-left: 9%;
+        margin-right: auto;
 
-    .about__wrapper {
-        display: flex;
-        flex-direction: column-reverse;
-        position: relative;
-        
-        .about__content {
-            margin-bottom: 40px;
-            
-            h2 {
-                font: 400 36px @fontG;
-                color: #E6E7EC;
-                margin-bottom: 15px;
-                text-align: center;
-            }
+        .title {
+            font-size: 52px;
+            font-weight: 700;
+            line-height: 126%;
+            letter-spacing: 1.6px;
+            margin-bottom: 12px;
+        }
 
-            .about__text {
-                font: 400 14px @fontT;
-                color: #E6E7EC;
-                text-align: center;
+        .subtitle {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 126%;
+            letter-spacing: 0.7px;
+            margin-bottom: 24px;
 
-                span {
-                    color: #B769FF;
-                    font-weight: 700;
-                }
+            span {
+                font-weight: 700;
             }
         }
 
-        .about__detail {
-            position: absolute;
-            bottom: -79px;
-            right: -14px;
-            width: 64px;
+        .text {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 163%;
+            letter-spacing: 0.5px;
+            margin-bottom: 40px;
+
+            span {
+                font-weight: 700;
+            }
+        }
+
+        .btn__green {
+            width: fit-content;
         }
     }
 
-    @media screen and (min-width: 768px) {
-        padding-top: 70px;
-        padding-bottom: 80px;
+    @media (max-width: @tablet) {
+        padding-top: 62px;
+        padding-bottom: 251px;
+        background-image: url('../img/cover-about-mobile.png');
+        background-position: left 0 bottom 0;
+        background-size: 100% auto;
 
-        .about__wrapper {
-            flex-direction: row;
-            flex-wrap: wrap;   
-            gap: 30px;      
+        .wrapper {
+            border-radius: 40px 0;
+            padding: 36px 27px 40px 27px;
+            margin-left: 16px;
+            margin-right: 16px;
+            width: calc(100% - 32px);
 
-            .about__content {
-                width: 488px;   
-                padding-top: 42px; 
-                margin-bottom: 0;
-                
-                h2 {
-                    text-align: left;
-                }
-
-                .about__text {
-                    font-size: 16px;
-                    margin-bottom: 0;
-                    text-align: justify;
-                }           
+            .title {
+                font-size: 42px;
+                letter-spacing: 1.3px;
+                margin-bottom: 16px;
             }
 
-            .about__detail {
-                position: absolute;
-                bottom: -106px;
-                right: -39px;
-                width: fit-content;
+            .subtitle {
+                font-size: 20px;
+                letter-spacing: 0.6px;
+                width: 235px;
+                margin-bottom: 18px;
             }
 
+            .text {
+                font-size: 16px;
+                letter-spacing: 0.5px;
+                margin-bottom: 32px;
+            }
+
+            .btn__green {
+                width: 100%;
+            }
         }
     }
 }
+

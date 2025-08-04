@@ -1,80 +1,110 @@
-//out: false 
+//out: false
 
-.page__banner {
-    background-color: rgb(39, 12, 61);
-    background-image: url('../img/banner/bg-hero-mobile.png');
+.hero {
+    background-image: url('../img/banner.png');
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 186px;
-    padding-bottom: 100px;
+    background-position: bottom 0 center;
 
-    .banner__content {
-        
-        .banner__text {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
+    .wrapper {
+        max-width: 1230px;
+        margin-left: auto;
+        margin-right: 28px;
+        padding: 218px 24px 181px 24px;
+        display: flex;
+        justify-content: center;
+        gap: 62px;
 
-            h1 {
-                font: 400 32px @fontG;
-                color: #FDF9FC;
-            }
+        .content {
+            padding-top: 25px;
+            width: 525px;
 
-            .subtitle {
-                font: 600 20px @fontT;
-                color: #FDF9FC;
-                margin-bottom: 23px;
-                padding-left: 3px;
+            .title {
+               font-weight: 700;
+               font-size: 52px;
+               letter-spacing: 1.6px;
+               line-height: 126%;
+               margin-bottom: 24px;
+               
+               span {
+                  color: #FF8C39;
+               }
             }
 
             .description {
-                font: 400 16px/22px @fontT;
-                color: #FDF9FC;
-                letter-spacing: 0.8px;
-                max-width: 380px;
-                padding-left: 3px;
-                margin-bottom: 50px;
+                font-size: 24px;
+                font-weight: 400;
+                letter-spacing: 0.7px;
+                line-height: 138%;
+                margin-bottom: 38px;
 
                 span {
                     font-weight: 700;
                 }
-                
             }
-        }        
-    }
 
-    .chevrons__down {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        margin-top: 120px;
-
-        .chevrons {
-            width: fit-content;
-        }        
-    }
-    
-    @media screen and (min-width: 768px) {        
-        padding-top: 273px; 
-        padding-bottom: 50px; 
-        background-position: center top 0; 
-        background-image: url('../img/banner/bg-hero-desktop.png');  
-
-        .banner__content {
-            
-            .banner__text {
-                margin-left: 10%;
-
-                h1 {
-                    font-size: 52px;
-                }    
-                
-                
-            }            
+            .buttons {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+            }
         }
-        
-        .chevrons__down {
-            margin-top: 250px;
+    }
+
+    @media (max-width: @tablet) {
+        background-image: url('../img/banner-mobile.png');
+        background-position: center center;
+
+        .wrapper {
+            margin-left: auto;
+            margin-right: auto;
+            padding: 144px 24px 54px 24px;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+
+            .content {
+                padding-top: 0;
+                width: 100%;
+                max-width: 725px;
+                text-align: center;
+
+                .title {
+                    font-size: 32px;
+                    margin-bottom: 16px;
+                    letter-spacing: 1px;
+                }
+
+                .description {
+                    font-size: 16px;
+                    letter-spacing: 0.5px;
+                    margin-bottom: 32px;
+                }
+
+                .buttons {
+                    flex-direction: column;
+                    align-items: center;
+                    width: 272px;
+                    margin: 0 auto;
+                    gap: 12px;
+
+                    .btn__transparent,
+                    .btn__gradient {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .cover {
+               width: 100%;
+               max-width: fit-content; 
+            }
+        }
+    }
+
+    @media (min-width: 1560px) {
+        .wrapper {
+            margin: 0 auto;
         }
     }
 }

@@ -1,21 +1,42 @@
 //out: false
 
-.animation__click() {
-    animation: effect--click 3s infinite both;
-
+.animation__fade_in_right() {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: effect--fade_in_right;
 }
 
-@keyframes effect--click {
+@keyframes effect--fade_in_right {
     0% {
-        transform: translateY(0) translateX(0);
-    }
-
-    50% {
-        transform: translateY(-10px) translateX(-20px);
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
     }
 
     100% {
-        transform: translateY(0) translateX(0);
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+}
+
+.animation__fade_top() {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: effect--fade_top;
+}
+
+@keyframes effect--fade_top {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
     }
 }
 

@@ -1,411 +1,942 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="theme-color" content="#0f0f4d">
+    <meta name="theme-color" content="#FF8C39">
 
-    <title>Fabiane Viegas - Portfólio</title>
+    <title>Fabiane Viegas · Web Designer</title>
 
-    <meta name="description" content="Portfólio de desenvolvedora web e web designer"/>
-    <meta name="twitter:description" content="Portfólio de desenvolvedora web e web designer">
-    <meta itemprop="description" content="Portfólio de desenvolvedora web e web designer">
-    <meta property="og:description" content="Portfólio de desenvolvedora web e web designer\" />
-    
-    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Descrição da página -->
+    <meta name="description"
+        content="Criação de Landing Pages e Sites Institucionais com design exclusivo, foco em conversão e atendimento personalizado. Desenvolvimento Web White Label para agências de marketing, pequenas empresas e profissionais autônomos." />
+
+    <!-- Palavras-chave para SEO -->
+    <meta name="keywords"
+        content="landing page, website, site, site institucional, desenvolvimento web, front-end, white label, web design, webdesign" />
+
+    <!-- Autor -->
+    <meta name="author" content="Fabiane Viegas Web Designer" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.fabianeviegas.com" />
+
+    <!-- SEO: Open Graph (Facebook, LinkedIn, etc) -->
+    <meta property="og:title" content="Fabiane Viegas · Web Designer">
+    <meta property="og:description"
+        content="Criação de Landing Pages e Sites Institucionais com design exclusivo, foco em conversão e atendimento personalizado. Desenvolvimento Web White Label para agências de marketing, pequenas empresas e profissionais autônomos." />
+    <meta property="og:image" content="https://fabianeviegas.com/branding/f-viegas-1200x630.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image" content="https://fabianeviegas.com/branding/f-viegas-400x400.png" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
+    <meta property="og:url" content="https://www.fabianeviegas.com">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Fabiane Viegas · Web Designer">
+
+    <!-- Indexação e exibição -->
     <meta name="robots" content="index, follow" />
-    <meta http-equiv="Cache-Control" content="no-cache, no-store" />
-    <meta http-equiv="Pragma" content="no-cache, no-store" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta http-equiv="content-language" content="pt-br">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/libs/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/libs/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    
+
+    <!-- Scripts -->
     <script defer src="assets/js/header__mobile.js"></script>
 </head>
 
 <body>
-    <header class="page__header" id="header">
-        <div class="container">            
-                         
-            <div class="is--desktop">
-                <h1 class="logo__header">
-                    <a href="index.html">
-                        <img src="assets/img/header/logo-white.svg" class="logo" alt="Fabiane Viegas">
-                    </a>
-                </h1>
+    <header class="page__header" id="inicio">
+        <div class="wrapper">
 
-                <nav>
-                    <a href="#sobre" class="header__link">Sobre mim</a>                    
-                    <a href="#projetos" class="header__link">Projetos</a>
-                    <a href="#contato" class="header__link">Contato</a>
+            <h1 class="logo">
+                <a href="index.html" rel="noopener noreferrer">
+                    <img src="assets/img/logo-header.png" alt="Logo F.Viegas">
+                </a>
+            </h1>
+
+            <div class="is--desktop">
+                <nav class="links">
+                    <a href="#comofunciona">
+                        Como Funciona
+                    </a>
+                    <a href="#servicos">
+                        Serviços
+                    </a>
+                    <a href="#sobre">
+                        Sobre mim
+                    </a>
+                    <a href="#skills">
+                        Skills
+                    </a>
+                    <a href="#portfolio">
+                        Portfólio
+                    </a>
+                    <a href="#beneficios">
+                        Benefícios
+                    </a>
+                    <a href="#depoimentos">
+                        Depoimentos
+                    </a>
                 </nav>
-            </div>       
+
+            </div>
 
             <div class="is--mobile">
-                <h1 class="logo__header">
-                    <a href="index.html">
-                        <img src="assets/img/header/logo-white.svg" class="logo" alt="Fabiane Viegas">
-                    </a>
-                </h1>
-
                 <menu class="navbar__hamburguer">
-                    <img src="assets/img/header/burger-bar.svg" alt="Menu">
+                    <img src="assets/img/burger-bar.svg" alt="Menu">
                 </menu>
 
-                <div id="navbar__overlay" class="navbar__overlay animate__animated animate__backInRight">
+                <div id="navbar__overlay" class="navbar__overlay">
                     <div class="overlay__content">
 
-                        <div class="d-flex justify-content-between align-items-center overlay__header">
-                            
-                            
-                            <img src="assets/img/header/icon-close.svg" class="overlay__close">
+                        <div class="overlay__header">
+                            <img src="assets/img/icon-close.svg" alt="Fechar" class="overlay__close"></img>
                         </div>
-    
-                        <div class="container d-flex flex-column align-items-center overlay__menu">
-                            
-                            <nav class="overlay__links">
-                                <a href="#sobre" class="header__link mobile__anchor">Sobre mim</a>                                
-                                <a href="#projetos" class="header__link mobile__anchor">Projetos</a>
-                                <a href="#contato" class="header__link mobile__anchor">Contato</a>
-                            </nav>                            
 
-                            <div class="overlay__social">
-                                <a href="www.linkedin.com/in/fabiane-viegas-8867671b4" class="link">
-                                    <img src="assets/img/icons-social/icon-linkedin.svg" alt="LinkedIn" class="icon__social">
+                        <div class="container d-flex flex-column align-items-center overlay__menu">
+
+                            <nav class="overlay__links d-flex flex-column align-items-center">
+                                <a href="#comofunciona" class="text-center mobile__anchor">
+                                    Como Funciona
                                 </a>
-                                <a href="https://github.com/fabiviegas" class="link">
-                                    <img src="assets/img/icons-social/icon-github.svg" alt="Github" class="icon__social">
+                                <a href="#serviços" class="text-center mobile__anchor">
+                                    Serviços
                                 </a>
-                                <a href="https://wa.me/5551989743363" class="link">
-                                    <img src="assets/img/icons-social/icon-whats.svg" alt="Whatsapp" class="icon__social">
+                                <a href="#sobre" class="text-center mobile__anchor">
+                                    Sobre mim
                                 </a>
-                            </div>
-                            
+                                <a href="#skills" class="text-center mobile__anchor">
+                                    Skills
+                                </a>
+                                <a href="#portfolio" class="text-center mobile__anchor">
+                                    Portfólio
+                                </a>
+                                <a href="#beneficios" class="text-center mobile__anchor">
+                                    Benefícios
+                                </a>
+                                <a href="#depoimentos" class="text-center mobile__anchor">
+                                    Depoimentos
+                                </a>
+                            </nav>
+
+                            <a href="http://wa.me/5551989743363" class="btn__white" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="assets/img/icon-whats.svg" class="icon" alt="Portfólio">
+                                Entre em contato
+                            </a>
+
                         </div>
                     </div>
 
                 </div>
             </div>
-            
         </div>
-    </header>     
+    </header>
 
-    <main class="page__banner">
-        <div class="container util--padding30">
-            <div class="banner__content">
-                
-                <div class="banner__text">
-                    <h1>Fabiane Viegas</h1>
-                    <p class="subtitle">Desenvolvedora e Web Designer</p>
-                    <p class="description">Especializada em <span>designs exclusivos</span> e desenvolvimento responsivo de <span>Landing Pages</span>.</p>
-                    <a href="https://wa.me/5551989743363" class="btn__gradient btn__banner">
-                        <img src="assets/img/icons-social/icon-whats.svg" class="icon__whats" alt="Whatsapp">
-                        <p class="text">ENTRE EM CONTATO</p>
+    <main class="hero">
+        <div class="wrapper">
+            <div class="content">
+                <h1 class="title"><span>Landing pages</span> e sites institucionais sob medida.</h1>
+                <p class="description">Especialista em páginas personalizadas que transmitem sua mensagem com clareza e
+                    ajudam a alcançar seus objetivos<br><span>— do layout ao código.</span></p>
+                <div class="buttons">
+                    <a href="#portfolio" class="btn__transparent">
+                        <img src="assets/img/icon-portfolio.svg" class="icon" alt="Portfólio">
+                        Ver Portfólio
+                    </a>
+                    <a href="http://wa.me/5551989743363" class="btn__gradient" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="assets/img/icon-whats.svg" class="icon" alt="Portfólio">
+                        Solicitar Orçamento
                     </a>
                 </div>
             </div>
-            <div class="chevrons__down animate__animated animate__slideInDown animate__slow animate__infinite">
-                <a href="#sobre">
-                    <img src="assets/img/banner/chevrons-down.svg" class="chevrons" alt="Descer">
-                </a>
+            <div class="cover">
+                <img src="assets/img/cover-banner.png" class="cover" alt="Trabalhos">
             </div>
         </div>
     </main>
 
-    <section class="page__about" id="sobre">
-        <div class="container util--padding30 util--container1198">           
-                
-            <div class="about__wrapper">
-                <div class="photo">
-                    <img src="assets/img/sobre/about-cover.png" class="photo__about img-fluid" alt="Cover">
-                </div>
-
-                <div class="about__content">
-                    <h2>
-                        Sobre mim
-                    </h2>
-                    <p class="about__text">
-                        Meu nome é Fabiane, especialista em design e desenvolvimento front-end, com foco em criação de <span>landing pages</span> e projetos de <span>web design</span>. Trabalho como freelancer, com o compromisso de desenvolver soluções visuais e funcionais para atender aos objetivos dos clientes.<br>
-                        <br>
-                        Estou sempre em busca de novas técnicas e tendências para aprimorar cada projeto, alinhando estética e funcionalidade com eficiência. Meu compromisso é oferecer <span>soluções personalizadas</span> que agreguem valor e gerem resultados sólidos.
-                    </p>
-                </div>
-                
-                <img src="assets/img/sobre/about-detail.png" class="about__detail img-fluid" alt="Detalhe">
-                
-            </div>                
-                
-            
-        </div>
-    </section>
-
-    <section class="page__numbers">
-        <div class="container">
-            <div class="numbers__wrapper">
-                <div class="info">
-                    <p class="info__number">+20</p>
-                    <p class="info__text">SITES ENTREGUES</p>
-                </div>
-                <div class="info">
-                    <p class="info__number">+50</p>
-                    <p class="info__text">DESIGNS PRODUZIDOS</p>
-                </div>
-                <div class="info">
-                    <p class="info__number">+100</p>
-                    <p class="info__text">CAFEZINHOS POR MÊS</p>
+    <div class="brands__scrolling">
+        <div class="do-not-overflow">
+            <div class="ticker-container">
+                <div class="ticker">
+                    <p class="text">HOSPEDAGEM GRATUITA POR 1 ANO</p>
+                    <img src="assets/img/dot.svg" class="dot" alt="">
+                    <p class="text">DESIGN EXCLUSIVO</p>
+                    <img src="assets/img/dot.svg" class="dot" alt="">
+                    <p class="text">PREÇOS COMPETITIVOS</p>
+                    <img src="assets/img/dot.svg" class="dot" alt="">
+                    <p class="text">ATENDIMENTO PERSONALIZADO</p>
+                    <img src="assets/img/dot.svg" class="dot" alt="">
+                    <p class="text">HOSPEDAGEM GRATUITA POR 1 ANO</p>
+                    <img src="assets/img/dot.svg" class="dot" alt="">
+                    <p class="text">DESIGN EXCLUSIVO</p>
+                    <img src="assets/img/dot.svg" class="dot" alt="">
+                    <p class="text">PREÇOS COMPETITIVOS</p>
+                    <img src="assets/img/dot.svg" class="dot" alt="">
+                    <p class="text">ATENDIMENTO PERSONALIZADO</p>
+                    <img src="assets/img/dot.svg" class="dot" alt="">
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="page__projects" id="projetos">
-        <div class="projects__heading">
-            
-            <h2 class="title__projects">
-                <img src="assets/img/title/title.svg" class="line" alt="Título">
-                Projetos
-            </h2>
-
-            <div class="title__description">
-                <p class="description">Aqui, você encontrará uma amostra do meu trabalho como web designer e front-end developer. Com um foco em Landing Pages, websites, logotipos e design gráfico, minha jornada no mundo do design e desenvolvimento abrange uma diversidade de projetos, desde colaborações com agências até empreendimentos individuais.</p>
+    <section class="steps" id="comofunciona">
+        <div class="wrapper">
+            <div class="heading">
+                <h1 class="title">Como funciona</h1>
+                <p class="description">Conheça todas as etapas de desenvolvimento para adquirir <span>seu website
+                        personalizado.</span></p>
             </div>
 
-            <img src="assets/img/projetos/cover-projects.png" class="cover" alt="Astronauta Web">
-            
-        </div>
+            <div class="steps__list">
 
-        <div class="project__highlight--1">
-            <img src="assets/img/projetos/cover-project1.png" class="cover__project" alt="Projeto">
-            <div class="project__description">
-                <h3 class="project__name">PSICÓLOGA LUARA DJIJAD</h3>
-                <p class="about__project">
-                    Projeto realizado com meu esposo, Leo Thomas Monteiro, para uma psicóloga. Landing Page com design próprio e exclusivo, totalmente responsiva.
-                </p>
-                <a href="https://anotherleo.github.io/workana/lp-luara" class="btn__gradient btn__project">
-                    <p class="text">Ver live</p>
-                </a>
-            </div>
-        </div>
-
-        <div class="project__highlight--2">
-            <img src="assets/img/projetos/cover-project2.png" class="cover__project" alt="Projeto">
-            <div class="project__description">
-                <h3 class="project__name">LDNA/SA AGÊNCIA DIGITAL</h3>
-                <p class="about__project">
-                    Desenvolvimento Front End de Landind Page para a Agência LDNA/SA, voltada ao Agronegócio.
-                </p>
-                <a href="https://anotherleo.github.io/ldna-2023/lp-ldna-agro/" class="btn__gradient btn__project">
-                    <p class="text">Ver live</p>
-                </a>
-            </div>
-        </div>
-
-        <div class="project__highlight--1 last__project">
-            <img src="assets/img/projetos/cover-project3.png" class="cover__project" alt="Projeto">
-            <div class="project__description">
-                <h3 class="project__name">AGÊNCIA EBEN</h3>
-                <p class="about__project">
-                    Projeto realizado para agência digital, desenvolvido por mim desde o design até a programação, com design totalmente exclusivo e responsivo.
-                </p>
-                <a href="https://fabiviegas.github.io/eben-1" class="btn__gradient btn__project">
-                    <p class="text">Ver live</p>
-                </a>
-            </div>
-        </div>
-
-        <div class="projects__more">
-            <div class="wrapper">
-                <div class="title__more">
-                    <h2 class="title">Mais Projetos</h2>
-                    <h3 class="subtitle">Confira outros projetos onde atuei como front-end developer.</h3>
-                </div>
-                <div class="owl-carousel owl-theme projects__carousel">
-                    <div class="item">
-                        <div class="card__projects">
-                            <img src="assets/img/projetos/job1.png" class="cover__card" alt="Projeto">
-                            <div class="card__overlay"></div>
-                            <div class="card__caption">
-                                <h4 class="project__name">Pinturas Condor</h4>
-                                <a href="https://anotherleo.github.io/ldna-2023/lp-pinturascondor" class="btn__link">Ver live</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card__projects">
-                            <img src="assets/img/projetos/job2.png" class="cover__card" alt="Projeto">
-                            <div class="card__overlay"></div>
-                            <div class="card__caption">
-                                <h4 class="project__name">Laboratti</h4>
-                                <a href="https://anotherleo.github.io/ldna-2023/lp-laboratti" class="btn__link">Ver live</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card__projects">
-                            <img src="assets/img/projetos/job3.png" class="cover__card" alt="Projeto">
-                            <div class="card__overlay"></div>
-                            <div class="card__caption">
-                                <h4 class="project__name">Panzé</h4>
-                                <a href="https://anotherleo.github.io/ldna-2023/lp-panze" class="btn__link">Ver live</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card__projects">
-                            <img src="assets/img/projetos/job4.png" class="cover__card" alt="Projeto">
-                            <div class="card__overlay"></div>
-                            <div class="card__caption">
-                                <h4 class="project__name">Fides Corretora</h4>
-                                <a href="https://anotherleo.github.io/ldna-2023/lp-fides" class="btn__link">Ver live</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card__projects">
-                            <img src="assets/img/projetos/job5.png" class="cover__card" alt="Projeto">
-                            <div class="card__overlay"></div>
-                            <div class="card__caption">
-                                <h4 class="project__name">PBS Rural</h4>
-                                <a href="https://anotherleo.github.io/ldna-2023/lp-pbs" class="btn__link">Ver live</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card__projects">
-                            <img src="assets/img/projetos/job8.png" class="cover__card" alt="Projeto">
-                            <div class="card__overlay"></div>
-                            <div class="card__caption">
-                                <h4 class="project__name">TH Transportes</h4>
-                                <a href="https://anotherleo.github.io/ldna-2023/thtransportes" class="btn__link">Ver live</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card__projects">
-                            <img src="assets/img/projetos/job9.png" class="cover__card" alt="Projeto">
-                            <div class="card__overlay"></div>
-                            <div class="card__caption">
-                                <h4 class="project__name">WG Contábil</h4>
-                                <a href="https://anotherleo.github.io/ldna-2023/lp-wgcontabil" class="btn__link">Ver live</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card__projects">
-                            <img src="assets/img/projetos/job11.png" class="cover__card" alt="Projeto">
-                            <div class="card__overlay"></div>
-                            <div class="card__caption">
-                                <h4 class="project__name">VoltzBR</h4>
-                                <a href="https://anotherleo.github.io/ldna-2023/lp-voltzBR" class="btn__link">Ver live</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card__projects">
-                            <img src="assets/img/projetos/job13.png" class="cover__card" alt="Projeto">
-                            <div class="card__overlay"></div>
-                            <div class="card__caption">
-                                <h4 class="project__name">SEO Engenharia</h4>
-                                <a href="https://anotherleo.github.io/ldna-projects/seo-engenharia" class="btn__link">Ver live</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            </div>
-        </div>
-            
-    </section>
-
-    <!--<section class="page__contact" id="contato">
-        <div class="container util--container1016 util--padding30">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="contact__content">
-                        <h2>
-                            Gostou do meu trabalho?
+                <div class="step__box box-right">
+                    <img src="assets/img/line-left.svg" class="line-left" alt="">
+                    <div class="step__content">
+                        <h2 class="step__title">
+                            <img src="assets/img/number-1.svg" class="icon" alt="Um">
+                            Briefing rápido
                         </h2>
-                        <h3>Vamos conversar. <img src="assets/img/contato/icon-smile.svg" class="icon__smile" alt="Contato"></h3>
-                        <p class="text">Busco trabalho remoto como desenvolvedora Front End, ou um estágio/trabalho inicial em web design para ajudar no meu aprendizado. Sou uma pessoa pontual, dedicada e aprendo rápido, disposta a trabalhar junto para ver um bom resultado.</p>
-                        <a href="https://wa.me/5551989743363" class="contact__button">
-                            <span class="text">
-                                <img src="assets/img/icons-social/icon-whats.svg" class="icon__button" alt="Whatsapp">
-                                51 9 89743363
-                            </span>
-                        </a>
-                        <a href="mailto:fabicviegas@gmail.com" class="contact__button">
-                            <span class="text">
-                                <img src="assets/img/icons-social/icon-mail.svg" class="icon__button" alt="Email">
-                                fabicviegas@gmail.com
-                            </span>
-                        </a>
+                        <p class="step__text">Envio um formulário simples com perguntas sobre seu negócio e suas metas.
+                            Com isso, já começo a planejar um site que faça sentido pra você.</p>
+                        <img src="assets/img/step-1.svg" class="detail" alt="">
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="photo">
-                        <img src="assets/img/contato/woman-computer.png" class="photo__contact" alt="Contato">
+
+                <img src="assets/img/line-vertical.svg" class="line-vertical" alt="">
+
+                <div class="step__box box-left">
+                    <div class="step__content">
+                        <h2 class="step__title">
+                            <img src="assets/img/number-2.svg" class="icon" alt="Um">
+                            Proposta Personalizada
+                        </h2>
+                        <p class="step__text">Com base nas suas respostas, envio um plano com as soluções recomendadas,
+                            prazos e valores — tudo transparente e alinhado com o que você precisa.</p>
+                        <img src="assets/img/step-2.svg" class="detail" alt="">
+                    </div>
+                    <img src="assets/img/line-right.svg" class="line-right" alt="">
+                </div>
+
+                <img src="assets/img/line-vertical.svg" class="line-vertical" alt="">
+
+                <div class="step__box box-right">
+                    <img src="assets/img/line-left.svg" class="line-left" alt="">
+                    <div class="step__content">
+                        <h2 class="step__title">
+                            <img src="assets/img/number-3.svg" class="icon" alt="Um">
+                            Design Visual
+                        </h2>
+                        <p class="step__text">Apresento o layout do site em imagem para sua aprovação. Você pode sugerir
+                            ajustes e só seguimos adiante quando estiver tudo do seu jeito.</p>
+                        <img src="assets/img/step-3.svg" class="detail" alt="">
+                    </div>
+                </div>
+
+                <img src="assets/img/line-vertical.svg" class="line-vertical" alt="">
+
+                <div class="step__box box-left">
+                    <div class="step__content">
+                        <h2 class="step__title">
+                            <img src="assets/img/number-4.svg" class="icon" alt="Um">
+                            Desenvolvimento do site
+                        </h2>
+                        <p class="step__text">Com o layout aprovado, transformo o design em código — responsivo, leve e
+                            otimizado para funcionar em qualquer dispositivo.</p>
+                        <img src="assets/img/step-4.svg" class="detail" alt="">
+                    </div>
+                    <img src="assets/img/line-right.svg" class="line-right" alt="">
+                </div>
+
+                <img src="assets/img/line-vertical.svg" class="line-vertical" alt="">
+
+                <div class="step__box box-right">
+                    <div class="step__content">
+                        <h2 class="step__title">
+                            <img src="assets/img/number-5.svg" class="icon" alt="Um">
+                            Revisão final e publicação
+                        </h2>
+                        <p class="step__text">Com tudo aprovado, faço a publicação nos canais que você indicar ou em
+                            nosso serviço de hospedagem <span>gratuita por um ano</span>, garantindo seu site no ar com
+                            tranquilidade.</p>
+                        <img src="assets/img/step-5.svg" class="detail" alt="">
                     </div>
                 </div>
             </div>
         </div>
-    </section>!-->
+    </section>
+
+    <section class="cta-1">
+        <div class="wrapper">
+            <div class="content">
+                <h2 class="title">Precisa de ajuda ou mais informações?</h2>
+                <h3 class="subtitle">Fale comigo e tire suas dúvidas!</h3>
+            </div>
+            <a href="http://wa.me/5551989743363" class="btn__green" target="_blank" rel="noopener noreferrer">
+                <img src="assets/img/icon-whats.svg" class="icon" alt="Whatsapp">
+                Entre em contato
+            </a>
+        </div>
+    </section>
+
+    <section class="services" id="servicos">
+        <div class="wrapper">
+            <div class="heading">
+                <h2 class="title"><span>Serviços</span> que ofereço</h2>
+                <p class="description">Criação estratégica para destacar sua <span>presença online</span></p>
+            </div>
+
+            <div class="services__list">
+
+                <div class="card__service">
+                    <img src="assets/img/service-1.svg" class="icon" alt="Landing page">
+                    <h3 class="card__title">Landing Pages</h3>
+                    <p class="card__text">Páginas focadas em conversão, ideais para campanhas, lançamentos e anúncios.
+                        Atenção à performance e chamadas para ação bem posicionadas.</p>
+                    <a href="http://wa.me/5551989743363" class="btn__orange" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/img/icon-whats.svg" class="icon__button" alt="Whatsapp">
+                        Solicitar Orçamento
+                    </a>
+                </div>
+
+                <div class="card__service">
+                    <img src="assets/img/service-2.svg" class="icon" alt="Landing page">
+                    <h3 class="card__title">Sites Institucionais</h3>
+                    <p class="card__text">Criação de sites completos, responsivos e bem estruturados para apresentar sua
+                        empresa com profissionalismo.</p>
+                    <a href="http://wa.me/5551989743363" class="btn__orange" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/img/icon-whats.svg" class="icon__button" alt="Whatsapp">
+                        Solicitar Orçamento
+                    </a>
+                </div>
+
+                <div class="card__service">
+                    <img src="assets/img/service-3.svg" class="icon" alt="Landing page">
+                    <h3 class="card__title">Design de Interface (UI)</h3>
+                    <p class="card__text">Layouts modernos e alinhados à identidade da sua marca. Pensado para facilitar
+                        a navegação e reforçar sua mensagem.</p>
+                    <a href="http://wa.me/5551989743363" class="btn__orange" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/img/icon-whats.svg" class="icon__button" alt="Whatsapp">
+                        Solicitar Orçamento
+                    </a>
+                </div>
+
+                <div class="card__service">
+                    <img src="assets/img/service-4.svg" class="icon" alt="Landing page">
+                    <h3 class="card__title">Desenvolvimento Front-end</h3>
+                    <p class="card__text">Transformo o layout em código otimizado e responsivo. Sites bem construídos e
+                        prontos para funcionar em qualquer dispositivo.</p>
+                    <a href="http://wa.me/5551989743363" class="btn__orange" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/img/icon-whats.svg" class="icon__button" alt="Whatsapp">
+                        Solicitar Orçamento
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="card__white-label">
+                <span class="tag__green">Para Agências</span>
+                <h3 class="card__title">Parceria White Label</h3>
+                <p class="card__description">Freelancer para agências — desenvolvimento front-end e UI sob demanda</p>
+                <p class="card__text">Atendo projetos terceirizados com pontualidade, comunicação objetiva e atenção ao
+                    detalhe. Posso integrar sua equipe como desenvolvedora freelance, entregando interfaces responsivas
+                    e código limpo, pronto para produção.</p>
+                <div class="buttons">
+                    <a href="#portfolio" class="btn__transparent">
+                        <img src="assets/img/icon-portfolio.svg" class="icon" alt="Portfólio">
+                        Ver Portfólio
+                    </a>
+                    <a href="http://wa.me/5551989743363" class="btn__gradient" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="assets/img/icon-whats.svg" class="icon" alt="Portfólio">
+                        Entre em contato
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <div class="wrapper">
+            <h2 class="title">Sobre mim</h2>
+            <h3 class="subtitle">Transformo ideias em <span>sites que funcionam.</span></h3>
+            <p class="text">Sou Fabiane Viegas, web designer com foco em <span>landing pages e sites
+                    institucionais</span> feitos sob medida. Unindo estratégia visual e <span>desenvolvimento
+                    front-end</span>, entrego soluções que comunicam com clareza e funcionam em qualquer dispositivo.
+                Também desenvolvo <span>páginas dinâmicas</span> com integração a bancos de dados via PHP e MySQL —
+                ideais para catálogos de produtos ou conteúdos gerenciáveis. Trabalho com empresas e agências que
+                valorizam <span>organização, transparência e qualidade</span> em cada etapa do projeto.</p>
+            <a href="http://wa.me/5551989743363" class="btn__green" target="_blank" rel="noopener noreferrer">
+                <img src="assets/img/icon-whats.svg" class="icon" alt="Whatsapp">
+                Fale comigo
+            </a>
+        </div>
+    </section>
+
+    <section class="numbers">
+        <div class="wrapper">
+            <div class="info">
+                <p class="number">+5</p>
+                <p class="text">ANOS DE EXPERIÊNCIA</p>
+            </div>
+            <div class="info">
+                <p class="number">+100</p>
+                <p class="text">PROJETOS REALIZADOS</p>
+            </div>
+            <div class="info">
+                <p class="number">+40</p>
+                <p class="text">PARCERIAS BEM SUCEDIDAS</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="wrapper">
+            <h2 class="title">Skills</h2>
+            <div class="owl-carousel owl-theme skills__carousel">
+                <div class="item">
+                    <div class="skill__item mx-auto">
+                        <img src="assets/img/skill-1.png" class="skill__icon" alt="HTML5">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="skill__item mx-auto">
+                        <img src="assets/img/skill-2.png" class="skill__icon" alt="CSS3">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="skill__item mx-auto">
+                        <img src="assets/img/skill-3.png" class="skill__icon" alt="less">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="skill__item mx-auto">
+                        <img src="assets/img/skill-4.png" class="skill__icon" alt="Figma">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="skill__item mx-auto">
+                        <img src="assets/img/skill-5.png" class="skill__icon" alt="PHP">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="skill__item mx-auto">
+                        <img src="assets/img/skill-6.png" class="skill__icon" alt="SQL">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="wrapper">
+            <div class="heading">
+                <h2 class="title">Portfólio</h2>
+                <p class="description">Conheça alguns dos meus trabalhos realizados nos últimos <span>5 anos de
+                        atuação.</span></p>
+            </div>
+
+            <div class="jobs__list">
+
+                <div class="job">
+                    <img src="assets/img/job-1.png" class="cover" alt="Job">
+                    <div class="content">
+                        <span class="tag__coral">Institucional</span>
+                        <h3 class="job__title">Central Médica</h3>
+                        <p class="job__description">Site para apresentação da empresa e produtos hospitalares. Possui
+                            seis páginas, incluindo formulário de contato e página dinânima através de banco de dados
+                            para catálogo de produtos.</p>
+                        <a href="https://www.centralmedicago.com.br/" class="btn__transparent" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="assets/img/icon-web.svg" class="icon" alt="Web">
+                            Ver site
+                        </a>
+                    </div>
+                </div>
+
+                <div class="job job-reverse">
+                    <div class="content">
+                        <span class="tag__orange">LANDING PAGE</span>
+                        <h3 class="job__title">Tendas Nova Geração</h3>
+                        <p class="job__description">Landing Page com foco na apresentação dos produtos de tenda,
+                            conversão, chamadas de ação e links de contato.</p>
+                        <a href="https://tendasnovageracao.com.br/" class="btn__transparent" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="assets/img/icon-web.svg" class="icon" alt="Web">
+                            Ver site
+                        </a>
+                    </div>
+                    <img src="assets/img/job-2.png" class="cover" alt="Job">
+                </div>
+
+                <div class="job">
+                    <img src="assets/img/job-3.png" class="cover" alt="Job">
+                    <div class="content">
+                        <span class="tag__orange">LANDING PAGE</span>
+                        <h3 class="job__title">Tech Chat</h3>
+                        <p class="job__description">Landing Page para venda de sistema de chat automatizado, com foco na
+                            venda dos Planos oferecidos. Contém chamadas de ação, links de contato, direcionamento ao
+                            portal do sistema, dentre outros.</p>
+                        <a href="https://lp1.escsistemas.com/" class="btn__transparent" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="assets/img/icon-web.svg" class="icon" alt="Web">
+                            Ver site
+                        </a>
+                    </div>
+                </div>
+
+                <div class="job job-reverse">
+                    <div class="content">
+                        <span class="tag__orange">LANDING PAGE</span>
+                        <h3 class="job__title">Agência Eben</h3>
+                        <p class="job__description">Landing Page para Agência Digital com design criativo e único com
+                            foco em serviço de drones. Contém modal para vídeos, cases, formulário de contato e chamadas
+                            de ação.</p>
+                        <a href="https://fabiviegas.github.io/eben-1/" class="btn__transparent" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="assets/img/icon-web.svg" class="icon" alt="Web">
+                            Ver site
+                        </a>
+                    </div>
+                    <img src="assets/img/job-4.png" class="cover" alt="Job">
+                </div>
+
+                <div class="job">
+                    <img src="assets/img/job-8.png" class="cover" alt="Job">
+                    <div class="content">
+                        <span class="tag__orange">Landing Page</span>
+                        <h3 class="job__title">Mussi & Ollier</h3>
+                        <p class="job__description">Desenvolvimento Front-end em parceria com Agência Digital para
+                            recorte de Landing Page para escritório de Advocacia.</p>
+                        <a href="https://mussieollier.adv.br/" class="btn__transparent" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="assets/img/icon-web.svg" class="icon" alt="Web">
+                            Ver site
+                        </a>
+                    </div>
+                </div>
+
+                <div class="job job-reverse">
+                    <div class="content">
+                        <span class="tag__orange">Landing Page</span>
+                        <h3 class="job__title">WG Contabilidade</h3>
+                        <p class="job__description">Desenvolvimento Front-end em parceria com Agência Digital para
+                            recorte de Landing Page para escritório de Assesoria e Contabilidade.</p>
+                        <a href="https://wgac.com.br/" class="btn__transparent" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="assets/img/icon-web.svg" class="icon" alt="Web">
+                            Ver site
+                        </a>
+                    </div>
+                    <img src="assets/img/job-9.png" class="cover" alt="Job">
+                </div>
+
+
+                <div class="job">
+                    <img src="assets/img/job-5.png" class="cover" alt="Job">
+                    <div class="content">
+                        <span class="tag__orange">LANDING PAGE</span>
+                        <h3 class="job__title">LDNA/SA Agro</h3>
+                        <p class="job__description">Desenvolvimento Front-end em parceria com Agência Digital para
+                            recorte de Landing Page focada no serviço para os clientes Agro. Feito com animações e
+                            design clean.</p>
+                        <a href="https://www.londrinasa.com.br/agromarketing" class="btn__transparent" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="assets/img/icon-web.svg" class="icon" alt="Web">
+                            Ver site
+                        </a>
+                    </div>
+                </div>
+
+                <div class="job">
+                    <div class="content">
+                        <span class="tag__coral">Institucional</span>
+                        <h3 class="job__title">TH Transportes</h3>
+                        <p class="job__description">Desenvolvimento Front-end em parceria com Agência Digital para
+                            recorte de site institucional para apresentação de empresa e serviços oferecidos.</p>
+                        <a href="https://transportadorath.com.br/" class="btn__transparent" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="assets/img/icon-web.svg" class="icon" alt="Web">
+                            Ver site
+                        </a>
+                    </div>
+                    <img src="assets/img/job-6.png" class="cover" alt="Job">
+                </div>
+
+                <div class="job">
+                    <img src="assets/img/job-7.png" class="cover" alt="Job">
+                    <div class="content">
+                        <span class="tag__coral">Institucional</span>
+                        <h3 class="job__title">Nogalí</h3>
+                        <p class="job__description">Desenvolvimento Front-end em parceria com Agência Digital para
+                            recorte de site institucional para apresentação de empresa e catálogo de produtos.</p>
+                        <a href="https://nogalidesign.com.br/" class="btn__transparent" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="assets/img/icon-web.svg" class="icon" alt="Web">
+                            Ver site
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits" id="beneficios">
+        <div class="wrapper">
+            <div class="heading">
+                <h2 class="title">Por que me contratar?</h2>
+                <p class="description">Soluções personalizadas para <span>você</span> ou para <span>sua empresa</span>.
+                </p>
+            </div>
+
+            <div class="benefits__list">
+
+                <div class="benefits__card">
+                    <span class="tag__orange-2">PARA CLIENTES</span>
+                    <p class="card__description">Ideal para empreendedores, profissionais liberais e pequenas empresas.
+                    </p>
+                    <h3 class="card__call">
+                        <img src="assets/img/icon-star.svg" class="icon" alt="">
+                        Foco no seu resultado
+                    </h3>
+                    <div class="list__topics">
+                        <div class="list__item">
+                            <img src="assets/img/dot-orange.svg" class="dot" alt="">
+                            Design exclusivo adaptado ao seu negócio
+                        </div>
+                        <div class="list__item">
+                            <img src="assets/img/dot-orange.svg" class="dot" alt="">
+                            Atendimento direto e personalizado
+                        </div>
+                        <div class="list__item">
+                            <img src="assets/img/dot-orange.svg" class="dot" alt="">
+                            Entrega pontual e suporte humano
+                        </div>
+                        <div class="list__item">
+                            <img src="assets/img/dot-orange.svg" class="dot" alt="">
+                            Possibilidade de hospedagem e domínio gratuito por 1 ano.
+                        </div>
+                        <div class="list__item">
+                            <img src="assets/img/dot-orange.svg" class="dot" alt="">
+                            Serviço completo desde o design à publicação
+                        </div>
+                        <div class="list__item">
+                            <img src="assets/img/dot-orange.svg" class="dot" alt="">
+                            Transparência do projeto do início ao fim
+                        </div>
+                        <div class="list__item">
+                            <img src="assets/img/dot-orange.svg" class="dot" alt="">
+                            Site responsivo, funcional em todos os dispositivos
+                        </div>
+                    </div>
+                    <a href="http://wa.me/5551989743363" class="btn__gradient" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="assets/img/icon-whats.svg" class="icon" alt="Whatsapp">
+                        Entre em contato e saiba mais
+                    </a>
+                </div>
+
+                <div class="benefits__card">
+                    <span class="tag__green">PARA AGÊNCIAS</span>
+                    <p class="card__description">Ideal para agências e estúdios que precisam terceirizar projetos (White
+                        Label).</p>
+                    <h3 class="card__call">
+                        <img src="assets/img/icon-handshake.svg" class="icon" alt="">
+                        Parceria estratégica
+                    </h3>
+                    <div class="list__topics">
+                        <div class="list__item">
+                            <img src="assets/img/dot-green.svg" class="dot" alt="">
+                            Padrão profissional e código limpo
+                        </div>
+                        <div class="list__item">
+                            <img src="assets/img/dot-green.svg" class="dot" alt="">
+                            Adaptação ao seu processo
+                        </div>
+                        <div class="list__item">
+                            <img src="assets/img/dot-green.svg" class="dot" alt="">
+                            Compromisso com prazos
+                        </div>
+                        <div class="list__item">
+                            <img src="assets/img/dot-green.svg" class="dot" alt="">
+                            Experiência com equipes multidisciplinares
+                        </div>
+                        <div class="list__item">
+                            <img src="assets/img/dot-green.svg" class="dot" alt="">
+                            Sem marca ou identidade minha no projeto
+                        </div>
+                        <div class="list__item">
+                            <img src="assets/img/dot-green.svg" class="dot" alt="">
+                            Design, front-end ou ambos. Você escolhe conforme o projeto.
+                        </div>
+                        <div class="list__item">
+                            <img src="assets/img/dot-green.svg" class="dot" alt="">
+                            Site responsivo, funcional em todos os dispositivos
+                        </div>
+                    </div>
+                    <a href="http://wa.me/5551989743363" class="btn__green" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/img/icon-whats.svg" class="icon" alt="Whatsapp">
+                        Entre em contato e saiba mais
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="depoimentos">
+        <div class="wrapper">
+            <div class="background"></div>
+            <div class="heading">
+                <div class="top">
+                    <h2 class="title">Depoimentos</h2>
+                    <p class="subtitle">Veja as <a href="https://g.co/kgs/HEGLGLi" class="link" target="_blank"
+                            rel="noopener noreferrer">avaliações</a></p>
+                </div>
+                <div class="bottom">
+                    <img src="assets/img/logo-google.svg" class="logo" alt="Google">
+                    <div class="loader"></div>
+                </div>
+            </div>
+
+            <div class="owl-carousel owl-theme testimonials__carousel">
+                <div class="item">
+                    <div class="card__testimonial mx-auto">
+                        <div class="card__heading">
+                            <div class="customer">
+                                <img src="assets/img/test-1.png" class="test__logo" alt="Esc Informática">
+                                <div class="test__info">
+                                    <h3 class="name">Elisa Maria</h3>
+                                    <h4 class="enterprise">ESC Informática</h4>
+                                </div>
+                            </div>
+                            <img src="assets/img/icon-google.svg" class="icon__google" alt="Google">
+                        </div>
+                        <img src="assets/img/icon-stars.svg" class="icon__stars" alt="Cinco Estrelas">
+                        <p class="card__text">
+                            Profissional excelente! Já fiz diversas landing pages com ela uma mais perfeita que a outra,
+                            super comprometida e compreensível até mesmo com as demandas mais sem pé e sem cabeça que os
+                            clientes passam kkk. Indico mil vezes pois é garantia de entrega de um serviço de altíssima
+                            qualidade.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card__testimonial mx-auto">
+                        <div class="card__heading">
+                            <div class="customer">
+                                <img src="assets/img/test-2.png" class="test__logo" alt="Tramandaí">
+                                <div class="test__info">
+                                    <h3 class="name">Jorge R. Stefenon</h3>
+                                    <h4 class="enterprise">Tramandaí Imóveis</h4>
+                                </div>
+                            </div>
+                            <img src="assets/img/icon-google.svg" class="icon__google" alt="Google">
+                        </div>
+                        <img src="assets/img/icon-stars.svg" class="icon__stars" alt="Cinco Estrelas">
+                        <p class="card__text">
+                            A Fabiane Viegas - Design, sempre nos atendeu com muito profissionalismo, destacando sua
+                            criatividade. O seu tempo de resposta é perfeito. Eu a recomendo, pois é uma profissional
+                            atenciosa e extremamente capacitada.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card__testimonial mx-auto">
+                        <div class="card__heading">
+                            <div class="customer">
+                                <img src="assets/img/test-3.png" class="test__logo" alt="Tramandaí">
+                                <div class="test__info">
+                                    <h3 class="name">Carol Ferraz</h3>
+                                    <h4 class="enterprise">Agência Eben</h4>
+                                </div>
+                            </div>
+                            <img src="assets/img/icon-google.svg" class="icon__google" alt="Google">
+                        </div>
+                        <img src="assets/img/icon-stars.svg" class="icon__stars" alt="Cinco Estrelas">
+                        <p class="card__text">
+                            A Fabiane Viegas é uma super profissional, ela me entregou o site perfeito e exatamente como
+                            eu queria.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-2">
+        <div class="wrapper">
+            <div class="content">
+                <h2 class="title">Vamos começar seu projeto?</h2>
+                <h3 class="subtitle">Entre em contato e receba um plano sob medida para seu negócio.</h3>
+            </div>
+            <a href="http://wa.me/5551989743363" class="btn__gradient" target="_blank" rel="noopener noreferrer">
+                <img src="assets/img/icon-whats.svg" class="icon" alt="Whatsapp">
+                Entre em contato
+            </a>
+        </div>
+    </section>
+
 
     <footer class="page__footer">
-        <div class="container util--padding30>
-            <div class="row">
-                <div class="col-md-12">
-                    <p class="copyrights">
-                        Desenvolvido com <img src="assets/img/footer/icon-heart.svg" class="icon__heart" alt="Amor"> por Fabiane Viegas
-                    </p>
+        <div class="footer__content">
+            <div class="wrapper">
+                <div class="footer__links">
+                    <a href="index.html" class="link__logo" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/img/logo-header.png" class="link__footer" alt="Logo F.Viegas">
+                    </a>
                 </div>
+                <div class="footer__nav">
+                    <div class="col--1">
+                        <a href="#inicio" class="nav__link">Início</a>
+                        <a href="#comofunciona" class="nav__link">Como Funciona</a>
+                        <a href="#servicos" class="nav__link">Serviços</a>
+                        <a href="#sobre" class="nav__link">Sobre mim</a>
+                    </div>
+                    <div class="col--2">
+                        <a href="#skills" class="nav__link">Skills</a>
+                        <a href="#portfolio" class="nav__link">Portfólio</a>
+                        <a href="#beneficios" class="nav__link">Benefícios</a>
+                        <a href="#depoimentos" class="nav__link">Depoimentos</a>
+                    </div>
+                </div>
+
+                <div class="contact">
+                    <a href="http://wa.me/5551989743363" class="contact__link" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="assets/img/icon-whats-orange.svg" class="icon" alt="Telefone">
+                        (51) 98974-3363
+                    </a>
+                    <a href="mailto:fabicviegas@gmail.com" class="contact__link" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="assets/img/icon-mail.svg" class="icon" alt="Email">
+                        fabicviegas@gmail.com
+                    </a>
+                    <a href="https://maps.app.goo.gl/Sa5BJF6bricfZzDn8" class="contact__link" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="assets/img/icon-location.svg" class="icon" alt="Localização">
+                        Tramandaí - RS
+                    </a>
+                </div>
+
+                <p class="time">
+                    <img src="assets/img/icon-clock.svg" class="icon" alt="Horário">
+                    Seg a Sex<br>
+                    09:00 às 22:00
+                </p>
             </div>
+        </div>
+
+        <div class="footer__copyrights">
+            <p class="copyright">F. Viegas Web Designer 2025. Todos os direitos reservados.</p>
         </div>
     </footer>
 
+    <a href="http://wa.me/5551989743363" class="float__whatsapp" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/icon-whats-white.svg" alt="whatsapp">
+    </a>
+
     <!-- bootstrap 4.6.1 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
 
     <!-- owl carousel controls -->
-    <script src="assets/libs/jquery-3.7.0.min.js"></script>
     <script src="assets/libs/owl.carousel.min.js"></script>
-    <script src="assets/libs/mutation-summary.js"></script>
     <script>
 
-        $('.projects__carousel').owlCarousel({
-            loop: true,
+        $('.skills__carousel').owlCarousel({
+            loop: false,
             nav: false,
-            dots: true,            
-            stagePadding: 60, 
-                        
-            responsive:{
+            dots: true,
+            stagePadding: 90,
+
+            responsive: {
                 0: {
                     items: 1,
-                    margin: 20,                    
+                    margin: 15,
                 },
-                
-                630: {
-                    items: 2,
-                    margin: 20,
-                },
-
-                1000: {
-                    items: 4,
-                    margin: 20,
-                    stagePadding: 0,
+                1200: {
+                    items: 6,
+                    margin: 24,
                 }
-                
             }
         });
 
-        
-    </script>
+        $('.testimonials__carousel').owlCarousel({
+            loop: false,
+            nav: false,
+            dots: true,
+            stagePadding: 20,
 
+            responsive: {
+                0: {
+                    items: 1,
+                    margin: 15,
+                    loop: true,
+                    stagePadding: 50,
+                },
+
+                500: {
+                    loop: true,
+                    items: 1,
+                    stagePadding: 90,
+                },
+
+                620: {
+                    loop: true,
+                    items: 1,
+                    stagePadding: 130,
+                },
+
+                720: {
+                    loop: true,
+                    items: 1,
+                    stagePadding: 150,
+                },
+
+                850: {
+                    loop: true,
+                    items: 1,
+                    stagePadding: 230,
+                },
+
+                1100: {
+                    loop: false,
+                    items: 1.5,
+                    stagePadding: 20,
+                },
+
+                1200: {
+                    items: 1.8,
+                    margin: 24,
+                },
+                1360: {
+                    items: 2.3,
+                    margin: 24,
+                },
+                1400: {
+                    items: 2.4,
+                }
+            }
+        });
+
+    </script>
 </body>

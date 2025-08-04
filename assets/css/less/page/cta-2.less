@@ -1,0 +1,72 @@
+//out: false
+
+.cta-2 {
+    padding: 73px 0;
+    background-image: url('../img/bg-cta-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .wrapper {
+        max-width: 1158px;
+        padding: 0 24px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 52px;
+
+        .content {
+            width: 728px;
+
+            .title {
+                background: linear-gradient(to right, #FF5C5C, #FF8C39);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                color: transparent;
+                font-size: 48px;
+                font-weight: 800;
+                letter-spacing: 1.4px;
+                margin-bottom: 16px;
+                line-height: auto;
+            }
+            .subtitle {
+                font-size: 32px;
+                font-weight: 600;
+                line-height: 129%;
+                letter-spacing: 1.0px;
+            }
+        }
+
+        .btn__gradient {
+            width: 332px;
+        }
+
+    }
+
+    @media (max-width: @tablet) {
+        padding-top: 74px;
+        padding-bottom: 150px;
+        background-image: url('../img/bg-cta-2-mobile.png');
+
+        .wrapper {
+            padding: 0 20px;
+            flex-direction: column;
+            align-items: center;
+            gap: 92px;
+
+            .content {
+                text-align: center;
+                width: fit-content;
+                
+                .title {
+                    margin-bottom: 32px;
+                }
+
+                .subtitle {
+                    font-size: 24px;
+                    letter-spacing: 0.7px;
+                }
+            }
+        }
+    }
+}

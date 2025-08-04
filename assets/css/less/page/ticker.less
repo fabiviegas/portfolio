@@ -1,0 +1,68 @@
+// out: false
+
+.brands__scrolling {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	object-fit: contain;
+	background-color: #0ACF83;
+	z-index: 10;
+
+	.do-not-overflow {
+		overflow: hidden;
+		padding: 28px 0 32px 0;
+
+		.ticker-container {
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+			object-fit: contain;
+		}
+
+		.ticker-container .ticker {
+			display: flex;
+			align-items: center;
+			gap: 28px;
+			animation: scroll 30s linear infinite;
+
+			.text {
+				color: #EBF5F0;
+				text-align: center;
+				font-family: "Fira Sans Extra Condensed";
+				font-size: 32px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: normal;
+				text-transform: uppercase;
+				min-width: fit-content;
+			}
+		}
+	}
+
+	@media (max-width: @tablet) {
+		.do-not-overflow {
+			padding: 24px 0;
+			.ticker-container {
+				.ticker {
+					animation: scroll 10s linear infinite; 
+
+					.text {
+						font-size: 24px;
+					}
+				}
+			}
+		}
+	}
+
+	
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(-100%);
+	}
+}

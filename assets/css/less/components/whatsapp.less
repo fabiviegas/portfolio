@@ -1,0 +1,40 @@
+// out: false
+
+.float__whatsapp {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 85px;
+    height: 85px;
+    background-color: #25D366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    z-index: 100;
+    transition: all linear .15s;
+    border: 0;
+    border-radius: 100%;
+
+    img {
+        width: 50px;
+    }
+
+    &:hover {
+        background-color: white;
+        box-shadow: 0 0 26px rgba(0, 0, 0, 0.5);
+
+        img {
+            filter: brightness(0) saturate(100%) invert(65%) sepia(29%) saturate(3698%) hue-rotate(93deg) brightness(110%) contrast(71%);
+        }
+    }
+
+    @media (max-width: 1200px) {
+        width: 65px;
+        height: 65px;
+
+        img {
+            width: 40px;
+        }
+    }
+}

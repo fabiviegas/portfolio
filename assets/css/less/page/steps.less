@@ -1,0 +1,161 @@
+//out: false
+
+.steps {
+    padding-top: 109px;
+    padding-bottom: 152px;
+
+    .wrapper {
+        max-width: 1192px;
+        padding: 0 24px;
+        margin: 0 auto;
+
+        .heading {
+            width: 452px;
+
+            .title {
+                font-size: 52px;
+                font-weight: 700;
+                line-height: 126%;
+                letter-spacing: 1.6px;
+                margin-bottom: 8px;
+            }
+
+            .description {
+               font-size: 20px;
+               line-height: 126%;
+               font-weight: 400;
+               letter-spacing: 0.6px; 
+
+               span {
+                font-weight: 700;
+               }
+            }
+        }
+
+        .steps__list {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 24px;
+
+            .line-vertical {
+                display: none;
+            }
+
+            .step__box {
+                display: flex;
+                align-items: flex-end;  
+                gap: 20px;              
+
+                &.box-right {
+                    justify-content: flex-end;
+                }
+
+                &.box-left {
+                    justify-content: flex-start;
+                }
+                
+                .step__content {
+                    width: 482px;
+                    position: relative;
+                    z-index: 2;
+
+                    .step__title {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        font-size: 24px;
+                        font-weight: 600;
+                        line-height: 126%;
+                        letter-spacing: 0.7px;
+                        color: #FF5C5C;
+                        margin-bottom: 8px;
+                    }
+
+                    .step__text {
+                        font-weight: 400;
+                        font-size: 18px;
+                        letter-spacing: 0.5px;
+                        line-height: 127%;
+                        padding-left: 52px;
+                    }
+
+                    .detail {
+                        position: absolute;
+                        z-index: -1;
+                        right: 28px;
+                        top: -9px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: @tablet) {
+        padding: 60px 0;
+
+        .wrapper {
+            text-align: center;
+            padding: 0 12px;
+
+            .heading {
+                width: 100%;
+                margin-bottom: 57px;
+                
+                .title {
+                    font-size: 32px;
+                    letter-spacing: 1.0px;
+                }
+
+                .description {
+                    font-size: 16px;
+                    letter-spacing: 0.5px;
+                }
+            }
+
+            .steps__list {
+                align-items: center;
+                gap: 12px;
+
+                .line-vertical {
+                    display: block;
+                }
+
+                .step__box {
+                    align-items: center;
+
+                    .line-left,
+                    .line-right {
+                        display: none;
+                    }
+
+                    .step__content {
+                        width: 100%;
+                        max-width: 482px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        .step__title {
+                            justify-content: center;
+
+                            .icon {
+                                width: 38px;
+                            }
+                        }
+
+                        .step__text {
+                            font-size: 16px;
+                            letter-spacing: 0.5px;
+                            padding-left: 0;
+                        }
+
+                        .detail {
+                            top: -12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,52 +1,54 @@
 //out: false
 
-.page__numbers {
-    background-image: url('../img/sobre/bg-numbers.svg'), linear-gradient(154deg, #7B6EC6 11.74%, #DCBFFF 95.31%);
+.numbers {
+    background-image: url('../img/cover-numbers.png'), linear-gradient(to right, rgba(255, 92, 92, .74), rgba(255, 140, 57, .74));
     background-repeat: no-repeat;
-    background-size: 270px, cover;
-    background-position: right -11px bottom -28px, top 0 left 0;
-    padding-top: 60px;
-    padding-bottom: 264px;
+    background-position: left 0 bottom 0, top 0 left 0;
+    background-size: 280px, 100%;
 
-    .numbers__wrapper {
+    .wrapper {
+        max-width: 953px;
+        width: 100%;
+        padding: 60px 24px;
+        margin-right: 6%;
+        margin-left: auto;
         display: flex;
-        flex-direction: column;
-        gap: 30px;
         align-items: center;
+        justify-content: space-between;
+        gap: 32px;
 
         .info {
-            color: #171932;
-            text-align: center;
             display: flex;
             flex-direction: column;
             align-items: center;
+            gap: 10px;
+            text-align: center;
+            color: #f7f7f7;
 
-            .info__number {
-                font: 900 80px @fontT;
-                margin-bottom: 5px;
-                line-height: 60px;
+            .number {
+                font-size: 120px;
+                font-weight: 900;                
+                line-height: 92%;
+                letter-spacing: 3.6px;
             }
 
-            .info__text {
-                font: 400 20px @fontT;
+            .text {
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 126%;
+                letter-spacing: 0.5px;
                 text-transform: uppercase;
-                letter-spacing: 2px;
-                line-height: 30px;
-                width: 133px;
             }
         }
     }
 
-    @media screen and (min-width: 768px) {
-        background-image: url('../img/sobre/bg-numbers.svg'), linear-gradient(90deg, #7B6EC6 1.33%, #DCBFFF 96.26%);
-        background-size: 335px, cover;
-        background-position: right 83px top -40px, top 0 left 0;
-        padding-bottom: 60px;
+    @media (max-width: @tablet) {
+        background-image: url('../img/cover-numbers.png'), linear-gradient(to bottom, rgba(255, 92, 92, .74), rgba(255, 140, 57, .74));
 
-        .numbers__wrapper {
-            flex-direction: row;
-            gap: 88px;
+        .wrapper {
+            flex-direction: column;
+            padding: 85px 24px 255px 24px;
+            gap: 48px;
         }
-
     }
 }

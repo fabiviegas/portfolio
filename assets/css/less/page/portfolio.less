@@ -1,0 +1,138 @@
+//out: false
+
+.portfolio {
+    padding-top: 100px;
+    padding-bottom: 130px;
+    background-image: url('../img/detail-1.png'), url('../img/detail-2.png');
+    background-position: top 700px left 0, bottom 200px left 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    .wrapper {
+        max-width: 960px;
+        padding: 0 24px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 79px;
+
+        .heading {
+            text-align: center;
+
+            .title {
+                font-size: 68px;
+                font-weight: 700;
+                line-height: 126%;
+                letter-spacing: 2.0px;
+                margin-bottom: 16px;
+            }
+
+            .description {
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 126%;
+                letter-spacing: 0.7px;
+
+                span {
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .jobs__list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 100px;
+
+            .job {
+                max-width: 900px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 32px;
+
+                .cover {
+                    width: 100%;
+                    max-width: 488px;
+                }
+
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    width: 300px;
+                    
+                    .job__title {
+                        margin-top: 6px;
+                        margin-bottom: 8px;
+                        font-size: 24px;
+                        font-weight: 700;
+                        line-height: 137%;
+                        letter-spacing: 1.2px;
+                    }
+
+                    .job__description {
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 137%;
+                        letter-spacing: 0.4px;
+                        margin-bottom: 16px;
+                    }
+
+                    .btn__transparent {
+                        width: fit-content;
+                        gap: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: @tablet) {
+        padding-top: 62px;
+        padding-bottom: 80px;
+
+        .wrapper {
+            gap: 46px;
+
+            .heading {
+                .title {
+                    font-size: 42px;
+                    letter-spacing: 1.3px;
+                    margin-bottom: 10px;
+                }
+
+                .description {
+                    font-size: 18px;
+                    letter-spacing: 0.5px;
+                }
+            }
+
+            .jobs__list {
+                gap: 82px;
+
+                .job {
+                    flex-direction: column;
+                    gap: 24px;
+
+                    &.job-reverse {
+                        flex-direction: column-reverse;
+                    }
+
+                    .content {
+                        align-items: center;
+                        text-align: center;
+                        width: 100%;
+
+                        .btn__transparent {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

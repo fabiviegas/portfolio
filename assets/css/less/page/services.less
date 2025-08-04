@@ -1,0 +1,203 @@
+//out: false
+
+.services {
+    padding-top: 120px;
+    padding-bottom: 235px;
+    background-image: url('../img/bg-services.png');
+    background-repeat: no-repeat;
+    background-position: left 0 bottom 130px;
+
+    .wrapper {
+        max-width: 1284px;
+        padding: 0 24px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .heading {
+           margin-bottom: 90px;
+           text-align: center;
+           
+           .title {
+              font-size: 52px;
+              font-weight: 700;
+              letter-spacing: 1.6px;
+              margin-bottom: 12px;
+
+              span {
+                color: #FF8C39;
+              }
+           }
+
+           .description {
+              font-size: 20px;
+              font-weight: 400;
+              letter-spacing: 0.6px;
+
+              span {
+                font-weight: 700;
+              }
+           }
+        }
+
+        .services__list {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 100px;
+
+            .card__service {
+                width: 290px;
+                height: 323px;
+                background-color: #FFF;
+                border-radius: 10px;
+                box-shadow: 6px 6px 20px rgba(46, 53, 59, 0.15);
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 30px 20px 60px 20px;
+                text-align: center;
+
+                .icon {
+                    width: fit-content;
+                    margin-bottom: 16px;
+                }
+
+                .card__title {
+                    font-size: 28px;
+                    font-weight: 700;
+                    line-height: 103%;
+                    margin-bottom: 8px;
+                }
+
+                .card__text {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 137%;
+                }
+
+                .btn__orange {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 12px 30px;
+                    gap: 10px;
+                    border-bottom-right-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                    background-color: #FF8C39;
+                    color: #f7f7f7;
+                    font-size: 18px;
+                    letter-spacing: 0.5px;
+                    font-weight: 600;
+                    position: absolute;
+                    width: 100%;
+                    bottom: 0;
+                    left: 0;
+                    transition: all linear .15s;
+
+                    &:hover {
+                        color: #f7f7f7;
+                        background-color: #FF5C5C;
+                    }
+                }
+            }
+        }
+
+        .card__white-label {
+            width: 100%;
+            max-width: 763px;
+            background-color: #FFF;
+            border-radius: 10px;
+            box-shadow: 6px 6px 20px rgba(46, 53, 59, 0.15);
+            padding: 40px 44px 38px 51px;
+
+            .card__title {
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 103%;
+                margin-bottom: 8px;
+                margin-top: 20px;
+            }
+
+            .card__description {
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 137%;
+                margin-bottom: 12px;
+            }
+
+            .card__text {
+               font-size: 16px;
+               font-weight: 400;
+               line-height: 137%;
+               margin-bottom: 27px;
+            }
+
+            .buttons {
+                display: flex;
+                align-items: center;
+                gap: 21px;
+            }
+        }
+    }
+
+    @media (max-width: @tablet) {
+        padding-top: 62px;
+        padding-bottom: 62px;
+        background-size: 550px;
+        background-position: bottom 320px left -140px;
+
+        .wrapper {
+            .heading {
+                margin-bottom: 62px;
+
+                .title {
+                    font-size: 42px;
+                    letter-spacing: 1.3px;
+                }
+
+                .description {
+                    font-size: 16px;
+                    letter-spacing: 0.5px;
+                }
+            }
+
+            .services__list {
+                gap: 32px;
+                margin-bottom: 32px;
+            }
+            
+            .card__white-label {
+                padding: 32px 24px;
+                text-align: center;
+
+                .tag__green {
+                    margin: 0 auto;
+                }
+
+                .card__title {
+                    font-size: 28px;
+                    margin-top: 16px;
+                }
+
+                .card__description {
+                    font-size: 18px;
+                }
+
+                .buttons {
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 16px;
+
+                    .btn__transparent,
+                    .btn__gradient {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

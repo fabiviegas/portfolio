@@ -1,0 +1,222 @@
+//out: false
+
+.testimonials {
+    padding-top: 62px;
+    padding-bottom: 120px;
+    overflow-x: hidden;
+
+    .wrapper {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        gap: 52px;
+
+        .background {
+            background-image: linear-gradient(to right, #FF8C39, #FF5C5C);
+            height: 310px;
+            width: 55%;
+            position: absolute;
+            z-index: 0;
+            right: 0;
+            top: 0;
+            border-top-left-radius: 40px;
+            border-bottom-left-radius: 40px;
+        }
+
+        .heading {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 270px;
+            width: 346px;
+            margin-top: 15px;
+            margin-left: 10%;
+
+            .top {
+                .title {
+                    font-size: 52px;
+                    line-height: 134%;
+                    letter-spacing: 1.6px;
+                    margin-bottom: 12px;
+                    font-weight: 700;
+                }
+
+                .subtitle {
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 134%;
+                    letter-spacing: 0.6px;                    
+
+                    .link {
+                        font-weight: 700;
+                        color: #2E353B;
+                        text-decoration: underline;
+                        transition: all linear .15s;
+                        display: inline;
+
+                        &:hover {
+                            color: #FF8C39;
+                        }
+                    }
+                }
+            }
+
+            .bottom {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 6px;
+
+                .logo__google {
+                    width: fit-content;
+                }
+
+                .loader {
+                    --s: 40px;
+                    height: calc(var(--s)*0.9);
+                    width: calc(var(--s)*5);
+                   --v1:transparent,#000 0.5deg 108deg,#0000 109deg;
+                   --v2:transparent,#000 0.5deg  36deg,#0000  37deg;
+                   mask:
+                     conic-gradient(from 54deg  at calc(var(--s)*0.68) calc(var(--s)*0.57),var(--v1)),
+                     conic-gradient(from 90deg  at calc(var(--s)*0.02) calc(var(--s)*0.35),var(--v2)),
+                     conic-gradient(from 126deg at calc(var(--s)*0.5)  calc(var(--s)*0.7) ,var(--v1)),
+                     conic-gradient(from 162deg at calc(var(--s)*0.5)  0                  ,var(--v2));
+                   -webkit-mask:
+                     conic-gradient(from 54deg  at calc(var(--s)*0.68) calc(var(--s)*0.57),var(--v1)),
+                     conic-gradient(from 90deg  at calc(var(--s)*0.02) calc(var(--s)*0.35),var(--v2)),
+                     conic-gradient(from 126deg at calc(var(--s)*0.5)  calc(var(--s)*0.7) ,var(--v1)),
+                     conic-gradient(from 162deg at calc(var(--s)*0.5)  0                  ,var(--v2));
+                     mask-size: var(--s) var(--s);
+                   -webkit-mask-size: var(--s) var(--s);
+                   mask-composite: xor,destination-over;
+                   -webkit-mask-composite: xor,destination-over;
+                           mask-composite: exclude,add;
+                    mask-repeat:repeat-x;
+                   -webkit-mask-repeat:repeat-x;
+                   background:linear-gradient(#ffb940 0 0) left/0% 100% #ddd no-repeat;
+                   animation: l20 2s infinite linear;
+                 }
+                 @keyframes l20 {
+                     90%,100% {background-size:100% 100%}
+                 }
+            }
+        }
+
+        .owl-carousel.owl-theme.testimonials__carousel {
+            margin-top: 72px;
+            position: relative;
+            z-index: 3;
+            
+
+            .owl-dots {
+                display: none;
+            }
+
+            .card__testimonial {
+                border-radius: 20px;
+                background-color: #FFF;
+                box-shadow: -6px 6px 25px rgba(46, 53, 59, .15);
+                width: 330px;
+                height: 300px;
+                padding: 26px 32px;
+                flex-shrink: 0;
+                margin-bottom: 30px;
+
+                .card__heading {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 10px;
+                    margin-bottom: 10px;
+
+                    .customer {
+                        display: flex;
+                        align-items: center;
+
+                        .test__logo {
+                            width: fit-content;
+                            margin-right: 18px;
+                        }
+
+                        .test__info {
+                            .name {
+                                font-size: 20px;
+                                font-weight: 700;
+                                line-height: 134%;
+                                letter-spacing: 0.6px;
+                                color: #FF5C5C;
+                                margin-bottom: 6px;
+                            }
+
+                            .enterprise {
+                                font-size: 14px;
+                                font-weight: 500;
+                                line-height: 134%;
+                            }
+                        }
+                    }
+
+                    .icon__google {
+                        width: fit-content;
+                        margin-top: 5px;
+                        align-self: flex-start;
+                    }
+                }
+
+                .icon__stars {
+                    width: fit-content;
+                    margin-bottom: 8px;
+                }
+
+                .card__text {
+                    font-size: 14px;
+                    line-height: 134%;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1100px) {
+        padding-bottom: 62px;
+
+        .wrapper {
+            flex-direction: column;
+            align-items: center;
+
+            .background {
+                width: 100%;
+                height: 155px;
+                border-radius: 0;
+                top: auto;
+                bottom: 160px;
+                left: 0;
+            }
+
+            .heading {
+                align-items: center;
+                text-align: center;
+                height: fit-content;
+                gap: 32px;
+                width: 100%;
+                margin: 0 auto 32px auto;
+                padding: 0 24px;
+            }
+
+            .owl-carousel.owl-theme.testimonials__carousel {
+                .owl-dots-circle();
+                margin-top: 0;
+
+                
+                .card__testimonial {
+                    width: 100%;
+                    max-width: 370px;
+                    height: 100%;
+                    
+                }
+            }
+        }
+    }
+}
