@@ -627,21 +627,21 @@ nav {
   max-width: 1230px;
   margin-left: auto;
   margin-right: 28px;
-  padding: 218px 24px 181px 24px;
+  padding: 247px 0 126px 24px;
   display: flex;
   justify-content: center;
-  gap: 62px;
+  gap: 0;
 }
 .hero .wrapper .content {
-  padding-top: 25px;
-  width: 525px;
+  width: 578px;
+  flex-shrink: 0;
 }
 .hero .wrapper .content .title {
   font-weight: 700;
-  font-size: 52px;
-  letter-spacing: 1.6px;
-  line-height: 126%;
-  margin-bottom: 24px;
+  font-size: 48px;
+  letter-spacing: 0.5px;
+  line-height: 108%;
+  margin-bottom: 16px;
 }
 .hero .wrapper .content .title span {
   color: #FF8C39;
@@ -651,15 +651,69 @@ nav {
   font-weight: 400;
   letter-spacing: 0.7px;
   line-height: 138%;
-  margin-bottom: 38px;
+  margin-bottom: 24px;
 }
 .hero .wrapper .content .description span {
   font-weight: 700;
 }
-.hero .wrapper .content .buttons {
+.hero .wrapper .content .buttons .btn__gradient {
+  width: fit-content;
+}
+.hero .wrapper .content .bottom {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
+  margin-bottom: 6px;
+  margin-top: 62px;
+}
+.hero .wrapper .content .bottom .logo {
+  width: 86px;
+}
+.hero .wrapper .content .bottom .loader {
+  --s: 20px;
+  height: calc(var(--s)*0.9);
+  width: calc(var(--s)*5);
+  --v1: transparent, #000 0.5deg 108deg, #0000 109deg;
+  --v2: transparent, #000 0.5deg 36deg, #0000 37deg;
+  mask: conic-gradient(from 54deg at calc(var(--s)*0.68) calc(var(--s)*0.57), var(--v1)), conic-gradient(from 90deg at calc(var(--s)*0.02) calc(var(--s)*0.35), var(--v2)), conic-gradient(from 126deg at calc(var(--s)*0.5) calc(var(--s)*0.7), var(--v1)), conic-gradient(from 162deg at calc(var(--s)*0.5) 0, var(--v2));
+  -webkit-mask: conic-gradient(from 54deg at calc(var(--s)*0.68) calc(var(--s)*0.57), var(--v1)), conic-gradient(from 90deg at calc(var(--s)*0.02) calc(var(--s)*0.35), var(--v2)), conic-gradient(from 126deg at calc(var(--s)*0.5) calc(var(--s)*0.7), var(--v1)), conic-gradient(from 162deg at calc(var(--s)*0.5) 0, var(--v2));
+  mask-size: var(--s) var(--s);
+  -webkit-mask-size: var(--s) var(--s);
+  mask-composite: xor, destination-over;
+  -webkit-mask-composite: xor, destination-over;
+  mask-composite: exclude,add;
+  mask-repeat: repeat-x;
+  -webkit-mask-repeat: repeat-x;
+  background: linear-gradient(#ffb940 0 0) left / 0% 100% #ddd no-repeat;
+  animation: l20 2s infinite linear;
+}
+@keyframes l20 {
+  90%,
+  100% {
+    background-size: 100% 100%;
+  }
+}
+.hero .wrapper .content .link__google {
+  color: #2E353B;
+  font-family: Figtree;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 134%;
+  /* 21.44px */
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+  transition: all linear 0.2s;
+}
+.hero .wrapper .content .link__google:hover {
+  color: #FF5C5C;
+}
+.hero .wrapper .cover {
+  max-width: 619px;
 }
 @media (max-width: 900px) {
   .hero {
@@ -690,16 +744,14 @@ nav {
     letter-spacing: 0.5px;
     margin-bottom: 32px;
   }
-  .hero .wrapper .content .buttons {
-    flex-direction: column;
-    align-items: center;
-    width: 272px;
-    margin: 0 auto;
-    gap: 12px;
-  }
-  .hero .wrapper .content .buttons .btn__transparent,
   .hero .wrapper .content .buttons .btn__gradient {
     width: 100%;
+    padding: 14px 18px;
+  }
+  .hero .wrapper .content .bottom {
+    width: 100%;
+    justify-content: center;
+    margin-top: 42px;
   }
   .hero .wrapper .cover {
     width: 100%;
@@ -1564,8 +1616,8 @@ nav {
   --s: 40px;
   height: calc(var(--s)*0.9);
   width: calc(var(--s)*5);
-  --v1: transparent,#000 0.5deg 108deg,#0000 109deg;
-  --v2: transparent,#000 0.5deg  36deg,#0000  37deg;
+  --v1: transparent, #000 0.5deg 108deg, #0000 109deg;
+  --v2: transparent, #000 0.5deg 36deg, #0000 37deg;
   mask: conic-gradient(from 54deg at calc(var(--s)*0.68) calc(var(--s)*0.57), var(--v1)), conic-gradient(from 90deg at calc(var(--s)*0.02) calc(var(--s)*0.35), var(--v2)), conic-gradient(from 126deg at calc(var(--s)*0.5) calc(var(--s)*0.7), var(--v1)), conic-gradient(from 162deg at calc(var(--s)*0.5) 0, var(--v2));
   -webkit-mask: conic-gradient(from 54deg at calc(var(--s)*0.68) calc(var(--s)*0.57), var(--v1)), conic-gradient(from 90deg at calc(var(--s)*0.02) calc(var(--s)*0.35), var(--v2)), conic-gradient(from 126deg at calc(var(--s)*0.5) calc(var(--s)*0.7), var(--v1)), conic-gradient(from 162deg at calc(var(--s)*0.5) 0, var(--v2));
   mask-size: var(--s) var(--s);
