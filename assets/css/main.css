@@ -957,7 +957,7 @@ nav {
 .sobre {
   background-image: url('../img/cover-about.png');
   background-repeat: no-repeat;
-  background-position: right -42px top 0;
+  background-position: right 0 top 0;
   background-size: auto 100%;
   padding-top: 91px;
   padding-bottom: 109px;
@@ -968,9 +968,9 @@ nav {
   border-radius: 60px 0;
   background-color: #f7f7f7;
   box-shadow: -6px 0 20px rgba(46, 53, 59, 0.15);
-  padding: 71px 102px 72px 96px;
+  padding: 71px 82px 72px 96px;
   width: 100%;
-  max-width: 751px;
+  max-width: 702px;
   margin-left: 9%;
   margin-right: auto;
 }
@@ -1007,10 +1007,12 @@ nav {
 @media (max-width: 900px) {
   .sobre {
     padding-top: 62px;
-    padding-bottom: 251px;
+    padding-bottom: 302px;
     background-image: url('../img/cover-about-mobile.png');
     background-position: left 0 bottom 0;
     background-size: 100% auto;
+    margin-bottom: 32px;
+    margin-top: 32px;
   }
   .sobre .wrapper {
     border-radius: 40px 0;
@@ -1020,7 +1022,7 @@ nav {
     width: calc(100% - 32px);
   }
   .sobre .wrapper .title {
-    font-size: 42px;
+    font-size: 32px;
     letter-spacing: 1.3px;
     margin-bottom: 16px;
   }
