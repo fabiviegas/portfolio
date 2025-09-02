@@ -1036,11 +1036,12 @@ nav {
   }
 }
 .services {
-  padding-top: 120px;
-  padding-bottom: 235px;
+  padding-top: 25px;
+  padding-bottom: 200px;
   background-image: url('../img/bg-services.png');
   background-repeat: no-repeat;
-  background-position: left 0 bottom 130px;
+  background-position: left 0 bottom 28px;
+  background-size: 553px auto;
 }
 .services .wrapper {
   max-width: 1284px;
@@ -1076,10 +1077,9 @@ nav {
   gap: 24px;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 100px;
 }
 .services .wrapper .services__list .card__service {
-  width: 290px;
+  width: 325px;
   height: 323px;
   background-color: #FFF;
   border-radius: 10px;
@@ -1088,7 +1088,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 20px 60px 20px;
+  padding: 30px 24px 60px 24px;
   text-align: center;
 }
 .services .wrapper .services__list .card__service .icon {
@@ -1129,38 +1129,6 @@ nav {
   color: #f7f7f7;
   background-color: #FF5C5C;
 }
-.services .wrapper .card__white-label {
-  width: 100%;
-  max-width: 763px;
-  background-color: #FFF;
-  border-radius: 10px;
-  box-shadow: 6px 6px 20px rgba(46, 53, 59, 0.15);
-  padding: 40px 44px 38px 51px;
-}
-.services .wrapper .card__white-label .card__title {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 103%;
-  margin-bottom: 8px;
-  margin-top: 20px;
-}
-.services .wrapper .card__white-label .card__description {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 137%;
-  margin-bottom: 12px;
-}
-.services .wrapper .card__white-label .card__text {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 137%;
-  margin-bottom: 27px;
-}
-.services .wrapper .card__white-label .buttons {
-  display: flex;
-  align-items: center;
-  gap: 21px;
-}
 @media (max-width: 900px) {
   .services {
     padding-top: 62px;
@@ -1182,29 +1150,6 @@ nav {
   .services .wrapper .services__list {
     gap: 32px;
     margin-bottom: 32px;
-  }
-  .services .wrapper .card__white-label {
-    padding: 32px 24px;
-    text-align: center;
-  }
-  .services .wrapper .card__white-label .tag__green {
-    margin: 0 auto;
-  }
-  .services .wrapper .card__white-label .card__title {
-    font-size: 28px;
-    margin-top: 16px;
-  }
-  .services .wrapper .card__white-label .card__description {
-    font-size: 18px;
-  }
-  .services .wrapper .card__white-label .buttons {
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-  }
-  .services .wrapper .card__white-label .buttons .btn__transparent,
-  .services .wrapper .card__white-label .buttons .btn__gradient {
-    width: 100%;
   }
 }
 .numbers {

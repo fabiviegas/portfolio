@@ -1,11 +1,12 @@
 //out: false
 
 .services {
-    padding-top: 120px;
-    padding-bottom: 235px;
+    padding-top: 25px;
+    padding-bottom: 200px;
     background-image: url('../img/bg-services.png');
     background-repeat: no-repeat;
-    background-position: left 0 bottom 130px;
+    background-position: left 0 bottom 28px;
+    background-size: 553px auto;
 
     .wrapper {
         max-width: 1284px;
@@ -46,10 +47,9 @@
             gap: 24px;
             flex-wrap: wrap;
             justify-content: center;
-            margin-bottom: 100px;
 
             .card__service {
-                width: 290px;
+                width: 325px;
                 height: 323px;
                 background-color: #FFF;
                 border-radius: 10px;
@@ -58,7 +58,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                padding: 30px 20px 60px 20px;
+                padding: 30px 24px 60px 24px;
                 text-align: center;
 
                 .icon {
@@ -105,43 +105,6 @@
                 }
             }
         }
-
-        .card__white-label {
-            width: 100%;
-            max-width: 763px;
-            background-color: #FFF;
-            border-radius: 10px;
-            box-shadow: 6px 6px 20px rgba(46, 53, 59, 0.15);
-            padding: 40px 44px 38px 51px;
-
-            .card__title {
-                font-size: 32px;
-                font-weight: 700;
-                line-height: 103%;
-                margin-bottom: 8px;
-                margin-top: 20px;
-            }
-
-            .card__description {
-                font-size: 20px;
-                font-weight: 500;
-                line-height: 137%;
-                margin-bottom: 12px;
-            }
-
-            .card__text {
-               font-size: 16px;
-               font-weight: 400;
-               line-height: 137%;
-               margin-bottom: 27px;
-            }
-
-            .buttons {
-                display: flex;
-                align-items: center;
-                gap: 21px;
-            }
-        }
     }
 
     @media (max-width: @tablet) {
@@ -168,35 +131,6 @@
             .services__list {
                 gap: 32px;
                 margin-bottom: 32px;
-            }
-            
-            .card__white-label {
-                padding: 32px 24px;
-                text-align: center;
-
-                .tag__green {
-                    margin: 0 auto;
-                }
-
-                .card__title {
-                    font-size: 28px;
-                    margin-top: 16px;
-                }
-
-                .card__description {
-                    font-size: 18px;
-                }
-
-                .buttons {
-                    flex-direction: column;
-                    align-items: center;
-                    gap: 16px;
-
-                    .btn__transparent,
-                    .btn__gradient {
-                        width: 100%;
-                    }
-                }
             }
         }
     }
