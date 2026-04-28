@@ -3,7 +3,7 @@
 .testimonials {
     padding-top: 62px;
     padding-bottom: 120px;
-    overflow-x: hidden;
+    overflow: hidden;
 
     .wrapper {
         position: relative;
@@ -12,15 +12,15 @@
         gap: 52px;
 
         .background {
-            background-image: linear-gradient(to right, #FF8C39, #FF5C5C);
+            background-image: linear-gradient(90deg, #5C3B94 0%, #A259FF 46.63%, #AF75F9 100%);
             height: 310px;
             width: 55%;
             position: absolute;
-            z-index: 0;
             right: 0;
             top: 0;
             border-top-left-radius: 40px;
             border-bottom-left-radius: 40px;
+            z-index: 0;
         }
 
         .heading {
@@ -57,7 +57,7 @@
                         display: inline;
 
                         &:hover {
-                            color: #FF8C39;
+                            color: #A259FF;
                         }
                     }
                 }
@@ -105,78 +105,109 @@
             }
         }
 
-        .owl-carousel.owl-theme.testimonials__carousel {
-            margin-top: 72px;
+        .carousel {
             position: relative;
-            z-index: 3;
+            padding-top: 72px;
+
+             .owl-carousel.owl-theme.testimonials__carousel {
+                            
             
-
-            .owl-dots {
-                display: none;
-            }
-
-            .card__testimonial {
-                border-radius: 20px;
-                background-color: #FFF;
-                box-shadow: -6px 6px 25px rgba(46, 53, 59, .15);
-                width: 330px;
-                height: 300px;
-                padding: 26px 32px;
-                flex-shrink: 0;
-                margin-bottom: 30px;
-
-                .card__heading {
+                .owl-nav {
+                    position: absolute;
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: center;
+                    align-items: center;
                     gap: 10px;
-                    margin-bottom: 10px;
+                    z-index: 10;
+                    top: -56px;
+                    left: 18%;
 
-                    .customer {
+                    .owl-prev,
+                    .owl-next {
+                        width: 30px;
+                        height: 30px;
+                        background-color: #5C3B94;
+                        border-radius: 100%;
                         display: flex;
+                        justify-content: center;
                         align-items: center;
+                        margin: 0;
 
-                        .test__logo {
+                        span {
+                            color: #f7f7f7;
+                        }
+                    }
+                }
+
+                .owl-dots {
+                    display: none;
+                }
+
+                .card__testimonial {
+                    border-radius: 12px;
+                    background-color: #FFF;
+                    box-shadow: 0 2px 8px rgba(46, 53, 59, .15);
+                    width: 330px;
+                    height: 260px;
+                    padding: 24px;
+                    flex-shrink: 0;
+                    margin-bottom: 30px;
+
+                    .card__heading {
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 10px;
+                        margin-bottom: 10px;
+
+                        .customer {
+                            display: flex;
+                            align-items: center;
+
+                            .test__logo {
+                                width: fit-content;
+                                margin-right: 18px;
+                            }
+
+                            .test__info {
+                                .name {
+                                    font-size: 18px;
+                                    font-weight: 700;
+                                    line-height: 134%;
+                                    letter-spacing: 0.6px;
+                                    color: #5C3B94;
+                                    margin-bottom: 4px;
+                                }
+
+                                .enterprise {
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                    line-height: 134%;
+                                }
+                            }
+                        }
+
+                        .icon__google {
                             width: fit-content;
-                            margin-right: 18px;
-                        }
-
-                        .test__info {
-                            .name {
-                                font-size: 20px;
-                                font-weight: 700;
-                                line-height: 134%;
-                                letter-spacing: 0.6px;
-                                color: #FF5C5C;
-                                margin-bottom: 6px;
-                            }
-
-                            .enterprise {
-                                font-size: 14px;
-                                font-weight: 500;
-                                line-height: 134%;
-                            }
+                            margin-top: 5px;
+                            align-self: flex-start;
                         }
                     }
 
-                    .icon__google {
+                    .icon__stars {
                         width: fit-content;
-                        margin-top: 5px;
-                        align-self: flex-start;
+                        margin-bottom: 8px;
                     }
-                }
 
-                .icon__stars {
-                    width: fit-content;
-                    margin-bottom: 8px;
-                }
-
-                .card__text {
-                    font-size: 14px;
-                    line-height: 134%;
-                    font-weight: 400;
+                    .card__text {
+                        font-size: 14px;
+                        line-height: 134%;
+                        font-weight: 400;
+                    }
                 }
             }
         }
+
+       
     }
 
     @media (max-width: 1100px) {
