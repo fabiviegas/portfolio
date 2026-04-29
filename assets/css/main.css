@@ -630,28 +630,27 @@ nav {
   padding: 222px 0 126px 24px;
   display: flex;
   justify-content: center;
-  gap: 42px;
+  gap: 32px;
 }
 .hero .wrapper .content {
-  width: 578px;
+  width: 620px;
   flex-shrink: 0;
 }
 .hero .wrapper .content .title {
   font-weight: 700;
-  font-size: 48px;
-  letter-spacing: 0.5px;
-  line-height: 108%;
+  font-size: 36px;
+  line-height: 52px;
   margin-bottom: 16px;
 }
 .hero .wrapper .content .title span {
   color: #5C3B94;
+  font-size: 42px;
 }
 .hero .wrapper .content .description {
   font-size: 20px;
   font-weight: 400;
-  letter-spacing: 0.7px;
   line-height: 138%;
-  margin-bottom: 24px;
+  margin-bottom: 42px;
 }
 .hero .wrapper .content .description span {
   font-weight: 700;
@@ -664,7 +663,7 @@ nav {
   align-items: center;
   gap: 8px;
   margin-bottom: 6px;
-  margin-top: 62px;
+  margin-top: 52px;
 }
 .hero .wrapper .content .bottom .logo {
   width: 86px;
@@ -713,7 +712,7 @@ nav {
   color: #A259FF;
 }
 .hero .wrapper .cover {
-  max-width: 512px;
+  max-width: 490px;
 }
 @media (max-width: 900px) {
   .hero {
