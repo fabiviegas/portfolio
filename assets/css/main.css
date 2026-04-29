@@ -1078,10 +1078,11 @@ nav {
   line-height: 126%;
 }
 .services .wrapper .heading .description {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400;
-  letter-spacing: 0.7px;
+  max-width: 632px;
   line-height: 126%;
+  margin: 0 auto;
 }
 .services .wrapper .heading .description span {
   font-weight: 700;
