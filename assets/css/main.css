@@ -637,23 +637,17 @@ nav {
   flex-shrink: 0;
 }
 .hero .wrapper .content .title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 52px;
-  margin-bottom: 16px;
-}
-.hero .wrapper .content .title span {
   color: #5C3B94;
   font-size: 42px;
+  line-height: 52px;
+  margin-bottom: 8px;
+  font-weight: 700;
 }
-.hero .wrapper .content .description {
+.hero .wrapper .content .subtitle {
   font-size: 20px;
   font-weight: 400;
   line-height: 138%;
   margin-bottom: 42px;
-}
-.hero .wrapper .content .description span {
-  font-weight: 700;
 }
 .hero .wrapper .content .buttons .btn__gradient {
   width: fit-content;
@@ -736,11 +730,11 @@ nav {
   .hero .wrapper .content .title {
     font-size: 32px;
     margin-bottom: 16px;
-    letter-spacing: 1px;
+    line-height: 38px;
   }
-  .hero .wrapper .content .description {
-    font-size: 16px;
-    letter-spacing: 0.5px;
+  .hero .wrapper .content .subtitle {
+    font-size: 18px;
+    line-height: 28px;
     margin-bottom: 32px;
   }
   .hero .wrapper .content .buttons .btn__gradient {
@@ -996,10 +990,10 @@ nav {
 }
 @media (max-width: 900px) {
   .sobre {
-    padding-top: 62px;
-    padding-bottom: 362px;
+    padding-top: 362px;
+    padding-bottom: 0;
     background-image: url('../img/cover-about-mobile.png');
-    background-position: left 0 bottom 0;
+    background-position: left 0 top 0;
     background-size: 100% auto;
     margin-bottom: 32px;
     margin-top: 32px;
@@ -1153,9 +1147,13 @@ nav {
   .services .wrapper .heading {
     margin-bottom: 62px;
   }
+  .services .wrapper .heading .head__title {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
   .services .wrapper .heading .title {
-    font-size: 42px;
-    letter-spacing: 1.3px;
+    font-size: 32px;
+    line-height: 118%;
   }
   .services .wrapper .heading .description {
     font-size: 16px;
@@ -1423,14 +1421,12 @@ nav {
   color: transparent;
   font-size: 42px;
   font-weight: 900;
-  letter-spacing: 1.4px;
   margin-bottom: 10px;
   line-height: 126%;
 }
 .benefits .wrapper .heading .description {
   font-size: 24px;
   font-weight: 400;
-  letter-spacing: 0.7px;
   line-height: 126%;
 }
 .benefits .wrapper .heading .description span {
@@ -1495,12 +1491,13 @@ nav {
   }
   .benefits .wrapper .heading .title {
     font-size: 32px;
-    letter-spacing: 1px;
     line-height: 118%;
+  }
+  .benefits .wrapper .heading .title br {
+    display: none;
   }
   .benefits .wrapper .heading .description {
     font-size: 18px;
-    letter-spacing: 0.5px;
   }
   .benefits .wrapper .benefits__list {
     flex-direction: column;
